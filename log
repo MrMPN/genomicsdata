@@ -1,0 +1,4645 @@
+This is MIRA V3.4.1.1 (production version).
+
+Please cite: Chevreux, B., Wetter, T. and Suhai, S. (1999), Genome Sequence
+Assembly Using Trace Signals and Additional Sequence Information.
+Computer Science and Biology: Proceedings of the German Conference on
+Bioinformatics (GCB) 99, pp. 45-56.
+
+To (un-)subscribe the MIRA mailing lists, see:
+	http://www.chevreux.org/mira_mailinglists.html
+
+After subscribing, mail general questions to the MIRA talk mailing list:
+	mira_talk@freelists.org
+
+To report bugs or ask for features, please use the new ticketing system at:
+	http://sourceforge.net/apps/trac/mira-assembler/
+This ensures that requests don't get lost.
+
+
+Compiled by: bach
+Wed Nov 14 23:07:20 CET 2012
+On: Linux vk10464 2.6.32-41-generic #94-Ubuntu SMP Fri Jul 6 18:00:34 UTC 2012 x86_64 GNU/Linux
+Compiled in boundtracking mode.
+Compiled in bugtracking mode.
+Compiled with ENABLE64 activated.
+Runtime settings (sorry, for debug):
+	Size of size_t  : 8
+	Size of uint32  : 4
+	Size of uint32_t: 4
+	Size of uint64  : 8
+	Size of uint64_t: 8
+Current system: Linux genomica 3.2.0-35-generic #55-Ubuntu SMP Wed Dec 5 17:42:16 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux
+
+
+
+Parsing parameters: --project=302 --job=denovo,genome,accurate,454 454_SETTINGS -LR:ft=fasta:mxti=yes
+
+
+
+
+Parameters parsed without error, perfect.
+
+-CL:pec and -CO:emeas1clpec are set, setting -CO:emea values to 1.
+------------------------------------------------------------------------------
+Parameter settings seen for:
+Sanger data (also common parameters), 454 data
+
+Used parameter settings:
+  General (-GE):
+	Project name in (proin)                     : 302
+	Project name out (proout)                   : 302
+	Number of threads (not)                     : 2
+	Automatic memory management (amm)           : yes
+	    Keep percent memory free (kpmf)         : 15
+	    Max. process size (mps)                 : 0
+	EST SNP pipeline step (esps)                : 0
+	Use template information (uti)              :  [san]  yes
+	                                               [454]  yes
+	    Template insert size minimum (tismin)   :  [san]  -1
+	                                               [454]  -1
+	    Template insert size maximum (tismax)   :  [san]  -1
+	                                               [454]  -1
+	    Template partner build direction (tpbd) :  [san]  -1
+	                                               [454]  -1
+	Colour reads by hash frequency (crhf)       : yes
+
+  Load reads options (-LR):
+	Load sequence data (lsd)                    :  [san]  no
+	                                               [454]  yes
+	    File type (ft)                          :  [san]  fasta
+	                                               [454]  fasta
+	    External quality (eq)                   : from SCF (scf)
+	        Ext. qual. override (eqo)           : no
+	        Discard reads on e.q. error (droeqe): no
+	    Solexa scores in qual file (ssiqf)      : no
+	    FASTQ qual offset (fqqo)                :  [san]  0
+	                                               [454]  0
+
+	Wants quality file (wqf)                    :  [san]  yes
+	                                               [454]  yes
+
+	Read naming scheme (rns)                    :  [san] Sanger Institute (sanger)
+	                                               [454] forward/reverse (fr)
+
+	Merge with XML trace info (mxti)            :  [san]  no
+	                                               [454]  yes
+
+	Filecheck only (fo)                         : no
+
+  Assembly options (-AS):
+	Number of passes (nop)                      : 5
+	    Skim each pass (sep)                    : yes
+	Maximum number of RMB break loops (rbl)     : 3
+	Maximum contigs per pass (mcpp)             : 0
+
+	Minimum read length (mrl)                   :  [san]  80
+	                                               [454]  40
+	Minimum reads per contig (mrpc)             :  [san]  2
+	                                               [454]  5
+	Base default quality (bdq)                  :  [san]  10
+	                                               [454]  10
+	Enforce presence of qualities (epoq)        :  [san]  yes
+	                                               [454]  yes
+
+	Automatic repeat detection (ard)            : yes
+	    Coverage threshold (ardct)              :  [san]  2
+	                                               [454]  2
+	    Minimum length (ardml)                  :  [san]  400
+	                                               [454]  200
+	    Grace length (ardgl)                    :  [san]  40
+	                                               [454]  20
+	    Use uniform read distribution (urd)     : no
+	      Start in pass (urdsip)                : 4
+	      Cutoff multiplier (urdcm)             :  [san]  1.5
+	                                               [454]  1.5
+	Keep long repeats separated (klrs)          : no
+
+	Spoiler detection (sd)                      : yes
+	    Last pass only (sdlpo)                  : yes
+
+	Use genomic pathfinder (ugpf)               : yes
+
+	Use emergency search stop (uess)            : yes
+	    ESS partner depth (esspd)               : 500
+	Use emergency blacklist (uebl)              : yes
+	Use max. contig build time (umcbt)          : no
+	    Build time in seconds (bts)             : 10000
+
+  Strain and backbone options (-SB):
+	Load straindata (lsd)                       : no
+	Assign default strain (ads)                 :  [san]  no
+	                                               [454]  no
+	    Default strain name (dsn)               :  [san]  StrainX
+	                                               [454]  StrainX
+	Load backbone (lb)                          : no
+	    Start backbone usage in pass (sbuip)    : 3
+	    Backbone file type (bft)                : fasta
+	    Backbone base quality (bbq)             : 30
+	    Backbone strain name (bsn)              : ReferenceStrain
+	        Force for all (bsnffa)              : no
+	    Backbone rail from strain (brfs)        : 
+	    Backbone rail length (brl)              : 0
+	    Backbone rail overlap (bro)             : 0
+	    Also build new contigs (abnc)           : yes
+
+  Dataprocessing options (-DP):
+	Use read extensions (ure)                   :  [san]  yes
+	                                               [454]  no
+	    Read extension window length (rewl)     :  [san]  30
+	                                               [454]  15
+	    Read extension w. maxerrors (rewme)     :  [san]  2
+	                                               [454]  2
+	    First extension in pass (feip)          :  [san]  0
+	                                               [454]  0
+	    Last extension in pass (leip)           :  [san]  0
+	                                               [454]  0
+
+  Clipping options (-CL):
+	Merge with SSAHA2/SMALT vector screen (msvs):  [san]  no
+	                                               [454]  no
+	    Gap size (msvsgs)                       :  [san]  10
+	                                               [454]  8
+	    Max front gap (msvsmfg)                 :  [san]  60
+	                                               [454]  8
+	    Max end gap (msvsmeg)                   :  [san]  120
+	                                               [454]  12
+	    Strict front clip (msvssfc)             :  [san]  0
+	                                               [454]  0
+	    Strict end clip (msvssec)               :  [san]  0
+	                                               [454]  0
+	Possible vector leftover clip (pvlc)        :  [san]  yes
+	                                               [454]  no
+	    maximum len allowed (pvcmla)            :  [san]  18
+	                                               [454]  18
+	Min qual. threshold for entire read (mqtfer):  [san]  0
+	                                               [454]  0
+	    Number of bases (mqtfernob)             :  [san]  0
+	                                               [454]  0
+	Quality clip (qc)                           :  [san]  no
+	                                               [454]  no
+	    Minimum quality (qcmq)                  :  [san]  20
+	                                               [454]  20
+	    Window length (qcwl)                    :  [san]  30
+	                                               [454]  30
+	Bad stretch quality clip (bsqc)             :  [san]  yes
+	                                               [454]  no
+	    Minimum quality (bsqcmq)                :  [san]  20
+	                                               [454]  5
+	    Window length (bsqcwl)                  :  [san]  30
+	                                               [454]  20
+	Masked bases clip (mbc)                     :  [san]  yes
+	                                               [454]  yes
+	    Gap size (mbcgs)                        :  [san]  20
+	                                               [454]  5
+	    Max front gap (mbcmfg)                  :  [san]  40
+	                                               [454]  12
+	    Max end gap (mbcmeg)                    :  [san]  60
+	                                               [454]  12
+	Lower case clip (lcc)                       :  [san]  no
+	                                               [454]  yes
+	Clip poly A/T at ends (cpat)                :  [san]  no
+	                                               [454]  no
+	    Keep poly-a signal (cpkps)              :  [san]  no
+	                                               [454]  no
+	    Minimum signal length (cpmsl)           :  [san]  12
+	                                               [454]  12
+	    Max errors allowed (cpmea)              :  [san]  1
+	                                               [454]  1
+	    Max gap from ends (cpmgfe)              :  [san]  9
+	                                               [454]  9
+	Clip 3 prime polybase (c3pp)                :  [san]  no
+	                                               [454]  no
+	    Minimum signal length (c3ppmsl)         :  [san]  12
+	                                               [454]  12
+	    Max errors allowed (c3ppmea)            :  [san]  2
+	                                               [454]  2
+	    Max gap from ends (c3ppmgfe)            :  [san]  9
+	                                               [454]  9
+	Clip known adaptors right (ckar)            :  [san]  no
+	                                               [454]  yes
+	Ensure minimum left clip (emlc)             :  [san]  yes
+	                                               [454]  no
+	    Minimum left clip req. (mlcr)           :  [san]  25
+	                                               [454]  4
+	    Set minimum left clip to (smlc)         :  [san]  30
+	                                               [454]  4
+	Ensure minimum right clip (emrc)            :  [san]  no
+	                                               [454]  no
+	    Minimum right clip req. (mrcr)          :  [san]  10
+	                                               [454]  10
+	    Set minimum right clip to (smrc)        :  [san]  20
+	                                               [454]  15
+
+	Apply SKIM chimera detection clip (ascdc)   : yes
+	Apply SKIM junk detection clip (asjdc)      : no
+
+	Propose end clips (pec)                     : yes
+	    Bases per hash (pecbph)                 : 27
+	    Handle Solexa GGCxG problem (pechsgp)   : yes
+
+	Clip bad solexa ends (cbse)                 : yes
+
+  Parameters for SKIM algorithm (-SK):
+	Number of threads (not)                     : 2
+
+	Also compute reverse complements (acrc)     : yes
+	Bases per hash (bph)                        : 21
+	Hash save stepping (hss)                    : 1
+	Percent required (pr)                       :  [san]  70
+	                                               [454]  80
+
+	Max hits per read (mhpr)                    : 2000
+	Max megahub ratio (mmhr)                    : 0
+
+	SW check on backbones (swcob)               : no
+
+	Freq. est. min normal (fenn)                : 0.4
+	Freq. est. max normal (fexn)                : 1.6
+	Freq. est. repeat (fer)                     : 1.9
+	Freq. est. heavy repeat (fehr)              : 8
+	Freq. est. crazy (fecr)                     : 20
+	Mask nasty repeats (mnr)                    : yes
+	    Nasty repeat ratio (nrr)                : 100
+	Repeat level in info file (rliif)           : 6
+
+	Max hashes in memory (mhim)                 : 15000000
+	MemCap: hit reduction (mchr)                : 2048
+
+  Pathfinder options (-PF):
+	Use quick rule (uqr)                        :  [san]  yes
+	                                               [454]  yes
+	    Quick rule min len 1 (qrml1)            :  [san]  200
+	                                               [454]  80
+	    Quick rule min sim 1 (qrms1)            :  [san]  90
+	                                               [454]  90
+	    Quick rule min len 2 (qrml2)            :  [san]  100
+	                                               [454]  60
+	    Quick rule min sim 2 (qrms2)            :  [san]  95
+	                                               [454]  95
+	Backbone quick overlap min len (bqoml)      :  [san]  150
+	                                               [454]  80
+	Max. start cache fill time (mscft)          : 5
+
+  Align parameters for Smith-Waterman align (-AL):
+	Bandwidth in percent (bip)             :  [san]  20
+	                                          [454]  20
+	Bandwidth max (bmax)                   :  [san]  130
+	                                          [454]  80
+	Bandwidth min (bmin)                   :  [san]  25
+	                                          [454]  20
+	Minimum score (ms)                     :  [san]  30
+	                                          [454]  15
+	Minimum overlap (mo)                   :  [san]  17
+	                                          [454]  20
+	Minimum relative score in % (mrs)      :  [san]  70
+	                                          [454]  70
+	Solexa_hack_max_errors (shme)          :  [san]  -1
+	                                          [454]  -1
+	Extra gap penalty (egp)                :  [san]  no
+	                                          [454]  yes
+	    extra gap penalty level (egpl)     :  [san] low
+	                                          [454] reject_codongaps
+	    Max. egp in percent (megpp)        :  [san]  100
+	                                          [454]  100
+
+  Contig parameters (-CO):
+	Name prefix (np)                                         : 302
+	Reject on drop in relative alignment score in % (rodirs) :  [san]  25
+	                                                            [454]  30
+	Mark repeats (mr)                                        : yes
+	    Only in result (mroir)                               : no
+	    Assume SNP instead of repeats (asir)                 : no
+	    Minimum reads per group needed for tagging (mrpg)    :  [san]  2
+	                                                            [454]  4
+	    Minimum neighbour quality needed for tagging (mnq)   :  [san]  20
+	                                                            [454]  20
+	    Minimum Group Quality needed for RMB Tagging (mgqrt) :  [san]  30
+	                                                            [454]  25
+	    End-read Marking Exclusion Area in bases (emea)      :  [san]  1
+	                                                            [454]  1
+	        Set to 1 on clipping PEC (emeas1clpec)           : yes
+	    Also mark gap bases (amgb)                           :  [san]  yes
+	                                                            [454]  no
+	        Also mark gap bases - even multicolumn (amgbemc) :  [san]  yes
+	                                                            [454]  yes
+	        Also mark gap bases - need both strands (amgbnbs):  [san]  yes
+	                                                            [454]  yes
+	Force non-IUPAC consensus per sequencing type (fnicpst)  :  [san]  no
+	                                                            [454]  no
+	Merge short reads (msr)                                  :  [san]  no
+	                                                            [454]  no
+	    Keep ends unmerged (msrkeu)                          :  [san]  -1
+	                                                            [454]  -1
+	Gap override ratio (gor)                                 :  [san]  66
+	                                                            [454]  66
+
+  Edit options (-ED):
+	Automatic contig editing (ace)              :  [san]  no
+	                                               [454]  yes
+     Sanger only:
+	Strict editing mode (sem)                   : no
+	Confirmation threshold in percent (ct)      : 50
+
+  Misc (-MI):
+	Stop on NFS (sonfs)                         : yes
+	Extended log (el)                           : no
+	Large contig size (lcs)                     : 500
+	Large contig size for stats(lcs4s)          : 5000
+	Stop on max read name length (somrnl)       : 40
+
+  Directories (-DI):
+	Working directory                 : 
+	When loading EXP files            : 
+	When loading SCF files            : 
+	Top directory for writing files   : 302_assembly
+	For writing result files          : 302_assembly/302_d_results
+	For writing result info files     : 302_assembly/302_d_info
+	For writing tmp files             : 302_assembly/302_d_tmp
+	Tmp redirected to (trt)           : 
+	For writing checkpoint files      : 302_assembly/302_d_chkpt
+
+  File names (-FN):
+	When loading sequences from FASTA            :  [san]  302_in.sanger.fasta
+	                                                [454]  302_in.454.fasta
+	When loading qualities from FASTA quality    :  [san]  302_in.sanger.fasta.qual
+	                                                [454]  302_in.454.fasta.qual
+	When loading sequences from FASTQ            :  [san]  302_in.sanger.fastq
+	                                                [454]  302_in.454.fastq
+	When loading project from CAF                : 302_in.sanger.caf
+	When loading project from MAF (disabled)     : 302_in.sanger.maf
+	When loading EXP fofn                        : 302_in.sanger.fofn
+	When loading project from PHD                : 302_in.phd.1
+	When loading strain data                     : 302_straindata_in.txt
+	When loading XML trace info files            :  [san]  302_traceinfo_in.sanger.xml
+	                                                [454]  302_traceinfo_in.454.xml
+	When loading SSAHA2 vector screen results    : 302_ssaha2vectorscreen_in.txt
+	When loading SMALT vector screen results     : 302_smaltvectorscreen_in.txt
+
+	When loading backbone from MAF               : 302_backbone_in.maf
+	When loading backbone from CAF               : 302_backbone_in.caf
+	When loading backbone from GenBank           : 302_backbone_in.gbf
+	When loading backbone from GFF3              : 302_backbone_in.gff3
+	When loading backbone from FASTA             : 302_backbone_in.fasta
+
+
+  Output files (-OUTPUT/-OUT):
+	Save simple singlets in project (sssip)      :  [san]  no
+	                                                [454]  no
+	Save tagged singlets in project (stsip)      :  [san]  yes
+	                                                [454]  yes
+
+	Remove rollover tmps (rrot)                  : yes
+	Remove tmp directory (rtd)                   : no
+
+    Result files:
+	Saved as CAF                       (orc)     : yes
+	Saved as MAF                       (orm)     : yes
+	Saved as FASTA                     (orf)     : yes
+	Saved as GAP4 (directed assembly)  (org)     : no
+	Saved as phrap ACE                 (ora)     : yes
+	Saved as GFF3                     (org3)     : no
+	Saved as HTML                      (orh)     : no
+	Saved as Transposed Contig Summary (ors)     : yes
+	Saved as simple text format        (ort)     : no
+	Saved as wiggle                    (orw)     : yes
+
+    Temporary result files:
+	Saved as CAF                       (otc)     : yes
+	Saved as MAF                       (otm)     : no
+	Saved as FASTA                     (otf)     : no
+	Saved as GAP4 (directed assembly)  (otg)     : no
+	Saved as phrap ACE                 (ota)     : no
+	Saved as HTML                      (oth)     : no
+	Saved as Transposed Contig Summary (ots)     : no
+	Saved as simple text format        (ott)     : no
+
+    Extended temporary result files:
+	Saved as CAF                      (oetc)     : no
+	Saved as FASTA                    (oetf)     : no
+	Saved as GAP4 (directed assembly) (oetg)     : no
+	Saved as phrap ACE                (oeta)     : no
+	Saved as HTML                     (oeth)     : no
+	Save also singlets               (oetas)     : no
+
+    Alignment output customisation:
+	TEXT characters per line (tcpl)              : 60
+	HTML characters per line (hcpl)              : 60
+	TEXT end gap fill character (tegfc)          :  
+	HTML end gap fill character (hegfc)          :  
+
+    File / directory output names:
+	CAF             : 302_out.caf
+	MAF             : 302_out.maf
+	FASTA           : 302_out.unpadded.fasta
+	FASTA quality   : 302_out.unpadded.fasta.qual
+	FASTA (padded)  : 302_out.padded.fasta
+	FASTA qual.(pad): 302_out.padded.fasta.qual
+	GAP4 (directory): 302_out.gap4da
+	ACE             : 302_out.ace
+	HTML            : 302_out.html
+	Simple text     : 302_out.txt
+	TCS overview    : 302_out.tcs
+	Wiggle          : 302_out.wig
+------------------------------------------------------------------------------
+Creating directory 302_assembly ... done.
+Creating directory 302_assembly/302_d_tmp ... done.
+Creating directory 302_assembly/302_d_results ... done.
+Creating directory 302_assembly/302_d_info ... done.
+Creating directory 302_assembly/302_d_chkpt ... done.
+
+Tmp directory is not on a NFS mount, good.
+
+Localtime: Mon Dec 21 11:16:51 2015
+
+Loading data (454) from FASTA files,
+Localtime: Mon Dec 21 11:16:51 2015
+Counting sequences in FASTA file:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Found 797 sequences.
+Localtime: Mon Dec 21 11:16:51 2015
+454 will load 797 reads.
+Longest Sanger: 0
+Longest 454: 602
+Longest IonTor: 0
+Longest PacBio: 0
+Longest Solexa: 0
+Longest Solid: 0
+Longest overall: 602
+Total reads to load: 797
+Reserving space for reads
+Reserved space for 807 reads.
+Loading data (454) from FASTA files,
+Localtime: Mon Dec 21 11:16:51 2015
+Localtime: Mon Dec 21 11:16:51 2015
+Loading data from FASTA file:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Localtime: Mon Dec 21 11:16:51 2015
+rnm size: 0
+Loading quality data from FASTA quality file 302_in.454.fasta.qual:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Localtime: Mon Dec 21 11:16:51 2015
+
+Done.
+Loaded 797 reads with 405360 raw bases.
+797 reads have quality accounted for.
+Loaded 797 454 reads.
+Total reads loaded: 797
+Localtime: Mon Dec 21 11:16:51 2015
+
+Localtime: Mon Dec 21 11:16:51 2015
+Merging data from XML trace info file 302_traceinfo_in.454.xml ...Num reads: 799
+Building hash table ... done.
+Localtime: Mon Dec 21 11:16:51 2015
+
+Generated 797 unique template ids for 797 valid reads.
+Done merging XML data, matched 797 reads.
+Localtime: Mon Dec 21 11:16:51 2015
+
+
+Note: 35 reads with 454 data had quality clips given, but no sequencing vector clip.
+For MIRA to run properly with read extension, those quality clips have been
+changed to sequencing vector clips.
+
+Checking reads for trace data:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+No SCF data present in any read, automatic contig editing for Sanger data is now switched off.
+797 reads with valid data for assembly.
+Localtime: Mon Dec 21 11:16:51 2015
+
+Generated 797 unique template ids for 797 valid reads.
+No useful template information found, template routines will not be used.
+Localtime: Mon Dec 21 11:16:51 2015
+
+Generated 0 unique strain ids for 797 reads.
+Strain "default" has 797 reads.
+Have read pool with 797 reads.
+
+===========================================================================
+Pool statistics:
+Backbones: 0	Backbone rails: 0
+
+		Sanger	454	IonTor	PacBio	Solexa	SOLiD
+		----------------------------------------
+Total reads	0	797	0	0	0	0
+Reads wo qual	0	0	0	0	0	0
+Used reads	0	797	0	0	0	0
+Avg tot rlen	0	508	0	0	0	0
+Avg rlen used	0	503	0	0	0	0
+
+With strain	0	0	0	0	0	0
+W/o clips	0	762	0	0	0	0
+
+Sanger	total bases:0	used bases in used reads: 0
+454	total bases:405360	used bases in used reads: 401231
+IonTor	total bases:0	used bases in used reads: 0
+PacBio	total bases:0	used bases in used reads: 0
+Solexa	total bases:0	used bases in used reads: 0
+Solid	total bases:0	used bases in used reads: 0
+===========================================================================
+
+
+Starting 454 known adaptor right clip ... Localtime: Mon Dec 21 11:16:51 2015
+Searching multithread now ... 
+2
+Searching for 454 partial end adaptors ... 
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done. Clipped 1 reads.
+Starting clips:  done.
+
+===========================================================================
+Pool statistics:
+Backbones: 0	Backbone rails: 0
+
+		Sanger	454	IonTor	PacBio	Solexa	SOLiD
+		----------------------------------------
+Total reads	0	797	0	0	0	0
+Reads wo qual	0	0	0	0	0	0
+Used reads	0	797	0	0	0	0
+Avg tot rlen	0	508	0	0	0	0
+Avg rlen used	0	503	0	0	0	0
+
+With strain	0	0	0	0	0	0
+W/o clips	0	762	0	0	0	0
+
+Sanger	total bases:0	used bases in used reads: 0
+454	total bases:405360	used bases in used reads: 401176
+IonTor	total bases:0	used bases in used reads: 0
+PacBio	total bases:0	used bases in used reads: 0
+Solexa	total bases:0	used bases in used reads: 0
+Solid	total bases:0	used bases in used reads: 0
+===========================================================================
+
+
+
+Tmp directory is not on a NFS mount, good.
+
+Hash analysis for proposed cutbacks:Localtime: Mon Dec 21 11:16:51 2015
+Writing temporary hstat files:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done
+Localtime: Mon Dec 21 11:16:51 2015
+
+Analysing hstat files:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Localtime: Mon Dec 21 11:16:51 2015
+clean up temporary stat files...Localtime: Mon Dec 21 11:16:51 2015
+Localtime: Mon Dec 21 11:16:51 2015
+Hash statistics:
+=========================================================
+Measured avg. frequency coverage: 13
+
+Deduced thresholds:
+-------------------
+Min normal cov: 5.2
+Max normal cov: 20.8
+Repeat cov: 24.7
+Heavy cov: 104
+Crazy cov: 260
+Mask cov: 1300
+
+Repeat ratio histogram:
+-----------------------
+0	25581
+1	34276
+2	2369
+3	4
+=========================================================
+
+Assigning statistics values:
+Localtime: Mon Dec 21 11:16:51 2015
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Localtime: Mon Dec 21 11:16:52 2015
+Localtime: Mon Dec 21 11:16:52 2015
+
+Looking for proposed cutbacks ... done.
+Performed clips:
+	Num reads cliped left: 181
+	Num reads cliped right: 366
+	Num reads completely killed: 0
+	Total bases clipped         : 9995
+
+Clipping dubious poly-base stretches at end of reads ... done.
+Hash analysis for proposed cutbacks:Localtime: Mon Dec 21 11:16:52 2015
+Writing temporary hstat files:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done
+Localtime: Mon Dec 21 11:16:52 2015
+
+Analysing hstat files:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Localtime: Mon Dec 21 11:16:52 2015
+clean up temporary stat files...Localtime: Mon Dec 21 11:16:52 2015
+Localtime: Mon Dec 21 11:16:52 2015
+Hash statistics:
+=========================================================
+Measured avg. frequency coverage: 13
+
+Deduced thresholds:
+-------------------
+Min normal cov: 5.2
+Max normal cov: 20.8
+Repeat cov: 24.7
+Heavy cov: 104
+Crazy cov: 260
+Mask cov: 1300
+
+Repeat ratio histogram:
+-----------------------
+0	24525
+1	34268
+2	2369
+3	4
+=========================================================
+
+Assigning statistics values:
+Localtime: Mon Dec 21 11:16:52 2015
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Localtime: Mon Dec 21 11:16:52 2015
+Localtime: Mon Dec 21 11:16:52 2015
+
+Looking for proposed cutbacks ... done.
+Performed clips:
+	Num reads cliped left: 0
+	Num reads cliped right: 1
+	Num reads completely killed: 0
+	Total bases clipped         : 7
+
+Clipping dubious poly-base stretches at end of reads ... done.
+
+===========================================================================
+Pool statistics:
+Backbones: 0	Backbone rails: 0
+
+		Sanger	454	IonTor	PacBio	Solexa	SOLiD
+		----------------------------------------
+Total reads	0	797	0	0	0	0
+Reads wo qual	0	0	0	0	0	0
+Used reads	0	797	0	0	0	0
+Avg tot rlen	0	508	0	0	0	0
+Avg rlen used	0	490	0	0	0	0
+
+With strain	0	0	0	0	0	0
+W/o clips	0	314	0	0	0	0
+
+Sanger	total bases:0	used bases in used reads: 0
+454	total bases:405360	used bases in used reads: 391142
+IonTor	total bases:0	used bases in used reads: 0
+PacBio	total bases:0	used bases in used reads: 0
+Solexa	total bases:0	used bases in used reads: 0
+Solid	total bases:0	used bases in used reads: 0
+===========================================================================
+
+
+Dump from /proc/self/status
+--------------------------------------------------------------------------------
+Name:	mira
+State:	R (running)
+Tgid:	5700
+Pid:	5700
+PPid:	2594
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	256
+Groups:	4 24 27 30 46 109 124 1000 
+VmPeak:	  324396 kB
+VmSize:	  324332 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	  276916 kB
+VmRSS:	  276856 kB
+VmData:	  319264 kB
+VmStk:	     136 kB
+VmExe:	    4876 kB
+VmLib:	       0 kB
+VmPTE:	     604 kB
+VmSwap:	       0 kB
+Threads:	1
+SigQ:	0/15837
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000000000000
+SigCgt:	0000000180000000
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	ffffffffffffffff
+Cpus_allowed:	1
+Cpus_allowed_list:	0
+Mems_allowed:	00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	73
+nonvoluntary_ctxt_switches:	152
+--------------------------------------------------------------------------------
+
+
+Pass: 1 / 5
+Performing snapshot 1
+Localtime: Mon Dec 21 11:16:52 2015
+Localtime: Mon Dec 21 11:16:52 2015
+
+===========================================================================
+Pool statistics:
+Backbones: 0	Backbone rails: 0
+
+		Sanger	454	IonTor	PacBio	Solexa	SOLiD
+		----------------------------------------
+Total reads	0	797	0	0	0	0
+Reads wo qual	0	0	0	0	0	0
+Used reads	0	797	0	0	0	0
+Avg tot rlen	0	508	0	0	0	0
+Avg rlen used	0	490	0	0	0	0
+
+With strain	0	0	0	0	0	0
+W/o clips	0	314	0	0	0	0
+
+Sanger	total bases:0	used bases in used reads: 0
+454	total bases:405360	used bases in used reads: 391142
+IonTor	total bases:0	used bases in used reads: 0
+PacBio	total bases:0	used bases in used reads: 0
+Solexa	total bases:0	used bases in used reads: 0
+Solid	total bases:0	used bases in used reads: 0
+===========================================================================
+
+
+Localtime: Mon Dec 21 11:16:52 2015
+Writing temporary hstat files:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done
+Localtime: Mon Dec 21 11:16:52 2015
+
+Analysing hstat files:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Localtime: Mon Dec 21 11:16:52 2015
+clean up temporary stat files...Localtime: Mon Dec 21 11:16:52 2015
+Localtime: Mon Dec 21 11:16:52 2015
+Hash statistics:
+=========================================================
+Measured avg. frequency coverage: 14
+
+Deduced thresholds:
+-------------------
+Min normal cov: 5.6
+Max normal cov: 22.4
+Repeat cov: 26.6
+Heavy cov: 112
+Crazy cov: 280
+Mask cov: 1400
+
+Repeat ratio histogram:
+-----------------------
+0	20746
+1	34472
+2	3169
+3	18
+9	1
+=========================================================
+
+Assigning statistics values:
+Localtime: Mon Dec 21 11:16:52 2015
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Localtime: Mon Dec 21 11:16:52 2015
+Buntifying reads ... done.
+Writing read repeat info to: 302_assembly/302_d_info/302_info_readrepeats.lst ... 10 sequences with 10 masked stretches.
+Localtime: Mon Dec 21 11:16:52 2015
+
+
+Searching for possible overlaps:
+Localtime: Mon Dec 21 11:16:52 2015
+Now running threaded and partitioned skimmer with 1 partitions in 2 threads:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%]  done.
+truncating 302_assembly/302_d_tmp/302_int_posmatchf_pass.1.bin from 126936 to 47088
+truncating 302_assembly/302_d_tmp/302_int_posmatchc_pass.1.bin from 118008 to 45504
+
+Skim summary:
+	accepted: 14320
+	possible: 16938
+	permbans: 0
+
+Hits chosen: 10206
+
+Localtime: Mon Dec 21 11:16:53 2015
+
+Total megahubs: 0
+Cutting back possible chimeras ... done.
+Performing snapshot 0
+Localtime: Mon Dec 21 11:16:53 2015
+Localtime: Mon Dec 21 11:16:53 2015
+Chimeras were searched for ... looking for hits to purge.
+truncating 302_assembly/302_d_tmp/302_int_posmatchf_pass.1.bin from 47088 to 46968
+truncating 302_assembly/302_d_tmp/302_int_posmatchc_pass.1.bin from 45504 to 45432
+System memory: 2100924416
+Mem2keepfree: 315138662
+Used by MIRA: 344133632
+Mem avail: 1441652122
+rsh not increased.
+Can load up to 8085 skim edges at once.
+Partitioning into 1 blocks.
+We have 7700 skims in file.
+Localtime: Mon Dec 21 11:16:53 2015
+De-normalising SKIM hits ... (this will take a while)
+Only one block ... first loop ...not loaded yet.
+Loading skims in id range 0 to 796
+Localtime: Mon Dec 21 11:16:53 2015
+Loaded 7700 elements.
+Sorting ... done.
+Localtime: Mon Dec 21 11:16:53 2015
+Writing normalised skimblock 0 (     241 KiB) ... done.
+Only one block ... not in first loop, return 0.
+Localtime: Mon Dec 21 11:16:53 2015
+Loading block 0
+Only one block, already loaded.
+Localtime: Mon Dec 21 11:16:53 2015
+Step 0
+Loading block 0
+Only one block, already loaded.
+Localtime: Mon Dec 21 11:16:53 2015
+Only long reads
+Step 10
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 1975
+Step 20
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 1975
+Step 30
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 1976
+Step 40
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 1976
+Step 50
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2379
+Step 55
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2379
+Step 60
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2379
+Step solexa by critlevel
+rsh4_takeSolexaByCritLevel.
+Loading block 0
+Only one block, already loaded.
+Taken 0 hits.
+Step template overlaps
+Loading block 0
+Only one block, already loaded.
+Step NAO
+rsh4_takeNeedAllOverlaps.
+Loading block 0
+Only one block, already loaded.
+Taken 0 hits.
+Total skims taken: 2379
+
+Filtering forward skims.
+Localtime: Mon Dec 21 11:16:53 2015
+Writing reduced skim file:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done.
+Done.
+Filtering complement skims.
+Localtime: Mon Dec 21 11:16:53 2015
+Writing reduced skim file:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done.
+Done all filtering.
+Localtime: Mon Dec 21 11:16:53 2015
+Making alignments.
+Localtime: Mon Dec 21 11:16:53 2015
+
+Aligning possible forward matches:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Alignment stats:
+Potential:   1162
+Calculated:  1161
+Evaded (PB): 0
+Rejected (checkfun): 0
+Trans 100 saved: 1
+
+Banned overlap pairs: 42	in 40 sets.
+
+Localtime: Mon Dec 21 11:16:53 2015
+
+Aligning possible complement matches:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Alignment stats:
+Potential:   1217
+Calculated:  1216
+Evaded (PB): 0
+Rejected (checkfun): 0
+Trans 100 saved: 1
+
+Banned overlap pairs: 83	in 63 sets.
+
+Localtime: Mon Dec 21 11:16:53 2015
+
+Localtime: Mon Dec 21 11:16:53 2015
+Counting number of alignments in file ... done.
+Expecting 2296 alignments.
+Localtime: Mon Dec 21 11:16:53 2015
+Loading confirmed overlaps from disk (will need approximately 135 KiB RAM):
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Localtime: Mon Dec 21 11:16:53 2015
+
+
+Sorting confirmed overlaps (this may take a while) ... done.
+
+Localtime: Mon Dec 21 11:16:53 2015
+Generating clusters:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Sorting clusters:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Localtime: Mon Dec 21 11:16:53 2015
+
+Writing clusters:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Writing unclustered reads ... done.
+Localtime: Mon Dec 21 11:16:53 2015
+BFC: 1	0
+overlapcompressstepping: 797
+nextoverlapcompress: 797
+Moving small clusters to debris:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done. 0 reads moved to debris.
+bfc 1
+Localtime: Mon Dec 21 11:16:53 2015
+
+Timing BFC unused: 2
+Unused: 796
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 10
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 4
+bfc 7/0
+Building new contig 1
+Localtime: Mon Dec 21 11:16:53 2015
+Unused reads: 796
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 2
+Timing n4_basicCSBSSetup init pf_banned: 3
+Timing n4_basicCSBSSetup lowerbound_oedges: 47
+Timing n4_basicCSBSSetup total: 54
+Timing n4_searchBestStrongGoodStartEnvironment 1 1 1 1: 57
+Startcache size: 15
+Timing n4_searchBestStrongGoodStartEnvironment sort: 3
+Timing n4_searchBestStrongGoodStartEnvironment total: 62
++[1] ++++++++++++++++++++++++++++++++++a+a+a++++++aa+++aaaa++++++   2189	3 / 305 / 1
+[52] +++++++++++++++++aaa++++++++++++++++++++++++++++++++++++++++   3663	3 / 302 / 1
+[109] ++++++++++aa+aaa+aa++aa+a+aaaa+Timing BFC paf construct: 46045
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:16:53 2015
+Timing BFC analysereadcov: 864
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 1
+Contig length: 4018
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0         126           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         487           0           0           0           0
+Max. coverage	           0          25           0           0           0           0
+Avg. coverage	       0.000      15.300       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 25
+Avg. contig coverage: 15.300
+
+Consensus contains:	A: 1202	C: 616	G: 655	T: 1213	N: 0
+			IUPAC: 0	Funny: 0	*: 332
+GC content: 34.482%
+-------------------------------------------------
+Timing BFC cout constats: 3316
+Localtime: Mon Dec 21 11:16:53 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Marking tricky 454 runs in 4280 cases.
+
+
+Marked 4280 reads.
+Timing BFC edit tricky1: 4254
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 3059
+bfc 11/0
+Editing tricky 454 / Solexa overcalls.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Performing 454 edits in 237 cases.
+
+
+Edited 237 reads.
+Deleting superfluous gap columns ... done.
+Timing BFC edit tricky2: 3468
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 180 positions.
+Deleting superfluous gap columns ... done.
+Timing BFC edit single discrepancy, no HAF: 5659
+bfc 12/0
+Timing BFC delPSHP: 22
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+Transfering reads to readpool.
+Timing BFC rp transfer: 1603
+Done.
+bfc 17/0
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving temp CAF ... done.
+done.
+Timing BFC store con: 10033
+Timing BFC loop total: 78466
+bfc 1
+Localtime: Mon Dec 21 11:16:53 2015
+
+Timing BFC unused: 1
+Unused: 670
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 0
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 2
+Localtime: Mon Dec 21 11:16:53 2015
+Unused reads: 670
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 0
+Timing n4_basicCSBSSetup init pf_banned: 0
+Timing n4_basicCSBSSetup total: 2
++[1] ++++++++++++++++++++++++++++++++++a+++++a++a++a+++++++++++++   2180	2 / 295 / 1
+[57] +++++++++++++++++++++++++++a+++++++++a++aa+aa+++++++++++++++   3568	3 / 295 / 1
+[111] ++++++++++++++++a+a++++a+++++++a+a+aa+a++aaTiming BFC paf construct: 48724
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:16:53 2015
+Timing BFC analysereadcov: 971
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 2
+Contig length: 4214
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0         144           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         494           0           0           0           0
+Max. coverage	           0          31           0           0           0           0
+Avg. coverage	       0.000      16.902       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 31
+Avg. contig coverage: 16.902
+
+Consensus contains:	A: 1168	C: 745	G: 756	T: 1211	N: 0
+			IUPAC: 0	Funny: 0	*: 334
+GC content: 38.686%
+-------------------------------------------------
+Timing BFC cout constats: 3731
+Localtime: Mon Dec 21 11:16:53 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Marking tricky 454 runs in 4683 cases.
+
+
+Marked 4683 reads.
+Timing BFC edit tricky1: 4817
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 3595
+bfc 11/0
+Editing tricky 454 / Solexa overcalls.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Performing 454 edits in 239 cases.
+
+
+Edited 239 reads.
+Deleting superfluous gap columns ... done.
+Timing BFC edit tricky2: 4108
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 212 positions.
+Deleting superfluous gap columns ... done.
+Timing BFC edit single discrepancy, no HAF: 6081
+bfc 12/0
+Timing BFC delPSHP: 29
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+Transfering reads to readpool.
+Timing BFC rp transfer: 1874
+Done.
+bfc 17/0
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving temp CAF ... done.
+done.
+Timing BFC store con: 12049
+Timing BFC loop total: 86092
+bfc 1
+Localtime: Mon Dec 21 11:16:53 2015
+
+Timing BFC unused: 3
+Unused: 526
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 1
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 1
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 3
+Localtime: Mon Dec 21 11:16:53 2015
+Unused reads: 526
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 1
+Timing n4_basicCSBSSetup init pf_banned: 1
+Timing n4_basicCSBSSetup total: 3
++[1] +++++++++++++++++++++++++++a++++++++++++++++++++++++++++++++   2100	1 / 290 / 1
+[60] +++++++++++++++++++++++++a++a+++aa++++++++++++a+a++a++++++++   3733	2 / 296 / 1
+[113] +++++++++++++++++++++a+++aaaa++++a+++++++++++++++++++++a+aa+   5073	3 / 287 / 1
+[164] +a+aaTiming BFC paf construct: 54713
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:16:53 2015
+Timing BFC analysereadcov: 1063
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 3
+Contig length: 5077
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0         166           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         479           0           0           0           0
+Max. coverage	           0          32           0           0           0           0
+Avg. coverage	       0.000      15.663       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 32
+Avg. contig coverage: 15.663
+
+Consensus contains:	A: 1357	C: 957	G: 927	T: 1455	N: 0
+			IUPAC: 0	Funny: 0	*: 381
+GC content: 40.119%
+-------------------------------------------------
+Timing BFC cout constats: 4308
+Localtime: Mon Dec 21 11:16:53 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Marking tricky 454 runs in 5592 cases.
+
+
+Marked 5592 reads.
+Timing BFC edit tricky1: 5063
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 3926
+bfc 11/0
+Editing tricky 454 / Solexa overcalls.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Performing 454 edits in 300 cases.
+
+
+Edited 300 reads.
+Deleting superfluous gap columns ... done.
+Timing BFC edit tricky2: 4373
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 212 positions.
+Deleting superfluous gap columns ... done.
+Timing BFC edit single discrepancy, no HAF: 7654
+bfc 12/0
+Timing BFC delPSHP: 31
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+Transfering reads to readpool.
+Timing BFC rp transfer: 1757
+Done.
+bfc 17/0
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving temp CAF ... done.
+done.
+Timing BFC store con: 13113
+Timing BFC loop total: 96129
+bfc 1
+Localtime: Mon Dec 21 11:16:53 2015
+
+Timing BFC unused: 3
+Unused: 360
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 1
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 4
+Localtime: Mon Dec 21 11:16:53 2015
+Unused reads: 360
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 0
+Timing n4_basicCSBSSetup init pf_banned: 1
+Timing n4_basicCSBSSetup total: 2
++[1] ++++++++++++++++++++++++++++++a++a+++++a++++a+aa+a++++++++++   2379	3 / 276 / 1
+[54] +++++++++++++++++++++aa+++++++++++a+aaaaaaaa+++a++a+++++++++   3852	2 / 304 / 1
+[101] ++++++++++++++++++++++++++++aa++Timing BFC paf construct: 43810
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:16:53 2015
+Timing BFC analysereadcov: 857
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 4
+Contig length: 4468
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0         131           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         484           0           0           0           0
+Max. coverage	           0          24           0           0           0           0
+Avg. coverage	       0.000      14.214       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 24
+Avg. contig coverage: 14.214
+
+Consensus contains:	A: 1287	C: 728	G: 707	T: 1404	N: 0
+			IUPAC: 0	Funny: 0	*: 342
+GC content: 34.779%
+-------------------------------------------------
+Timing BFC cout constats: 3449
+Localtime: Mon Dec 21 11:16:53 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Marking tricky 454 runs in 4092 cases.
+
+
+Marked 4092 reads.
+Timing BFC edit tricky1: 4077
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:
+Found
+ - 1 new Strong RMB (SRMc)
+ - 0 new Weak RMB (WRMc)
+ - 0 SNP
+positions tagged.Timing BFC mark reps: 3063
+bfc 11/0
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 191 positions.
+Deleting superfluous gap columns ... done.
+Timing BFC edit single discrepancy, no HAF: 3232
+bfc 12/0
+Timing BFC delPSHP: 21
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+ Transfering read tags to readpool.
+Transfering tags to readpool.
+Timing BFC crtag2rp transfer: 19
+Done.
+bfc 17/0
+
+Accepting probably misassembled contig because of too many iterations.
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving temp CAF ... done.
+done.
+Timing BFC store con: 11342
+Timing BFC loop total: 69961
+bfc 1
+Localtime: Mon Dec 21 11:16:53 2015
+
+Timing BFC unused: 3
+Unused: 229
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 1
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 5
+Localtime: Mon Dec 21 11:16:53 2015
+Unused reads: 229
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 1
+Timing n4_basicCSBSSetup init pf_banned: 1
+Timing n4_basicCSBSSetup total: 2
++[1] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   2243	1 / 304 / 0
+[61] ++++++a+aa++++++++++++a+++++++++++++++++++a+aTiming BFC paf construct: 31768
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:16:54 2015
+Timing BFC analysereadcov: 761
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 5
+Contig length: 3547
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0         100           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         505           0           0           0           0
+Max. coverage	           0          29           0           0           0           0
+Avg. coverage	       0.000      14.243       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 29
+Avg. contig coverage: 14.243
+
+Consensus contains:	A: 1094	C: 611	G: 585	T: 987	N: 0
+			IUPAC: 1	Funny: 0	*: 269
+GC content: 36.497%
+-------------------------------------------------
+Timing BFC cout constats: 2910
+Localtime: Mon Dec 21 11:16:54 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Marking tricky 454 runs in 3545 cases.
+
+
+Marked 3545 reads.
+Timing BFC edit tricky1: 3264
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 2623
+bfc 11/0
+Editing tricky 454 / Solexa overcalls.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Performing 454 edits in 199 cases.
+
+
+Edited 199 reads.
+Deleting superfluous gap columns ... done.
+Timing BFC edit tricky2: 3357
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 143 positions.
+Deleting superfluous gap columns ... done.
+Timing BFC edit single discrepancy, no HAF: 4512
+bfc 12/0
+Timing BFC delPSHP: 24
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+Transfering reads to readpool.
+Timing BFC rp transfer: 1232
+Done.
+bfc 17/0
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving temp CAF ... done.
+done.
+Timing BFC store con: 8674
+Timing BFC loop total: 59248
+bfc 1
+Localtime: Mon Dec 21 11:16:54 2015
+
+Timing BFC unused: 2
+Unused: 129
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 1
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 1
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 6
+Localtime: Mon Dec 21 11:16:54 2015
+Unused reads: 129
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 1
+Timing n4_basicCSBSSetup init pf_banned: 1
+Timing n4_basicCSBSSetup total: 3
+Timing n4_searchBestStrongGoodStartEnvironment 1 1 1 1: 12
+Startcache size: 5
+Timing n4_searchBestStrongGoodStartEnvironment sort: 1
+Timing n4_searchBestStrongGoodStartEnvironment total: 15
++[1] +++++++++++++++++++++++a++a+++++++++a+aa+a++a+++++++++++++++   2296	1 / 283 / 1
+[54] ++++++++++++++++++++++a+aaaaaaaTiming BFC paf construct: 26794
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:16:54 2015
+Timing BFC analysereadcov: 526
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 6
+Contig length: 2855
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0          77           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         498           0           0           0           0
+Max. coverage	           0          24           0           0           0           0
+Avg. coverage	       0.000      13.448       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 24
+Avg. contig coverage: 13.448
+
+Consensus contains:	A: 828	C: 489	G: 522	T: 823	N: 0
+			IUPAC: 0	Funny: 0	*: 193
+GC content: 37.979%
+-------------------------------------------------
+Timing BFC cout constats: 2098
+Localtime: Mon Dec 21 11:16:54 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Marking tricky 454 runs in 2182 cases.
+
+
+Marked 2182 reads.
+Timing BFC edit tricky1: 2364
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 1927
+bfc 11/0
+Editing tricky 454 / Solexa overcalls.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Performing 454 edits in 127 cases.
+
+
+Edited 127 reads.
+Deleting superfluous gap columns ... done.
+Timing BFC edit tricky2: 2238
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 119 positions.
+Deleting superfluous gap columns ... done.
+Timing BFC edit single discrepancy, no HAF: 4108
+bfc 12/0
+Timing BFC delPSHP: 14
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+Transfering reads to readpool.
+Timing BFC rp transfer: 840
+Done.
+bfc 17/0
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving temp CAF ... done.
+done.
+Timing BFC store con: 7071
+Timing BFC loop total: 48066
+bfc 1
+Localtime: Mon Dec 21 11:16:54 2015
+
+Timing BFC unused: 1
+Unused: 52
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 0
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 7
+Localtime: Mon Dec 21 11:16:54 2015
+Unused reads: 52
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 1
+Timing n4_basicCSBSSetup init pf_banned: 1
+Timing n4_basicCSBSSetup total: 4
++[1] ++++Timing BFC paf construct: 1617
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:16:54 2015
+Timing BFC analysereadcov: 57
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 7
+Contig length: 720
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0           5           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         537           0           0           0           0
+Max. coverage	           0           5           0           0           0           0
+Avg. coverage	       0.000       3.731       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 5
+Avg. contig coverage: 3.731
+
+Consensus contains:	A: 244	C: 104	G: 97	T: 256	N: 0
+			IUPAC: 0	Funny: 0	*: 19
+GC content: 28.673%
+-------------------------------------------------
+Timing BFC cout constats: 265
+Localtime: Mon Dec 21 11:16:54 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Marked 0 reads.
+Timing BFC edit tricky1: 197
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 197
+bfc 11/0
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 13 positions.
+Deleting superfluous gap columns ... done.
+Timing BFC edit single discrepancy, no HAF: 145
+bfc 12/0
+Timing BFC delPSHP: 0
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+Transfering reads to readpool.
+Timing BFC rp transfer: 51
+Done.
+bfc 17/0
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving temp CAF ... done.
+done.
+Timing BFC store con: 689
+Timing BFC loop total: 3262
+bfc 1
+Localtime: Mon Dec 21 11:16:54 2015
+
+Timing BFC unused: 1
+Unused: 47
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 0
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 1
+bfc 7/0
+Building new contig 8
+Localtime: Mon Dec 21 11:16:54 2015
+Unused reads: 47
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 0
+Timing n4_basicCSBSSetup init pf_banned: 0
+Timing n4_basicCSBSSetup total: 2
++[1] +Timing BFC paf construct: 302
+bfc 9/0
+
+Contig does not meet requirement of minimum reads per contig.
+Moving 2 reads to debris.
+Timing BFC loop total: 313
+bfc 1
+Localtime: Mon Dec 21 11:16:54 2015
+
+Timing BFC unused: 1
+Unused: 45
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 1
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 1
+bfc 7/0
+Building new contig 8
+Localtime: Mon Dec 21 11:16:54 2015
+Unused reads: 45
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 0
+Timing n4_basicCSBSSetup init pf_banned: 0
+Timing n4_basicCSBSSetup total: 2
++[1] +Timing BFC paf construct: 247
+bfc 9/0
+
+Contig does not meet requirement of minimum reads per contig.
+Moving 2 reads to debris.
+Timing BFC loop total: 258
+bfc 1
+Localtime: Mon Dec 21 11:16:54 2015
+
+Timing BFC unused: 1
+Unused: 43
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 0
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 8
+Localtime: Mon Dec 21 11:16:54 2015
+Unused reads: 43
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 0
+Timing n4_basicCSBSSetup init pf_banned: 0
+Timing n4_basicCSBSSetup total: 2
++[1] +Timing BFC paf construct: 253
+Triggering additional cluster check.
+Moving small clusters to debris:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done. 36 reads moved to debris.
+bfc 9/0
+
+Contig does not meet requirement of minimum reads per contig.
+Moving 2 reads to debris.
+Timing BFC loop total: 284
+bfc 1
+Localtime: Mon Dec 21 11:16:54 2015
+
+Timing BFC unused: 1
+Unused: 5
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 1
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 8
+Localtime: Mon Dec 21 11:16:54 2015
+Unused reads: 5
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 0
+Timing n4_basicCSBSSetup init pf_banned: 0
+Timing n4_basicCSBSSetup total: 2
+Timing n4_searchBestStrongGoodStartEnvironment 1 1 1 1: 2
+Startcache size: 0
+Timing n4_searchBestStrongGoodStartEnvironment 0 0 1 1: 1
+Startcache size: 0
+Timing n4_searchBestStrongGoodStartEnvironment 0 0 0 1: 2
+Startcache size: 1
+Timing n4_searchBestStrongGoodStartEnvironment sort: 0
+Timing n4_searchBestStrongGoodStartEnvironment total: 9
++[1] ++++Timing BFC paf construct: 1162
+Triggering additional cluster check.
+Moving small clusters to debris:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done. 0 reads moved to debris.
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:16:54 2015
+Timing BFC analysereadcov: 54
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 8
+Contig length: 717
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0           5           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         490           0           0           0           0
+Max. coverage	           0           5           0           0           0           0
+Avg. coverage	       0.000       3.421       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 5
+Avg. contig coverage: 3.421
+
+Consensus contains:	A: 248	C: 137	G: 117	T: 203	N: 0
+			IUPAC: 0	Funny: 0	*: 12
+GC content: 36.028%
+-------------------------------------------------
+Timing BFC cout constats: 253
+Localtime: Mon Dec 21 11:16:54 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Marked 0 reads.
+Timing BFC edit tricky1: 149
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 166
+bfc 11/0
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 7 positions.
+Deleting superfluous gap columns ... done.
+Timing BFC edit single discrepancy, no HAF: 128
+bfc 12/0
+Timing BFC delPSHP: 1
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+Transfering reads to readpool.
+Timing BFC rp transfer: 29
+Done.
+bfc 17/0
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving temp CAF ... done.
+done.
+Timing BFC store con: 619
+Timing BFC loop total: 2612
+bfc 1
+Localtime: Mon Dec 21 11:16:54 2015
+
+Timing BFC unused: 1
+Unused: 0
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC loop total: 2619
+Saving debris list to file: 302_assembly/302_d_tmp/302_info_debrislist_pass.1.txt
+Repeats found during contig building, adding additional alignment iteration
+for quick repeat resolving.
+Making alignments.
+Localtime: Mon Dec 21 11:16:54 2015
+
+Aligning possible forward matches:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Alignment stats:
+Potential:   1957
+Calculated:  80
+Evaded (PB): 42
+Rejected (checkfun): 1835
+Trans 100 saved: 0
+
+Banned overlap pairs: 118	in 75 sets.
+
+Localtime: Mon Dec 21 11:16:54 2015
+
+Aligning possible complement matches:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Alignment stats:
+Potential:   1893
+Calculated:  90
+Evaded (PB): 41
+Rejected (checkfun): 1762
+Trans 100 saved: 0
+
+Banned overlap pairs: 162	in 82 sets.
+
+Localtime: Mon Dec 21 11:16:54 2015
+
+Making alignments.
+Localtime: Mon Dec 21 11:16:54 2015
+
+Aligning possible forward matches:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Alignment stats:
+Potential:   1957
+Calculated:  16
+Evaded (PB): 77
+Rejected (checkfun): 1864
+Trans 100 saved: 0
+
+Banned overlap pairs: 164	in 82 sets.
+
+Localtime: Mon Dec 21 11:16:54 2015
+
+Aligning possible complement matches:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Alignment stats:
+Potential:   1893
+Calculated:  15
+Evaded (PB): 85
+Rejected (checkfun): 1793
+Trans 100 saved: 0
+
+Banned overlap pairs: 164	in 82 sets.
+
+Localtime: Mon Dec 21 11:16:54 2015
+
+Dump from /proc/self/status
+--------------------------------------------------------------------------------
+Name:	mira
+State:	R (running)
+Tgid:	5700
+Pid:	5700
+PPid:	2594
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	256
+Groups:	4 24 27 30 46 109 124 1000 
+VmPeak:	  336076 kB
+VmSize:	  336068 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	  295244 kB
+VmRSS:	  295244 kB
+VmData:	  331000 kB
+VmStk:	     136 kB
+VmExe:	    4876 kB
+VmLib:	       0 kB
+VmPTE:	     624 kB
+VmSwap:	       0 kB
+Threads:	1
+SigQ:	0/15837
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000000000000
+SigCgt:	0000000180000000
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	ffffffffffffffff
+Cpus_allowed:	1
+Cpus_allowed_list:	0
+Mems_allowed:	00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	97
+nonvoluntary_ctxt_switches:	172
+--------------------------------------------------------------------------------
+
+
+Pass: 2 / 5
+Performing snapshot 2
+Localtime: Mon Dec 21 11:16:54 2015
+Localtime: Mon Dec 21 11:16:54 2015
+
+===========================================================================
+Pool statistics:
+Backbones: 0	Backbone rails: 0
+
+		Sanger	454	IonTor	PacBio	Solexa	SOLiD
+		----------------------------------------
+Total reads	0	797	0	0	0	0
+Reads wo qual	0	0	0	0	0	0
+Used reads	0	797	0	0	0	0
+Avg tot rlen	0	507	0	0	0	0
+Avg rlen used	0	489	0	0	0	0
+
+With strain	0	0	0	0	0	0
+W/o clips	0	314	0	0	0	0
+
+Sanger	total bases:0	used bases in used reads: 0
+454	total bases:404571	used bases in used reads: 390325
+IonTor	total bases:0	used bases in used reads: 0
+PacBio	total bases:0	used bases in used reads: 0
+Solexa	total bases:0	used bases in used reads: 0
+Solid	total bases:0	used bases in used reads: 0
+===========================================================================
+
+
+Localtime: Mon Dec 21 11:16:54 2015
+Writing temporary hstat files:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done
+Localtime: Mon Dec 21 11:16:54 2015
+
+Analysing hstat files:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Localtime: Mon Dec 21 11:16:54 2015
+clean up temporary stat files...Localtime: Mon Dec 21 11:16:54 2015
+Localtime: Mon Dec 21 11:16:54 2015
+Hash statistics:
+=========================================================
+Measured avg. frequency coverage: 16
+
+Deduced thresholds:
+-------------------
+Min normal cov: 6
+Max normal cov: 26
+Repeat cov: 30
+Heavy cov: 128
+Crazy cov: 320
+Mask cov: 1600
+
+Repeat ratio histogram:
+-----------------------
+0	22895
+1	34838
+2	2562
+3	6
+8	1
+=========================================================
+
+Assigning statistics values:
+Localtime: Mon Dec 21 11:16:54 2015
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Localtime: Mon Dec 21 11:16:54 2015
+Buntifying reads ... done.
+Writing read repeat info to: 302_assembly/302_d_info/302_info_readrepeats.lst ... 0 sequences with 0 masked stretches.
+Localtime: Mon Dec 21 11:16:54 2015
+
+
+Searching for possible overlaps:
+Localtime: Mon Dec 21 11:16:54 2015
+Now running threaded and partitioned skimmer with 1 partitions in 2 threads:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%]  done.
+truncating 302_assembly/302_d_tmp/302_int_posmatchf_pass.2.bin from 127224 to 45960
+truncating 302_assembly/302_d_tmp/302_int_posmatchc_pass.2.bin from 117840 to 44064
+
+Skim summary:
+	accepted: 14575
+	possible: 16988
+	permbans: 165
+
+Hits chosen: 10211
+
+Localtime: Mon Dec 21 11:16:54 2015
+
+Total megahubs: 0
+Can load up to 7502 skim edges at once.
+Partitioning into 1 blocks.
+We have 7502 skims in file.
+Localtime: Mon Dec 21 11:16:54 2015
+De-normalising SKIM hits ... (this will take a while)
+Only one block ... first loop ...not loaded yet.
+Loading skims in id range 0 to 796
+Localtime: Mon Dec 21 11:16:54 2015
+Loaded 7502 elements.
+Sorting ... done.
+Localtime: Mon Dec 21 11:16:54 2015
+Writing normalised skimblock 0 (     234 KiB) ... done.
+Only one block ... not in first loop, return 0.
+Localtime: Mon Dec 21 11:16:54 2015
+Loading block 0
+Only one block, already loaded.
+Localtime: Mon Dec 21 11:16:54 2015
+Step 0
+Loading block 0
+Only one block, already loaded.
+Localtime: Mon Dec 21 11:16:54 2015
+Only long reads
+Step 10
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 1973
+Step 20
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 1973
+Step 30
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 1973
+Step 40
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 1973
+Step 50
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2414
+Step 55
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2414
+Step 60
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2414
+Step solexa by critlevel
+rsh4_takeSolexaByCritLevel.
+Loading block 0
+Only one block, already loaded.
+Taken 0 hits.
+Step template overlaps
+Loading block 0
+Only one block, already loaded.
+Step NAO
+rsh4_takeNeedAllOverlaps.
+Loading block 0
+Only one block, already loaded.
+Taken 130 hits.
+Total skims taken: 2544
+
+Filtering forward skims.
+Localtime: Mon Dec 21 11:16:54 2015
+Writing reduced skim file:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done.
+Done.
+Filtering complement skims.
+Localtime: Mon Dec 21 11:16:54 2015
+Writing reduced skim file:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done.
+Done all filtering.
+Localtime: Mon Dec 21 11:16:54 2015
+Making alignments.
+Errno: 2
+Errno: 2
+Errno: 2
+Localtime: Mon Dec 21 11:16:54 2015
+
+Aligning possible forward matches:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Alignment stats:
+Potential:   1277
+Calculated:  1276
+Evaded (PB): 0
+Rejected (checkfun): 0
+Trans 100 saved: 1
+
+Banned overlap pairs: 182	in 92 sets.
+
+Localtime: Mon Dec 21 11:16:55 2015
+
+Aligning possible complement matches:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Alignment stats:
+Potential:   1267
+Calculated:  1265
+Evaded (PB): 0
+Rejected (checkfun): 0
+Trans 100 saved: 2
+
+Banned overlap pairs: 198	in 101 sets.
+
+Localtime: Mon Dec 21 11:16:55 2015
+
+Localtime: Mon Dec 21 11:16:55 2015
+Counting number of alignments in file ... done.
+Expecting 2510 alignments.
+Localtime: Mon Dec 21 11:16:55 2015
+Loading confirmed overlaps from disk (will need approximately 147 KiB RAM):
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Localtime: Mon Dec 21 11:16:55 2015
+
+
+Sorting confirmed overlaps (this may take a while) ... done.
+
+Localtime: Mon Dec 21 11:16:55 2015
+Generating clusters:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Sorting clusters:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Localtime: Mon Dec 21 11:16:55 2015
+
+Writing clusters:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Writing unclustered reads ... done.
+Localtime: Mon Dec 21 11:16:55 2015
+BFC: 2	0
+overlapcompressstepping: 797
+nextoverlapcompress: 797
+Moving small clusters to debris:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done. 0 reads moved to debris.
+bfc 1
+Localtime: Mon Dec 21 11:16:55 2015
+
+Timing BFC unused: 1
+Unused: 796
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 2
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 1
+bfc 7/0
+Building new contig 1
+Localtime: Mon Dec 21 11:16:55 2015
+Unused reads: 796
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 1
+Timing n4_basicCSBSSetup init pf_banned: 3
+Timing n4_basicCSBSSetup lowerbound_oedges: 42
+Timing n4_basicCSBSSetup total: 50
+Timing n4_searchBestStrongGoodStartEnvironment 1 1 1 1: 68
+Startcache size: 14
+Timing n4_searchBestStrongGoodStartEnvironment sort: 2
+Timing n4_searchBestStrongGoodStartEnvironment total: 72
++[1] ++++++++++++++++++++++++++++++++++++++a+++++++++++++++++++++   2344	1 / 298 / 5
+[60] +++a+++a++a+a++++++a++a+aa+++++++++++++++++++++++++++++aa+++   3482	2 / 286 / 1
+[110] ++aa++aa+++aa+a++a+aa+++++++++++++++++++++++++++++++++++++++   5007	1 / 261 / 1
+[160] ++aaaaa++++++++++++++++++++++++++++a++++++++a+++++++++++++++   6737	2 / 287 / 1
+[213] ++++++++++++++++++a++a+aa++aaaa++++++++++++++a++++a+++++++++   7988	4 / 278 / 1
+[263] +++++++++++++++++a++++a+++++++++++++++++++++++++++++++++++++   9469	1 / 277 / 1
+[321] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   10605	2 / 276 / 0
+[381] ++++++++++++++++++++a+++++++++++++++++++++++++++++++++++++++   12062	2 / 296 / 4
+[440] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   13876	1 / 261 / 0
+[500] +a++++++++a+++a+++++++++++++++++++++++++++++++++++++++++++++   15243	4 / 274 / 1
+[557] ++++++++++a++++++++++++++++++a++++++++++++++++++++++++++++++   16823	3 / 281 / 2
+[615] ++++++++++a++a+a+++++++++++++++++++aaa++++++++++++++++++++++   18281	3 / 314 / 1
+[669] +++++++++++++++++++++++++++++++++++++++++++++a+aa++++++++a++   20299	3 / 285 / 1
+[725] +++++a++a+++++++++++++++++++++++++++a+++aTiming BFC paf construct: 235997
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:16:55 2015
+Timing BFC analysereadcov: 4910
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 1
+Contig length: 20983
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0         762           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         489           0           0           0           0
+Max. coverage	           0          33           0           0           0           0
+Avg. coverage	       0.000      17.767       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 33
+Avg. contig coverage: 17.767
+
+Consensus contains:	A: 6406	C: 3610	G: 3757	T: 6199	N: 1
+			IUPAC: 0	Funny: 0	*: 1010
+GC content: 36.887%
+-------------------------------------------------
+Timing BFC cout constats: 19108
+Localtime: Mon Dec 21 11:16:55 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Marking tricky 454 runs in 11521 cases.
+
+
+Marked 11521 reads.
+Timing BFC edit tricky1: 20435
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 13755
+bfc 11/0
+Editing tricky 454 / Solexa overcalls.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Performing 454 edits in 617 cases.
+
+
+Edited 617 reads.
+Deleting superfluous gap columns ... done.
+Timing BFC edit tricky2: 19939
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 400 positions.
+Deleting superfluous gap columns ... done.
+Timing BFC edit single discrepancy, no HAF: 35490
+bfc 12/0
+Timing BFC delPSHP: 84
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+Transfering reads to readpool.
+Timing BFC rp transfer: 7433
+Done.
+bfc 17/0
+Timing BFC setup AS_used_ids: 1
+bfc 6/1
+Timing BFC discard con: 353
+bfc 7/1
+
+Looping because of edits in reads.
+Rebuilding contig 1 now.
+Localtime: Mon Dec 21 11:16:55 2015
+Unused reads: 796
+bfc 8/1
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 1
+Timing n4_basicCSBSSetup init pf_banned: 3
+Timing n4_basicCSBSSetup total: 5
++[1] ++++++++++++++++++++++++++++++++++++++++a+++++++++++++++++++   2225	1 / 270 / 2
+[60] ++++++++++aa+++a+++++++++++++++++++++++++++++a+a+a+aa+++++++   3589	4 / 264 / 1
+[112] +++++a++aa++aa+aa++++++aaa++++++++++a+++++++++++++++++a+a+++   4757	2 / 263 / 1
+[159] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   6676	1 / 276 / 0
+[219] ++++++++++a++++++++a+++a++++a++a+++a++++++++++++++++++++++++   8179	4 / 285 / 1
+[273] ++a+++a+++++++a++++++a++++++++++++++++++++++++++++++++++++++   9361	2 / 265 / 1
+[329] ++++++++++++++++++++++++++++++a++++++a++++++++a+a+++++++++++   10474	2 / 264 / 1
+[385] ++++++++++++++++++a++a++++++++++++++++++++++++++++++++++++++   11874	2 / 274 / 2
+[443] +++++++++++++++++++++aa+a++a++++++++++++++++++++++++++++++++   13694	1 / 252 / 1
+[499] +++++a+aa+++++aaa++++a+a++++++++++++++++++++++++++++++++++++   14906	6 / 300 / 1
+[551] ++a+++++a+++++++++++++++++++++++++++++++++++++++++++++++++++   16374	3 / 287 / 1
+[609] ++++++++++++++++++a++a+a+++++++++++++++++++aaa++++++++++++++   17785	4 / 296 / 1
+[663] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   19652	3 / 273 / 0
+[723] ++++++++++++++++++++++++++++++++++++++++++++aTiming BFC paf construct: 229348
+bfc 9/1
+
+
+Finished building.
+Localtime: Mon Dec 21 11:16:56 2015
+Timing BFC analysereadcov: 4763
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 1
+Contig length: 20530
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0         767           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         488           0           0           0           0
+Max. coverage	           0          33           0           0           0           0
+Avg. coverage	       0.000      18.259       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 33
+Avg. contig coverage: 18.259
+
+Consensus contains:	A: 6198	C: 3757	G: 3610	T: 6407	N: 0
+			IUPAC: 0	Funny: 0	*: 558
+GC content: 36.887%
+-------------------------------------------------
+Timing BFC cout constats: 18673
+Localtime: Mon Dec 21 11:16:56 2015
+bfc 10/1
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Marking tricky 454 runs in 3683 cases.
+
+
+Marked 3683 reads.
+Timing BFC edit tricky1: 15167
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 11464
+bfc 11/1
+Editing tricky 454 / Solexa overcalls.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Performing 454 edits in 195 cases.
+
+
+Edited 195 reads.
+Deleting superfluous gap columns ... done.
+Timing BFC edit tricky2: 15530
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 134 positions.
+Deleting superfluous gap columns ... done.
+Timing BFC edit single discrepancy, no HAF: 17373
+bfc 12/1
+Timing BFC delPSHP: 35
+bfc 13/1
+bfc 14/1
+bfc 15/1
+bfc 16/1
+Transfering reads to readpool.
+Timing BFC rp transfer: 5230
+Done.
+bfc 17/1
+Timing BFC setup AS_used_ids: 2
+bfc 6/2
+Timing BFC discard con: 320
+bfc 7/2
+
+Looping because of edits in reads.
+Rebuilding contig 1 now.
+Localtime: Mon Dec 21 11:16:56 2015
+Unused reads: 796
+bfc 8/2
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 1
+Timing n4_basicCSBSSetup init pf_banned: 3
+Timing n4_basicCSBSSetup total: 6
++[1] ++++++++++++++++++++++a+++a++++++++++++++a+++a++++++++++++++   2088	1 / 275 / 1
+[57] ++++++++++++++++++++++++++++++++++++++++++++++++++++++a+++++   3371	1 / 304 / 1
+[116] +a++++++++a+a+++++++++++++++++++++++++++++a+++++++++++++++++   4879	3 / 264 / 1
+[172] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   6369	1 / 270 / 0
+[232] ++++++++++++++++++++++++++a++++++++++++a++a+++++++++++++++++   7619	5 / 247 / 2
+[289] +++++++++++++++++++a+++++a+++++++++++++++++++++++++++++a++++   9027	3 / 265 / 1
+[346] ++++++++++++++++++++++++++++++++++++a++a+a++++++++++++++++++   10741	2 / 293 / 2
+[403] +aaa++++++++++++++++++++++++++++++++++++++++++++++++++++++++   12417	4 / 269 / 1
+[460] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   13776	5 / 250 / 0
+[520] +++aa++++++++++++aa+++++++++++++++++++++++++++++++++++++++++   15657	1 / 266 / 1
+[576] +++++++++++++++++++++++++++++++++++++++++++++++++++++++++aa+   16968	3 / 269 / 1
+[634] ++++aa++aa+++aa+a++a+aa+++++++++++++++++++++++++++++++++++++   18465	1 / 256 / 1
+[684] ++++aaaa+a++++++++++++++++++++++++++++++++++++++++++++++++++   20003	2 / 268 / 1
+[739] +++++++++++++++a++++a++++++aaa++aaTiming BFC paf construct: 222618
+bfc 9/2
+
+
+Finished building.
+Localtime: Mon Dec 21 11:16:56 2015
+Timing BFC analysereadcov: 4717
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 1
+Contig length: 20387
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0         766           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         488           0           0           0           0
+Max. coverage	           0          33           0           0           0           0
+Avg. coverage	       0.000      18.372       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 33
+Avg. contig coverage: 18.372
+
+Consensus contains:	A: 6198	C: 3757	G: 3610	T: 6406	N: 1
+			IUPAC: 0	Funny: 0	*: 415
+GC content: 36.888%
+-------------------------------------------------
+Timing BFC cout constats: 18465
+Localtime: Mon Dec 21 11:16:56 2015
+bfc 10/2
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Marking tricky 454 runs in 876 cases.
+
+
+Marked 876 reads.
+Timing BFC edit tricky1: 13152
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 10487
+bfc 11/2
+Editing tricky 454 / Solexa overcalls.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Performing 454 edits in 47 cases.
+
+
+Edited 47 reads.
+Deleting superfluous gap columns ... done.
+Timing BFC edit tricky2: 13972
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 25 positions.
+Deleting superfluous gap columns ... done.
+Timing BFC edit single discrepancy, no HAF: 11373
+bfc 12/2
+Timing BFC delPSHP: 21
+bfc 13/2
+bfc 14/2
+bfc 15/2
+bfc 16/2
+Transfering reads to readpool.
+Timing BFC rp transfer: 5040
+Done.
+bfc 17/2
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving temp CAF ... done.
+done.
+Timing BFC store con: 58707
+Contig coverage analysis ... Timing BFC loop total: 1034596
+bfc 1
+Localtime: Mon Dec 21 11:16:56 2015
+
+Timing BFC unused: 1
+Unused: 30
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 1
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 2
+Localtime: Mon Dec 21 11:16:56 2015
+Unused reads: 30
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 1
+Timing n4_basicCSBSSetup init pf_banned: 3
+Timing n4_basicCSBSSetup total: 5
++Timing BFC paf construct: 36
+bfc 9/0
+
+Contig does not meet requirement of minimum reads per contig.
+Moving 1 reads to debris.
+Timing BFC loop total: 49
+bfc 1
+Localtime: Mon Dec 21 11:16:56 2015
+
+Timing BFC unused: 1
+Unused: 29
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 0
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 2
+Localtime: Mon Dec 21 11:16:56 2015
+Unused reads: 29
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 0
+Timing n4_basicCSBSSetup init pf_banned: 0
+Timing n4_basicCSBSSetup total: 2
++[1] +aaa+aaaaTiming BFC paf construct: 2314
+Triggering additional cluster check.
+Moving small clusters to debris:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done. 18 reads moved to debris.
+bfc 9/0
+
+Contig does not meet requirement of minimum reads per contig.
+Moving 3 reads to debris.
+Timing BFC loop total: 2346
+bfc 1
+Localtime: Mon Dec 21 11:16:56 2015
+
+Timing BFC unused: 0
+Unused: 8
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 1
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 1
+bfc 7/0
+Building new contig 2
+Localtime: Mon Dec 21 11:16:56 2015
+Unused reads: 8
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 1
+Timing n4_basicCSBSSetup init pf_banned: 0
+Timing n4_basicCSBSSetup total: 4
+Timing n4_searchBestStrongGoodStartEnvironment 1 1 1 1: 2
+Startcache size: 0
+Timing n4_searchBestStrongGoodStartEnvironment 0 0 1 1: 1
+Startcache size: 0
+Timing n4_searchBestStrongGoodStartEnvironment 0 0 0 1: 2
+Startcache size: 1
+Timing n4_searchBestStrongGoodStartEnvironment sort: 0
+Timing n4_searchBestStrongGoodStartEnvironment total: 8
++[1] +++++++Timing BFC paf construct: 1840
+Triggering additional cluster check.
+Moving small clusters to debris:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done. 0 reads moved to debris.
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:16:56 2015
+Timing BFC analysereadcov: 75
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 2
+Contig length: 860
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0           8           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         498           0           0           0           0
+Max. coverage	           0           8           0           0           0           0
+Avg. coverage	       0.000       4.636       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 8
+Avg. contig coverage: 4.636
+
+Consensus contains:	A: 297	C: 153	G: 144	T: 256	N: 0
+			IUPAC: 0	Funny: 0	*: 10
+GC content: 34.941%
+-------------------------------------------------
+Timing BFC cout constats: 330
+Localtime: Mon Dec 21 11:16:56 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Marked 0 reads.
+Timing BFC edit tricky1: 186
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 203
+bfc 11/0
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 1 positions.
+Deleting superfluous gap columns ... done.
+Timing BFC edit single discrepancy, no HAF: 144
+bfc 12/0
+Timing BFC delPSHP: 1
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+Transfering reads to readpool.
+Timing BFC rp transfer: 41
+Done.
+bfc 17/0
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving temp CAF ... done.
+done.
+Timing BFC store con: 830
+Timing BFC loop total: 3694
+bfc 1
+Localtime: Mon Dec 21 11:16:56 2015
+
+Timing BFC unused: 1
+Unused: 0
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC loop total: 3702
+Saving debris list to file: 302_assembly/302_d_tmp/302_info_debrislist_pass.2.txt
+Dump from /proc/self/status
+--------------------------------------------------------------------------------
+Name:	mira
+State:	R (running)
+Tgid:	5700
+Pid:	5700
+PPid:	2594
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	256
+Groups:	4 24 27 30 46 109 124 1000 
+VmPeak:	  347812 kB
+VmSize:	  347804 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	  307360 kB
+VmRSS:	  307036 kB
+VmData:	  342736 kB
+VmStk:	     136 kB
+VmExe:	    4876 kB
+VmLib:	       0 kB
+VmPTE:	     648 kB
+VmSwap:	       0 kB
+Threads:	1
+SigQ:	0/15837
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000000000000
+SigCgt:	0000000180000000
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	ffffffffffffffff
+Cpus_allowed:	1
+Cpus_allowed_list:	0
+Mems_allowed:	00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	124
+nonvoluntary_ctxt_switches:	193
+--------------------------------------------------------------------------------
+
+
+Pass: 3 / 5
+Performing snapshot 3
+Localtime: Mon Dec 21 11:16:56 2015
+Localtime: Mon Dec 21 11:16:56 2015
+
+===========================================================================
+Pool statistics:
+Backbones: 0	Backbone rails: 0
+
+		Sanger	454	IonTor	PacBio	Solexa	SOLiD
+		----------------------------------------
+Total reads	0	797	0	0	0	0
+Reads wo qual	0	0	0	0	0	0
+Used reads	0	797	0	0	0	0
+Avg tot rlen	0	506	0	0	0	0
+Avg rlen used	0	489	0	0	0	0
+
+With strain	0	0	0	0	0	0
+W/o clips	0	314	0	0	0	0
+
+Sanger	total bases:0	used bases in used reads: 0
+454	total bases:404014	used bases in used reads: 389768
+IonTor	total bases:0	used bases in used reads: 0
+PacBio	total bases:0	used bases in used reads: 0
+Solexa	total bases:0	used bases in used reads: 0
+Solid	total bases:0	used bases in used reads: 0
+===========================================================================
+
+
+Localtime: Mon Dec 21 11:16:56 2015
+Writing temporary hstat files:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done
+Localtime: Mon Dec 21 11:16:56 2015
+
+Analysing hstat files:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Localtime: Mon Dec 21 11:16:56 2015
+clean up temporary stat files...Localtime: Mon Dec 21 11:16:56 2015
+Localtime: Mon Dec 21 11:16:56 2015
+Hash statistics:
+=========================================================
+Measured avg. frequency coverage: 16
+
+Deduced thresholds:
+-------------------
+Min normal cov: 6
+Max normal cov: 26
+Repeat cov: 30
+Heavy cov: 128
+Crazy cov: 320
+Mask cov: 1600
+
+Repeat ratio histogram:
+-----------------------
+0	23499
+1	34398
+2	3392
+3	8
+8	1
+=========================================================
+
+Assigning statistics values:
+Localtime: Mon Dec 21 11:16:56 2015
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Localtime: Mon Dec 21 11:16:56 2015
+Buntifying reads ... done.
+Writing read repeat info to: 302_assembly/302_d_info/302_info_readrepeats.lst ... 0 sequences with 0 masked stretches.
+Localtime: Mon Dec 21 11:16:56 2015
+
+
+Searching for possible overlaps:
+Localtime: Mon Dec 21 11:16:56 2015
+Now running threaded and partitioned skimmer with 1 partitions in 2 threads:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%]  done.
+truncating 302_assembly/302_d_tmp/302_int_posmatchf_pass.3.bin from 127992 to 45744
+truncating 302_assembly/302_d_tmp/302_int_posmatchc_pass.3.bin from 118272 to 43752
+
+Skim summary:
+	accepted: 14821
+	possible: 17005
+	permbans: 199
+
+Hits chosen: 10261
+
+Localtime: Mon Dec 21 11:16:57 2015
+
+Total megahubs: 0
+Can load up to 7458 skim edges at once.
+Partitioning into 1 blocks.
+We have 7458 skims in file.
+Localtime: Mon Dec 21 11:16:57 2015
+De-normalising SKIM hits ... (this will take a while)
+Only one block ... first loop ...not loaded yet.
+Loading skims in id range 0 to 796
+Localtime: Mon Dec 21 11:16:57 2015
+Loaded 7458 elements.
+Sorting ... done.
+Localtime: Mon Dec 21 11:16:57 2015
+Writing normalised skimblock 0 (     233 KiB) ... done.
+Only one block ... not in first loop, return 0.
+Localtime: Mon Dec 21 11:16:57 2015
+Loading block 0
+Only one block, already loaded.
+Localtime: Mon Dec 21 11:16:57 2015
+Step 0
+Loading block 0
+Only one block, already loaded.
+Localtime: Mon Dec 21 11:16:57 2015
+Only long reads
+Step 10
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2016
+Step 20
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2016
+Step 30
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2023
+Step 40
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2023
+Step 50
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2486
+Step 55
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2486
+Step 60
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2486
+Step solexa by critlevel
+rsh4_takeSolexaByCritLevel.
+Loading block 0
+Only one block, already loaded.
+Taken 0 hits.
+Step template overlaps
+Loading block 0
+Only one block, already loaded.
+Step NAO
+rsh4_takeNeedAllOverlaps.
+Loading block 0
+Only one block, already loaded.
+Taken 176 hits.
+Total skims taken: 2662
+
+Filtering forward skims.
+Localtime: Mon Dec 21 11:16:57 2015
+Writing reduced skim file:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done.
+Done.
+Filtering complement skims.
+Localtime: Mon Dec 21 11:16:57 2015
+Writing reduced skim file:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done.
+Done all filtering.
+Localtime: Mon Dec 21 11:16:57 2015
+Making alignments.
+Errno: 2
+Errno: 2
+Errno: 2
+Localtime: Mon Dec 21 11:16:57 2015
+
+Aligning possible forward matches:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Alignment stats:
+Potential:   1337
+Calculated:  1331
+Evaded (PB): 0
+Rejected (checkfun): 0
+Trans 100 saved: 6
+
+Banned overlap pairs: 233	in 115 sets.
+
+Localtime: Mon Dec 21 11:16:57 2015
+
+Aligning possible complement matches:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Alignment stats:
+Potential:   1325
+Calculated:  1322
+Evaded (PB): 0
+Rejected (checkfun): 0
+Trans 100 saved: 3
+
+Banned overlap pairs: 264	in 126 sets.
+
+Localtime: Mon Dec 21 11:16:58 2015
+
+Localtime: Mon Dec 21 11:16:58 2015
+Counting number of alignments in file ... done.
+Expecting 2596 alignments.
+Localtime: Mon Dec 21 11:16:58 2015
+Loading confirmed overlaps from disk (will need approximately 152 KiB RAM):
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Localtime: Mon Dec 21 11:16:58 2015
+
+
+Sorting confirmed overlaps (this may take a while) ... done.
+
+Localtime: Mon Dec 21 11:16:58 2015
+Generating clusters:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Sorting clusters:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Localtime: Mon Dec 21 11:16:58 2015
+
+Writing clusters:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Writing unclustered reads ... done.
+Localtime: Mon Dec 21 11:16:58 2015
+BFC: 3	0
+overlapcompressstepping: 797
+nextoverlapcompress: 797
+Moving small clusters to debris:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done. 0 reads moved to debris.
+bfc 1
+Localtime: Mon Dec 21 11:16:58 2015
+
+Timing BFC unused: 2
+Unused: 795
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 2
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 1
+bfc 6/0
+Timing BFC discard con: 1
+bfc 7/0
+Building new contig 1
+Localtime: Mon Dec 21 11:16:58 2015
+Unused reads: 795
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 1
+Timing n4_basicCSBSSetup init pf_banned: 3
+Timing n4_basicCSBSSetup lowerbound_oedges: 44
+Timing n4_basicCSBSSetup total: 54
+Timing n4_searchBestStrongGoodStartEnvironment 1 1 1 1: 66
+Startcache size: 13
+Timing n4_searchBestStrongGoodStartEnvironment sort: 2
+Timing n4_searchBestStrongGoodStartEnvironment total: 70
++[1] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   2206	1 / 293 / 0
+[61] ++++++++++++aa++++++++a+++++++++++++++++++++++++++++++++aa+a   3615	2 / 282 / 1
+[115] +a++a+aa+aa++a+aaa+++++++++++++++++++++++++++++++++++++++++a   4907	1 / 260 / 1
+[164] aaa+aa++++++++++++++++++++++++++++++++++++++++++++++++++++++   6447	2 / 283 / 1
+[219] ++++++++++++++++++++++++aa+++a+++++++++++++++++++++++++a+++a   8105	3 / 269 / 1
+[274] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   9746	1 / 270 / 0
+[334] ++++++++++++++++++++++a+++++++++++++++++++++++++++++++++++++   10633	1 / 269 / 2
+[393] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   12262	2 / 289 / 0
+[453] ++++++++++++++++++++++++++++++++++++++++++++a+++++++++++++++   13595	2 / 251 / 2
+[512] ++++a+++a++++++++++++++++++++++++++++++++++++++++++++++++a++   14981	5 / 264 / 1
+[569] ++++++++++++++++++++++a+++++++++++++++++++++++++++++++++++++   16968	3 / 278 / 2
+[628] +++++++++++++++++++a++++a+aaaa++a+++++++++++++++++++++++++++   18202	4 / 278 / 1
+[681] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   19908	3 / 259 / 0
+[741] ++++++++++++++++++++++++++++++Timing BFC paf construct: 223920
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:16:58 2015
+Timing BFC analysereadcov: 4822
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 1
+Contig length: 20356
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0         771           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         488           0           0           0           0
+Max. coverage	           0          33           0           0           0           0
+Avg. coverage	       0.000      18.515       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 33
+Avg. contig coverage: 18.515
+
+Consensus contains:	A: 6406	C: 3610	G: 3757	T: 6197	N: 1
+			IUPAC: 0	Funny: 0	*: 385
+GC content: 36.890%
+-------------------------------------------------
+Timing BFC cout constats: 18573
+Localtime: Mon Dec 21 11:16:58 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Marking tricky 454 runs in 358 cases.
+
+
+Marked 358 reads.
+Timing BFC edit tricky1: 13205
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 10432
+bfc 11/0
+Editing tricky 454 / Solexa overcalls.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Performing 454 edits in 19 cases.
+
+
+Edited 19 reads.
+Deleting superfluous gap columns ... done.
+Timing BFC edit tricky2: 13858
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 35 positions.
+Deleting superfluous gap columns ... done.
+Timing BFC edit single discrepancy, no HAF: 10242
+bfc 12/0
+Timing BFC delPSHP: 16
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+Transfering reads to readpool.
+Timing BFC rp transfer: 6182
+Done.
+bfc 17/0
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving temp CAF ... done.
+done.
+Timing BFC store con: 58022
+Contig coverage analysis ... Timing BFC loop total: 359739
+bfc 1
+Localtime: Mon Dec 21 11:16:58 2015
+
+Timing BFC unused: 1
+Unused: 24
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 1
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 2
+Localtime: Mon Dec 21 11:16:58 2015
+Unused reads: 24
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 1
+Timing n4_basicCSBSSetup init pf_banned: 1
+Timing n4_basicCSBSSetup total: 4
++Timing BFC paf construct: 39
+bfc 9/0
+
+Contig does not meet requirement of minimum reads per contig.
+Moving 1 reads to debris.
+Timing BFC loop total: 56
+bfc 1
+Localtime: Mon Dec 21 11:16:58 2015
+
+Timing BFC unused: 0
+Unused: 23
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 1
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 2
+Localtime: Mon Dec 21 11:16:58 2015
+Unused reads: 23
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 0
+Timing n4_basicCSBSSetup init pf_banned: 0
+Timing n4_basicCSBSSetup total: 1
++[1] +aaa+aaaaTiming BFC paf construct: 2261
+Triggering additional cluster check.
+Moving small clusters to debris:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done. 12 reads moved to debris.
+bfc 9/0
+
+Contig does not meet requirement of minimum reads per contig.
+Moving 3 reads to debris.
+Timing BFC loop total: 2292
+bfc 1
+Localtime: Mon Dec 21 11:16:58 2015
+
+Timing BFC unused: 1
+Unused: 8
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 0
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 1
+bfc 7/0
+Building new contig 2
+Localtime: Mon Dec 21 11:16:58 2015
+Unused reads: 8
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 0
+Timing n4_basicCSBSSetup init pf_banned: 0
+Timing n4_basicCSBSSetup total: 2
+Timing n4_searchBestStrongGoodStartEnvironment 1 1 1 1: 2
+Startcache size: 0
+Timing n4_searchBestStrongGoodStartEnvironment 0 0 1 1: 1
+Startcache size: 0
+Timing n4_searchBestStrongGoodStartEnvironment 0 0 0 1: 1
+Startcache size: 1
+Timing n4_searchBestStrongGoodStartEnvironment sort: 1
+Timing n4_searchBestStrongGoodStartEnvironment total: 8
++[1] +++++++Timing BFC paf construct: 1834
+Triggering additional cluster check.
+Moving small clusters to debris:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done. 0 reads moved to debris.
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:16:58 2015
+Timing BFC analysereadcov: 75
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 2
+Contig length: 859
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0           8           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         498           0           0           0           0
+Max. coverage	           0           8           0           0           0           0
+Avg. coverage	       0.000       4.640       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 8
+Avg. contig coverage: 4.640
+
+Consensus contains:	A: 297	C: 153	G: 144	T: 256	N: 0
+			IUPAC: 0	Funny: 0	*: 9
+GC content: 34.941%
+-------------------------------------------------
+Timing BFC cout constats: 331
+Localtime: Mon Dec 21 11:16:58 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Marked 0 reads.
+Timing BFC edit tricky1: 179
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 210
+bfc 11/0
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 0 positions.
+Timing BFC edit single discrepancy, no HAF: 84
+bfc 12/0
+Timing BFC delPSHP: 0
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+Transfering reads to readpool.
+Timing BFC rp transfer: 41
+Done.
+bfc 17/0
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving temp CAF ... done.
+done.
+Timing BFC store con: 810
+Timing BFC loop total: 3612
+bfc 1
+Localtime: Mon Dec 21 11:16:58 2015
+
+Timing BFC unused: 1
+Unused: 0
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC loop total: 3619
+Saving debris list to file: 302_assembly/302_d_tmp/302_info_debrislist_pass.3.txt
+Dump from /proc/self/status
+--------------------------------------------------------------------------------
+Name:	mira
+State:	R (running)
+Tgid:	5700
+Pid:	5700
+PPid:	2594
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	256
+Groups:	4 24 27 30 46 109 124 1000 
+VmPeak:	  359548 kB
+VmSize:	  359540 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	  319592 kB
+VmRSS:	  319592 kB
+VmData:	  354472 kB
+VmStk:	     136 kB
+VmExe:	    4876 kB
+VmLib:	       0 kB
+VmPTE:	     672 kB
+VmSwap:	       0 kB
+Threads:	1
+SigQ:	0/15837
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000000000000
+SigCgt:	0000000180000000
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	ffffffffffffffff
+Cpus_allowed:	1
+Cpus_allowed_list:	0
+Mems_allowed:	00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	151
+nonvoluntary_ctxt_switches:	213
+--------------------------------------------------------------------------------
+
+
+Pass: 4 / 5
+Performing snapshot 4
+Localtime: Mon Dec 21 11:16:58 2015
+Localtime: Mon Dec 21 11:16:58 2015
+
+===========================================================================
+Pool statistics:
+Backbones: 0	Backbone rails: 0
+
+		Sanger	454	IonTor	PacBio	Solexa	SOLiD
+		----------------------------------------
+Total reads	0	797	0	0	0	0
+Reads wo qual	0	0	0	0	0	0
+Used reads	0	797	0	0	0	0
+Avg tot rlen	0	506	0	0	0	0
+Avg rlen used	0	489	0	0	0	0
+
+With strain	0	0	0	0	0	0
+W/o clips	0	314	0	0	0	0
+
+Sanger	total bases:0	used bases in used reads: 0
+454	total bases:404024	used bases in used reads: 389778
+IonTor	total bases:0	used bases in used reads: 0
+PacBio	total bases:0	used bases in used reads: 0
+Solexa	total bases:0	used bases in used reads: 0
+Solid	total bases:0	used bases in used reads: 0
+===========================================================================
+
+
+Localtime: Mon Dec 21 11:16:58 2015
+Writing temporary hstat files:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done
+Localtime: Mon Dec 21 11:16:58 2015
+
+Analysing hstat files:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Localtime: Mon Dec 21 11:16:58 2015
+clean up temporary stat files...Localtime: Mon Dec 21 11:16:58 2015
+Localtime: Mon Dec 21 11:16:58 2015
+Hash statistics:
+=========================================================
+Measured avg. frequency coverage: 16
+
+Deduced thresholds:
+-------------------
+Min normal cov: 6
+Max normal cov: 26
+Repeat cov: 30
+Heavy cov: 128
+Crazy cov: 320
+Mask cov: 1600
+
+Repeat ratio histogram:
+-----------------------
+0	23438
+1	34247
+2	3542
+3	8
+8	1
+=========================================================
+
+Assigning statistics values:
+Localtime: Mon Dec 21 11:16:58 2015
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Localtime: Mon Dec 21 11:16:58 2015
+Buntifying reads ... done.
+Writing read repeat info to: 302_assembly/302_d_info/302_info_readrepeats.lst ... 0 sequences with 0 masked stretches.
+Localtime: Mon Dec 21 11:16:58 2015
+
+
+Searching for possible overlaps:
+Localtime: Mon Dec 21 11:16:58 2015
+Now running threaded and partitioned skimmer with 1 partitions in 2 threads:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%]  done.
+truncating 302_assembly/302_d_tmp/302_int_posmatchf_pass.4.bin from 127584 to 45552
+truncating 302_assembly/302_d_tmp/302_int_posmatchc_pass.4.bin from 117816 to 43704
+
+Skim summary:
+	accepted: 14759
+	possible: 16955
+	permbans: 265
+
+Hits chosen: 10225
+
+Localtime: Mon Dec 21 11:16:59 2015
+
+Total megahubs: 0
+Can load up to 7438 skim edges at once.
+Partitioning into 1 blocks.
+We have 7438 skims in file.
+Localtime: Mon Dec 21 11:16:59 2015
+De-normalising SKIM hits ... (this will take a while)
+Only one block ... first loop ...not loaded yet.
+Loading skims in id range 0 to 796
+Localtime: Mon Dec 21 11:16:59 2015
+Loaded 7438 elements.
+Sorting ... done.
+Localtime: Mon Dec 21 11:16:59 2015
+Writing normalised skimblock 0 (     232 KiB) ... done.
+Only one block ... not in first loop, return 0.
+Localtime: Mon Dec 21 11:16:59 2015
+Loading block 0
+Only one block, already loaded.
+Localtime: Mon Dec 21 11:16:59 2015
+Step 0
+Loading block 0
+Only one block, already loaded.
+Localtime: Mon Dec 21 11:16:59 2015
+Only long reads
+Step 10
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 1971
+Step 20
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 1971
+Step 30
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 1972
+Step 40
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 1972
+Step 50
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2497
+Step 55
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2497
+Step 60
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2497
+Step solexa by critlevel
+rsh4_takeSolexaByCritLevel.
+Loading block 0
+Only one block, already loaded.
+Taken 0 hits.
+Step template overlaps
+Loading block 0
+Only one block, already loaded.
+Step NAO
+rsh4_takeNeedAllOverlaps.
+Loading block 0
+Only one block, already loaded.
+Taken 159 hits.
+Total skims taken: 2656
+
+Filtering forward skims.
+Localtime: Mon Dec 21 11:16:59 2015
+Writing reduced skim file:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done.
+Done.
+Filtering complement skims.
+Localtime: Mon Dec 21 11:16:59 2015
+Writing reduced skim file:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done.
+Done all filtering.
+Localtime: Mon Dec 21 11:16:59 2015
+Making alignments.
+Errno: 2
+Errno: 2
+Errno: 2
+Localtime: Mon Dec 21 11:16:59 2015
+
+Aligning possible forward matches:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Alignment stats:
+Potential:   1336
+Calculated:  1326
+Evaded (PB): 0
+Rejected (checkfun): 0
+Trans 100 saved: 10
+
+Banned overlap pairs: 279	in 135 sets.
+
+Localtime: Mon Dec 21 11:16:59 2015
+
+Aligning possible complement matches:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Alignment stats:
+Potential:   1320
+Calculated:  1317
+Evaded (PB): 0
+Rejected (checkfun): 0
+Trans 100 saved: 3
+
+Banned overlap pairs: 294	in 140 sets.
+
+Localtime: Mon Dec 21 11:16:59 2015
+
+Localtime: Mon Dec 21 11:16:59 2015
+Counting number of alignments in file ... done.
+Expecting 2626 alignments.
+Localtime: Mon Dec 21 11:16:59 2015
+Loading confirmed overlaps from disk (will need approximately 154 KiB RAM):
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Localtime: Mon Dec 21 11:16:59 2015
+
+
+Sorting confirmed overlaps (this may take a while) ... done.
+
+Localtime: Mon Dec 21 11:16:59 2015
+Generating clusters:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Sorting clusters:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Localtime: Mon Dec 21 11:16:59 2015
+
+Writing clusters:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Writing unclustered reads ... done.
+Localtime: Mon Dec 21 11:16:59 2015
+BFC: 4	0
+overlapcompressstepping: 797
+nextoverlapcompress: 797
+Moving small clusters to debris:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done. 1 reads moved to debris.
+bfc 1
+Localtime: Mon Dec 21 11:16:59 2015
+
+Timing BFC unused: 2
+Unused: 795
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 1
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 1
+bfc 7/0
+Building new contig 1
+Localtime: Mon Dec 21 11:16:59 2015
+Unused reads: 795
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 2
+Timing n4_basicCSBSSetup init pf_banned: 3
+Timing n4_basicCSBSSetup lowerbound_oedges: 42
+Timing n4_basicCSBSSetup total: 51
+Timing n4_searchBestStrongGoodStartEnvironment 1 1 1 1: 73
+Startcache size: 13
+Timing n4_searchBestStrongGoodStartEnvironment sort: 1
+Timing n4_searchBestStrongGoodStartEnvironment total: 77
++[1] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   2058	1 / 286 / 0
+[61] ++++++++++++++++aa++++a+++++++++++++++++++++++++++++++++aa+a   3612	2 / 280 / 1
+[115] +a++a+aa+aa++a+aaa+++++++++++++++++++++++++++++++++++++++++a   4904	1 / 259 / 1
+[164] aaaa+a++++++++++++++++++++++++++++++++++++++++++++++++++++++   6443	2 / 283 / 1
+[219] ++++++++++++++++++++++++aaa+++++++++++++++++++++++++++++++++   8100	3 / 279 / 2
+[276] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   9738	1 / 267 / 0
+[336] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   10679	1 / 265 / 0
+[396] ++++++++++a+++++++++++++++++++++++++++++++++++++++++++++++++   12388	2 / 287 / 3
+[455] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   13586	3 / 277 / 0
+[515] a++++a++++a+++++++++++++++++++++++++++++++++++++++++++++++++   15094	6 / 271 / 2
+[572] +++++++++++++++a+++aa+++++++++++++++++++++++++++++++++++++++   17237	3 / 274 / 1
+[629] +++++++++++++++++a++++a+aaa++++++++++++aTiming BFC paf construct: 196692
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:17:00 2015
+Timing BFC analysereadcov: 4146
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 1
+Contig length: 17394
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0         663           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         491           0           0           0           0
+Max. coverage	           0          33           0           0           0           0
+Avg. coverage	       0.000      18.725       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 33
+Avg. contig coverage: 18.725
+
+Consensus contains:	A: 5435	C: 3093	G: 3255	T: 5289	N: 1
+			IUPAC: 0	Funny: 0	*: 321
+GC content: 37.184%
+-------------------------------------------------
+Timing BFC cout constats: 16106
+Localtime: Mon Dec 21 11:17:00 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Marking tricky 454 runs in 39 cases.
+
+
+Marked 39 reads.
+Timing BFC edit tricky1: 11019
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 8951
+bfc 11/0
+Editing tricky 454 / Solexa overcalls.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Performing 454 edits in 2 cases.
+
+
+Edited 2 reads.
+Deleting superfluous gap columns ... done.
+Timing BFC edit tricky2: 11585
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 8 positions.
+Deleting superfluous gap columns ... done.
+Timing BFC edit single discrepancy, no HAF: 8095
+bfc 12/0
+Timing BFC delPSHP: 12
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+Transfering reads to readpool.
+Timing BFC rp transfer: 5393
+Done.
+bfc 17/0
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving temp CAF ... done.
+done.
+Timing BFC store con: 50055
+Contig coverage analysis ... Hunting join spoiler
+HSS At end: 0 1	498-9700000-9720000:19989:rev
+HSS At end: 0 1	444-9700000-9720000:19576:fwd
+HSS At end: 0 1	692-9700000-9720000:19706:fwd
+HSS At end: 0 1	628-9700000-9720000:19593:fwd
+HSS At end: 0 1	151-9700000-9720000:19474:fwd
+HSS At end: 0 1	285-9700000-9720000:19516:fwd
+HSS At end: 1 0	381-9700000-9720000:2905:fwd
+Timing BFC loop total: 312562
+bfc 1
+Localtime: Mon Dec 21 11:17:00 2015
+
+Timing BFC unused: 2
+Unused: 132
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 1
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 2
+Localtime: Mon Dec 21 11:17:00 2015
+Unused reads: 132
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 1
+Timing n4_basicCSBSSetup init pf_banned: 2
+Timing n4_basicCSBSSetup total: 4
++[1] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   2385	2 / 262 / 0
+[61] ++++++++++++++++++++++++++++++++++++++++++++++Timing BFC paf construct: 27362
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:17:00 2015
+Timing BFC analysereadcov: 647
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 2
+Contig length: 3354
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0         107           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         473           0           0           0           0
+Max. coverage	           0          24           0           0           0           0
+Avg. coverage	       0.000      15.102       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 24
+Avg. contig coverage: 15.102
+
+Consensus contains:	A: 1122	C: 581	G: 578	T: 1025	N: 0
+			IUPAC: 0	Funny: 0	*: 48
+GC content: 35.057%
+-------------------------------------------------
+Timing BFC cout constats: 3248
+Localtime: Mon Dec 21 11:17:00 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Marking tricky 454 runs in 24 cases.
+
+
+Marked 24 reads.
+Timing BFC edit tricky1: 1511
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 1440
+bfc 11/0
+Editing tricky 454 / Solexa overcalls.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Performing 454 edits in 1 cases.
+
+
+Edited 1 reads.
+Deleting superfluous gap columns ... done.
+Timing BFC edit tricky2: 1463
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 2 positions.
+Deleting superfluous gap columns ... done.
+Timing BFC edit single discrepancy, no HAF: 1288
+bfc 12/0
+Timing BFC delPSHP: 2
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+Transfering reads to readpool.
+Timing BFC rp transfer: 594
+Done.
+bfc 17/0
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving temp CAF ... done.
+done.
+Timing BFC store con: 7739
+Hunting join spoiler
+HSS At end: 0 1	397-9700000-9720000:2767:fwd
+HSS At end: 1 0	112-9700000-9720000:11:fwd
+HSS At end: 1 0	538-9700000-9720000:460:rev
+HSS At end: 1 0	423-9700000-9720000:264:rev
+HSS At end: 1 0	465-9700000-9720000:276:rev
+HSS At end: 1 0	267-9700000-9720000:383:rev
+HSS At end: 1 0	634-9700000-9720000:438:rev
+HSS At end: 1 0	419-9700000-9720000:484:rev
+Timing BFC loop total: 45379
+bfc 1
+Localtime: Mon Dec 21 11:17:00 2015
+
+Timing BFC unused: 1
+Unused: 25
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 1
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 3
+Localtime: Mon Dec 21 11:17:00 2015
+Unused reads: 25
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 1
+Timing n4_basicCSBSSetup init pf_banned: 0
+Timing n4_basicCSBSSetup total: 2
++[1] +aaa+aaaaTiming BFC paf construct: 2231
+bfc 9/0
+
+Contig does not meet requirement of minimum reads per contig.
+Moving 3 reads to debris.
+Timing BFC loop total: 2243
+bfc 1
+Localtime: Mon Dec 21 11:17:00 2015
+
+Timing BFC unused: 1
+Unused: 22
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 0
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 1
+bfc 7/0
+Building new contig 3
+Localtime: Mon Dec 21 11:17:00 2015
+Unused reads: 22
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 0
+Timing n4_basicCSBSSetup init pf_banned: 0
+Timing n4_basicCSBSSetup total: 2
+Timing n4_searchBestStrongGoodStartEnvironment 1 1 1 1: 7
+Startcache size: 0
+Timing n4_searchBestStrongGoodStartEnvironment 0 0 1 1: 2
+Startcache size: 0
+Timing n4_searchBestStrongGoodStartEnvironment 0 0 0 1: 2
+Startcache size: 2
+Timing n4_searchBestStrongGoodStartEnvironment sort: 1
+Timing n4_searchBestStrongGoodStartEnvironment total: 16
++[1] +++++++Timing BFC paf construct: 1860
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:17:00 2015
+Timing BFC analysereadcov: 72
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 3
+Contig length: 859
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0           8           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         498           0           0           0           0
+Max. coverage	           0           8           0           0           0           0
+Avg. coverage	       0.000       4.640       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 8
+Avg. contig coverage: 4.640
+
+Consensus contains:	A: 297	C: 153	G: 144	T: 256	N: 0
+			IUPAC: 0	Funny: 0	*: 9
+GC content: 34.941%
+-------------------------------------------------
+Timing BFC cout constats: 374
+Localtime: Mon Dec 21 11:17:00 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Marked 0 reads.
+Timing BFC edit tricky1: 171
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 206
+bfc 11/0
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 0 positions.
+Timing BFC edit single discrepancy, no HAF: 83
+bfc 12/0
+Timing BFC delPSHP: 1
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+Transfering reads to readpool.
+Timing BFC rp transfer: 41
+Done.
+bfc 17/0
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving temp CAF ... done.
+done.
+Timing BFC store con: 850
+Hunting join spoiler
+HSS At end: 1 0	579-9700000-9720000:17134:rev
+HSS At end: 0 1	180-9700000-9720000:16787:rev
+Timing BFC loop total: 3697
+bfc 1
+Localtime: Mon Dec 21 11:17:00 2015
+
+Timing BFC unused: 1
+Unused: 14
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 0
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 4
+Localtime: Mon Dec 21 11:17:00 2015
+Unused reads: 14
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 0
+Timing n4_basicCSBSSetup init pf_banned: 0
+Timing n4_basicCSBSSetup total: 2
++[1] +Timing BFC paf construct: 261
+Triggering additional cluster check.
+Moving small clusters to debris:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done. 12 reads moved to debris.
+bfc 9/0
+
+Contig does not meet requirement of minimum reads per contig.
+Moving 2 reads to debris.
+Timing BFC loop total: 288
+bfc 1
+Localtime: Mon Dec 21 11:17:00 2015
+
+Timing BFC unused: 1
+Unused: 0
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC loop total: 294
+Saving debris list to file: 302_assembly/302_d_tmp/302_info_debrislist_pass.4.txt
+Dump from /proc/self/status
+--------------------------------------------------------------------------------
+Name:	mira
+State:	R (running)
+Tgid:	5700
+Pid:	5700
+PPid:	2594
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	256
+Groups:	4 24 27 30 46 109 124 1000 
+VmPeak:	  359604 kB
+VmSize:	  359540 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	  322740 kB
+VmRSS:	  322732 kB
+VmData:	  354472 kB
+VmStk:	     136 kB
+VmExe:	    4876 kB
+VmLib:	       0 kB
+VmPTE:	     672 kB
+VmSwap:	       0 kB
+Threads:	1
+SigQ:	0/15837
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000000000000
+SigCgt:	0000000180000000
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	ffffffffffffffff
+Cpus_allowed:	1
+Cpus_allowed_list:	0
+Mems_allowed:	00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	178
+nonvoluntary_ctxt_switches:	231
+--------------------------------------------------------------------------------
+
+
+Pass: 5 / 5
+Performing snapshot 5
+Localtime: Mon Dec 21 11:17:00 2015
+Localtime: Mon Dec 21 11:17:00 2015
+
+===========================================================================
+Pool statistics:
+Backbones: 0	Backbone rails: 0
+
+		Sanger	454	IonTor	PacBio	Solexa	SOLiD
+		----------------------------------------
+Total reads	0	797	0	0	0	0
+Reads wo qual	0	0	0	0	0	0
+Used reads	0	797	0	0	0	0
+Avg tot rlen	0	506	0	0	0	0
+Avg rlen used	0	489	0	0	0	0
+
+With strain	0	0	0	0	0	0
+W/o clips	0	314	0	0	0	0
+
+Sanger	total bases:0	used bases in used reads: 0
+454	total bases:404030	used bases in used reads: 389784
+IonTor	total bases:0	used bases in used reads: 0
+PacBio	total bases:0	used bases in used reads: 0
+Solexa	total bases:0	used bases in used reads: 0
+Solid	total bases:0	used bases in used reads: 0
+===========================================================================
+
+
+Localtime: Mon Dec 21 11:17:00 2015
+Writing temporary hstat files:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done
+Localtime: Mon Dec 21 11:17:00 2015
+
+Analysing hstat files:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Localtime: Mon Dec 21 11:17:00 2015
+clean up temporary stat files...Localtime: Mon Dec 21 11:17:00 2015
+Localtime: Mon Dec 21 11:17:00 2015
+Hash statistics:
+=========================================================
+Measured avg. frequency coverage: 16
+
+Deduced thresholds:
+-------------------
+Min normal cov: 6
+Max normal cov: 26
+Repeat cov: 30
+Heavy cov: 128
+Crazy cov: 320
+Mask cov: 1600
+
+Repeat ratio histogram:
+-----------------------
+0	23428
+1	34163
+2	3598
+3	8
+8	1
+=========================================================
+
+Assigning statistics values:
+Localtime: Mon Dec 21 11:17:00 2015
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Localtime: Mon Dec 21 11:17:00 2015
+Buntifying reads ... done.
+Writing read repeat info to: 302_assembly/302_d_info/302_info_readrepeats.lst ... 0 sequences with 0 masked stretches.
+Localtime: Mon Dec 21 11:17:00 2015
+
+
+Searching for possible overlaps:
+Localtime: Mon Dec 21 11:17:00 2015
+Now running threaded and partitioned skimmer with 1 partitions in 2 threads:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%]  done.
+truncating 302_assembly/302_d_tmp/302_int_posmatchf_pass.5.bin from 127368 to 46008
+truncating 302_assembly/302_d_tmp/302_int_posmatchc_pass.5.bin from 117792 to 43728
+
+Skim summary:
+	accepted: 14734
+	possible: 16926
+	permbans: 295
+
+Hits chosen: 10215
+
+Localtime: Mon Dec 21 11:17:01 2015
+
+Total megahubs: 0
+Can load up to 7478 skim edges at once.
+Partitioning into 1 blocks.
+We have 7478 skims in file.
+Localtime: Mon Dec 21 11:17:01 2015
+De-normalising SKIM hits ... (this will take a while)
+Only one block ... first loop ...not loaded yet.
+Loading skims in id range 0 to 796
+Localtime: Mon Dec 21 11:17:01 2015
+Loaded 7478 elements.
+Sorting ... done.
+Localtime: Mon Dec 21 11:17:01 2015
+Writing normalised skimblock 0 (     234 KiB) ... done.
+Only one block ... not in first loop, return 0.
+Localtime: Mon Dec 21 11:17:01 2015
+Loading block 0
+Only one block, already loaded.
+Localtime: Mon Dec 21 11:17:01 2015
+Step 0
+Loading block 0
+Only one block, already loaded.
+Localtime: Mon Dec 21 11:17:01 2015
+Only long reads
+Step 10
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 1960
+Step 20
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 1960
+Step 30
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 1960
+Step 40
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 1960
+Step 50
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2511
+Step 55
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2511
+Step 60
+Loading block 0
+Only one block, already loaded.
+Total skims taken: 2511
+Step solexa by critlevel
+rsh4_takeSolexaByCritLevel.
+Loading block 0
+Only one block, already loaded.
+Taken 0 hits.
+Step template overlaps
+Loading block 0
+Only one block, already loaded.
+Step NAO
+rsh4_takeNeedAllOverlaps.
+Loading block 0
+Only one block, already loaded.
+Taken 161 hits.
+Total skims taken: 2672
+
+Filtering forward skims.
+Localtime: Mon Dec 21 11:17:01 2015
+Writing reduced skim file:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done.
+Done.
+Filtering complement skims.
+Localtime: Mon Dec 21 11:17:01 2015
+Writing reduced skim file:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done.
+Done all filtering.
+Localtime: Mon Dec 21 11:17:01 2015
+Making alignments.
+Errno: 2
+Errno: 2
+Errno: 2
+Localtime: Mon Dec 21 11:17:01 2015
+
+Aligning possible forward matches:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Alignment stats:
+Potential:   1350
+Calculated:  1339
+Evaded (PB): 0
+Rejected (checkfun): 0
+Trans 100 saved: 11
+
+Banned overlap pairs: 308	in 142 sets.
+
+Localtime: Mon Dec 21 11:17:01 2015
+
+Aligning possible complement matches:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Alignment stats:
+Potential:   1322
+Calculated:  1317
+Evaded (PB): 0
+Rejected (checkfun): 0
+Trans 100 saved: 5
+
+Banned overlap pairs: 315	in 147 sets.
+
+Localtime: Mon Dec 21 11:17:01 2015
+
+Localtime: Mon Dec 21 11:17:01 2015
+Counting number of alignments in file ... done.
+Expecting 2651 alignments.
+Localtime: Mon Dec 21 11:17:01 2015
+Loading confirmed overlaps from disk (will need approximately 155 KiB RAM):
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Localtime: Mon Dec 21 11:17:01 2015
+
+
+Sorting confirmed overlaps (this may take a while) ... done.
+
+Localtime: Mon Dec 21 11:17:01 2015
+Generating clusters:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Sorting clusters:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Localtime: Mon Dec 21 11:17:01 2015
+
+Writing clusters:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Writing unclustered reads ... done.
+Localtime: Mon Dec 21 11:17:01 2015
+BFC: 5	1
+overlapcompressstepping: 797
+nextoverlapcompress: 797
+Moving small clusters to debris:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done. 0 reads moved to debris.
+bfc 1
+Localtime: Mon Dec 21 11:17:01 2015
+
+Timing BFC unused: 1
+Unused: 797
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 2
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 2
+bfc 7/0
+Building new contig 1
+Localtime: Mon Dec 21 11:17:01 2015
+Unused reads: 797
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 1
+Timing n4_basicCSBSSetup init pf_banned: 4
+Timing n4_basicCSBSSetup lowerbound_oedges: 46
+Timing n4_basicCSBSSetup total: 53
+Timing n4_searchBestStrongGoodStartEnvironment 1 1 1 1: 68
+Startcache size: 13
+Timing n4_searchBestStrongGoodStartEnvironment sort: 1
+Timing n4_searchBestStrongGoodStartEnvironment total: 73
++[1] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   2059	1 / 296 / 0
+[61] ++++++++++++++++aa++++a+++++++++++++++++++++++++++++++++aa+a   3613	2 / 294 / 1
+[115] +a++a+aa+aa++a+aa+++++++++++++++++++++++++++++++++++++++++aa   4905	1 / 273 / 1
+[164] aaa+++a+++++++++++++++++++++++++++++++++++++++++++++++++++++   6532	3 / 300 / 1
+[220] +++++++++++++++++++aa+++++a+++++++++++++++++++++++++++++++++   8096	3 / 451 / 2
+[277] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   9826	2 / 507 / 0
+[337] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   10767	196 / 457 / 0
+[397] +++++++a++++++++++++++++++++++++++++++++++++++++++++++++++++   12385	3 / 529 / 3
+[456] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++a+++   13583	5 / 261 / 3
+[515] ++a++++a++++++++++++++++++++++++++++++++++++++++++++++++++++   15129	7 / 280 / 1
+[573] +++++++++++++++aa+++++++++++++++++++++++++++++++++++++++++++   17315	4 / 289 / 3
+[631] +++++++++++++a++++a+aaa++++++++++++a++++++++++++++++++++++++   18408	8 / 288 / 2
+[685] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   20110	4 / 285 / 0
+[745] ++++++++++++++++++++++aaa+++Timing BFC paf construct: 293362
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:17:02 2015
+Timing BFC analysereadcov: 5288
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 1
+Contig length: 20338
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0         770           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         488           0           0           0           0
+Max. coverage	           0          33           0           0           0           0
+Avg. coverage	       0.000      18.505       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 33
+Avg. contig coverage: 18.505
+
+Consensus contains:	A: 6406	C: 3610	G: 3757	T: 6197	N: 1
+			IUPAC: 0	Funny: 0	*: 367
+GC content: 36.890%
+-------------------------------------------------
+Timing BFC cout constats: 19989
+Localtime: Mon Dec 21 11:17:02 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Marking tricky 454 runs in 22 cases.
+
+
+Marked 22 reads.
+Timing BFC edit tricky1: 13443
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 10703
+bfc 11/0
+Editing tricky 454 / Solexa overcalls.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] Performing 454 edits in 1 cases.
+
+
+Edited 1 reads.
+Deleting superfluous gap columns ... done.
+Timing BFC edit tricky2: 13892
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 3 positions.
+Deleting superfluous gap columns ... done.
+Timing BFC edit single discrepancy, no HAF: 9490
+bfc 12/0
+Timing BFC delPSHP: 19
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+Transfering reads to readpool.
+Timing BFC rp transfer: 6086
+Done.
+bfc 17/0
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving CAF ... done.
+Saving MAF ... done.
+Saving FASTA ... done.
+Saving TCS ... done.
+Saving Wiggle ... makeIntelligentConsensus() complete calc
+done.
+Saving ACE ... done.
+done.
+Timing BFC store con: 141931
+Contig coverage analysis ... Timing BFC loop total: 514880
+bfc 1
+Localtime: Mon Dec 21 11:17:02 2015
+
+Timing BFC unused: 1
+Unused: 27
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 0
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 1
+bfc 7/0
+Building new contig 2
+Localtime: Mon Dec 21 11:17:02 2015
+Unused reads: 27
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 1
+Timing n4_basicCSBSSetup init pf_banned: 3
+Timing n4_basicCSBSSetup total: 6
++[1] +aaa+aaaaTiming BFC paf construct: 2422
+bfc 9/0
+
+Contig does not meet requirement of minimum reads per contig.
+Moving 3 reads to debris.
+Timing BFC loop total: 2437
+bfc 1
+Localtime: Mon Dec 21 11:17:02 2015
+
+Timing BFC unused: 1
+Unused: 24
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 1
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 1
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 2
+Localtime: Mon Dec 21 11:17:02 2015
+Unused reads: 24
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 0
+Timing n4_basicCSBSSetup init pf_banned: 0
+Timing n4_basicCSBSSetup total: 1
+Timing n4_searchBestStrongGoodStartEnvironment 1 1 1 1: 4
+Startcache size: 0
+Timing n4_searchBestStrongGoodStartEnvironment 0 0 1 1: 2
+Startcache size: 0
+Timing n4_searchBestStrongGoodStartEnvironment 0 0 0 1: 3
+Startcache size: 2
+Timing n4_searchBestStrongGoodStartEnvironment sort: 0
+Timing n4_searchBestStrongGoodStartEnvironment total: 13
++[1] +++++++Timing BFC paf construct: 1964
+bfc 9/0
+
+
+Finished building.
+Localtime: Mon Dec 21 11:17:02 2015
+Timing BFC analysereadcov: 78
+makeIntelligentConsensus() complete calc
+
+-------------- Contig statistics ----------------
+Contig id: 2
+Contig length: 859
+
+		      Sanger         454      IonTor      PacBio      Solexa       Solid
+Num. reads	           0           8           0           0           0           0
+100% merged reads	   -           -           -           -           0           0
+Avg. read len	           0         498           0           0           0           0
+Max. coverage	           0           8           0           0           0           0
+Avg. coverage	       0.000       4.640       0.000       0.000       0.000       0.000
+
+Max. contig coverage: 8
+Avg. contig coverage: 4.640
+
+Consensus contains:	A: 297	C: 153	G: 144	T: 256	N: 0
+			IUPAC: 0	Funny: 0	*: 9
+GC content: 34.941%
+-------------------------------------------------
+Timing BFC cout constats: 338
+Localtime: Mon Dec 21 11:17:02 2015
+bfc 10/0
+
+Marking tricky 454 / Solexa overcalls in temporary contig.
+
+Searching for tricky 454 overcalls:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Marked 0 reads.
+Timing BFC edit tricky1: 183
+Marking possibly misassembled repeats:  [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] done step 1, starting step 2:done. Found none.
+Timing BFC mark reps: 210
+bfc 11/0
+
+Searching for single discr. without HAF tags:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Edited 0 positions.
+Timing BFC edit single discrepancy, no HAF: 83
+bfc 12/0
+Timing BFC delPSHP: 1
+bfc 13/0
+bfc 14/0
+bfc 15/0
+bfc 16/0
+Transfering reads to readpool.
+Timing BFC rp transfer: 45
+Done.
+bfc 17/0
+bfc 19
+Storing contig ... 10Searching for: SROs UNSs IUPACs, preparing needed data: sorting tags ... makeIntelligentConsensus() complete calc
+fetching consensus for strain0 ...done.
+Starting search:
+done with search
+Transfering tags to readpool.
+Saving CAF ... done.
+Saving MAF ... done.
+Saving FASTA ... done.
+Saving TCS ... done.
+Saving Wiggle ... makeIntelligentConsensus() complete calc
+done.
+Saving ACE ... done.
+done.
+Timing BFC store con: 1935
+Timing BFC loop total: 4883
+bfc 1
+Localtime: Mon Dec 21 11:17:02 2015
+
+Timing BFC unused: 1
+Unused: 16
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC prelim1: 0
+bfc 3
+bfc 4
+bfc 5
+Timing BFC setup AS_used_ids: 0
+bfc 6/0
+Timing BFC discard con: 0
+bfc 7/0
+Building new contig 3
+Localtime: Mon Dec 21 11:17:02 2015
+Unused reads: 16
+bfc 8/0
+assemblymode_mapping: 0
+use genomic pathfinder: 1
+Timing n4_basicCSBSSetup cleararrays: 1
+Timing n4_basicCSBSSetup init pf_banned: 0
+Timing n4_basicCSBSSetup total: 2
++[1] +Timing BFC paf construct: 261
+Triggering additional cluster check.
+Moving small clusters to debris:
+ [0%] ....|.... [10%] ....|.... [20%] ....|.... [30%] ....|.... [40%] ....|.... [50%] ....|.... [60%] ....|.... [70%] ....|.... [80%] ....|.... [90%] ....|.... [100%] 
+Done. 14 reads moved to debris.
+bfc 9/0
+
+Contig does not meet requirement of minimum reads per contig.
+Moving 2 reads to debris.
+Timing BFC loop total: 295
+bfc 1
+Localtime: Mon Dec 21 11:17:02 2015
+
+Timing BFC unused: 0
+Unused: 0
+AS_used_ids.size(): 797
+bfc 2
+Timing BFC loop total: 303
+Saving debris list to file: 302_assembly/302_d_info/302_info_debrislist.txt
+Performing snapshot 6
+Localtime: Mon Dec 21 11:17:02 2015
+Localtime: Mon Dec 21 11:17:02 2015
+
+
+
+
+========================== Memory self assessment ==============================
+Running in 64 bit mode.
+
+Dump from /proc/meminfo
+--------------------------------------------------------------------------------
+MemTotal:        2051684 kB
+MemFree:          222628 kB
+Buffers:          192684 kB
+Cached:           774204 kB
+SwapCached:            0 kB
+Active:          1214768 kB
+Inactive:         474792 kB
+Active(anon):     840148 kB
+Inactive(anon):   110816 kB
+Active(file):     374620 kB
+Inactive(file):   363976 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        722660 kB
+Mapped:           118676 kB
+Shmem:            228292 kB
+Slab:              82308 kB
+SReclaimable:      59956 kB
+SUnreclaim:        22352 kB
+KernelStack:        2608 kB
+PageTables:        23108 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1025840 kB
+Committed_AS:    2900564 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       11160 kB
+VmallocChunk:   34359725132 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       53184 kB
+DirectMap2M:     2043904 kB
+--------------------------------------------------------------------------------
+
+Dump from /proc/self/status
+--------------------------------------------------------------------------------
+Name:	mira
+State:	R (running)
+Tgid:	5700
+Pid:	5700
+PPid:	2594
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	256
+Groups:	4 24 27 30 46 109 124 1000 
+VmPeak:	  359604 kB
+VmSize:	  359540 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	  322804 kB
+VmRSS:	  322600 kB
+VmData:	  354472 kB
+VmStk:	     136 kB
+VmExe:	    4876 kB
+VmLib:	       0 kB
+VmPTE:	     672 kB
+VmSwap:	       0 kB
+Threads:	1
+SigQ:	0/15837
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000000000000
+SigCgt:	0000000180000000
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	ffffffffffffffff
+Cpus_allowed:	1
+Cpus_allowed_list:	0
+Mems_allowed:	00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	205
+nonvoluntary_ctxt_switches:	269
+--------------------------------------------------------------------------------
+
+Information on current assembly object:
+
+AS_readpool: 797 reads.
+AS_contigs: 0 contigs.
+AS_bbcontigs: 0 contigs.
+Mem used for reads: 3523704 (3 MiB)
+
+Memory used in assembly structures:
+                                           Eff. Size   Free cap. LostByAlign
+     AS_writtenskimhitsperid:        797       3 KiB         0 B         4 B
+               AS_skim_edges:          0     253 KiB     253 KiB         0 B
+                 AS_adsfacts:       2651      59 KiB       8 KiB         4 B
+          AS_confirmed_edges:       5302     119 KiB      16 KiB         4 B
+   AS_permanent_overlap_bans:          1        24 B         0 B         0 B
+              AS_readhitmiss:          0        24 B         0 B         0 B
+            AS_readhmcovered:          0        24 B         0 B         0 B
+                AS_count_rhm:          0        24 B         0 B         0 B
+                 AS_clipleft:        797       3 KiB         0 B         4 B
+                AS_clipright:        797       3 KiB         0 B         4 B
+                 AS_used_ids:          0       824 B       797 B         3 B
+              AS_multicopies:        797       824 B         0 B         3 B
+            AS_hasmcoverlaps:          0       824 B       797 B         3 B
+       AS_maxcoveragereached:        797       3 KiB         0 B         4 B
+       AS_coverageperseqtype:          0        24 B         0 B         0 B
+           AS_istroublemaker:        797       824 B         0 B         3 B
+                 AS_isdebris:        797       824 B         0 B         3 B
+          AS_needalloverlaps:        797       872 B        35 B         0 B
+    AS_readsforrepeatresolve:          0        40 B         0 B         0 B
+                AS_allrmbsok:          0        24 B         0 B         0 B
+        AS_probablermbsnotok:          0        24 B         0 B         0 B
+            AS_weakrmbsnotok:          0        24 B         0 B         0 B
+          AS_readmaytakeskim:          0        40 B         0 B         0 B
+               AS_skimstaken:          0        40 B         0 B         0 B
+          AS_numskimoverlaps:          0        24 B         0 B         0 B
+       AS_numleftextendskims:          0        24 B         0 B         0 B
+         AS_rightextendskims:          0        24 B         0 B         0 B
+      AS_skimleftextendratio:          0        24 B         0 B         0 B
+     AS_skimrightextendratio:          0        24 B         0 B         0 B
+             AS_usedtmpfiles:         56       2 KiB         0 B         0 B
+Total: 3985360 (4 MiB)
+
+================================================================================
+Dynamic allocs: 38
+Align allocs: 38
+
+
+End of assembly process, thank you for using MIRA.

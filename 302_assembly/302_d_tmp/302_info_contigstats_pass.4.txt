@@ -1,0 +1,4 @@
+# name              	length	av.qual	#-reads	mx.cov.	av.cov	GC%	CnIUPAC	CnFunny	CnN	CnX	CnGap	CnNoCov
+302_c1              	17073	83	663	33	18.73	37.18	0	0	1	0	320	0
+302_c2              	3306	82	107	24	15.11	35.06	0	0	0	0	47	0
+302_rep_c3          	850	67	8	8	4.64	34.94	0	0	0	0	9	0

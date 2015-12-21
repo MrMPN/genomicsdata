@@ -1,0 +1,1 @@
+mira --project=302 --job=denovo,genome,accurate,454 454_SETTINGS -LR:ft=fasta:mxti=yes
