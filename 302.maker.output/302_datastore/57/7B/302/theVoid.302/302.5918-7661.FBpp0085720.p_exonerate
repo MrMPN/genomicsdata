@@ -1,0 +1,105 @@
+Command line: [/home/genomica/Programs/maker/exe/exonerate/bin/exonerate -q /home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/FBpp0085720.fasta -t /home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/302.5918-7661.fasta -Q protein -T dna -m protein2genome --softmasktarget --percent 20 --showcigar]
+Hostname: [genomica]
+
+C4 Alignment:
+------------
+         Query: FBpp0085720 type=protein; loc=2R:complement(15334965..15336251,15338938..15338994); ID=FBpp0085720; name=betaTub56D-PB; parent=FBgn0003887,FBtr0086536; dbxref=FlyBase:FBpp0085720,FlyBase_Annotation_IDs:CG9277-PB,GB_protein:AAF57555.1,REFSEQ:NP_523795,GB_protein:AAF57555,FlyMine:FBpp0085720,modMine:FBpp0085720; MD5=af532e832c1035fa8fb3355ba120f3d1; length=447; release=r5.48; species=Dmel; 
+        Target: 302 5918 7661:[revcomp]
+         Model: protein2genome:local
+     Raw score: 795
+   Query range: 1 -> 358
+  Target range: 1544 -> 467
+
+    2 : ArgGluIleValHisIleGlnAlaGlyGlnCysGlyAsnGlnIleGlyAlaLysPheTrpGl :   22
+        ||||||  !:!!  !|||!!.!.!||||||..!|||  !|||||||||  !  !! !|||||
+        ArgGluCysIleSerIleHisValGlyGlnAlaGlyValGlnIleGlyAsnAlaCysTrpGl
+ 1544 : CGTGAATGTATCTCTATCCACGTTGGCCAAGCTGGTGTCCAGATTGGTAATGCATGCTGGGA : 1484
+
+   23 : uIleIleSerAspGluHisGlyIleAspAlaThrGlyAlaTyrHisGlyAspSerAspLeu< :   43
+        |:!:  !!!!   ||||||||||||.!. !!  !|||  !   ! !..!|||!.!  !:!! 
+        uLeuTyrCysLeuGluHisGlyIleGlnProAspGlyGlnMetProSerAspLysThrValG
+ 1483 : GCTGTACTGCCTGGAGCATGGTATCCAGCCTGATGGTCAGATGCCCTCTGACAAGACCGTCG : 1421
+
+   44 : -><->GlnLeuGluArgIleAsnValTyrTyrAsnGluAlaSerGlyGlyLysTyrValPro :   61
+                  !!!:  !.!!|||..!!:!!:!!:!|||.!!.!!!.!||||||:!!||||||
+        lyGlyGlyAspAspSerPheAsnThrPhePheSerGluThrGlyAlaGlyLysHisValPro
+ 1420 : GTGGTGGCGATGATTCGTTCAACACCTTCTTCAGCGAGACCGGCGCTGGCAAGCATGTGCCG : 1361
+
+   62 : ArgAlaValLeuValAspLeuGluProGlyThrMetAspSerValArgSerGlyProPheGl :   82
+        |||||||||!!!|||||||||||||||  !..!:!:|||..!||||||!!!||| !!!:! !
+        ArgAlaValPheValAspLeuGluProThrValValAspGluValArgThrGlyThrTyrAr
+ 1360 : CGTGCAGTCTTTGTTGATCTGGAACCCACTGTGGTTGATGAGGTGCGCACTGGCACTTACCG : 1298
+
+   83 : yGlnIlePheArgProAspAsnPheValPheGlyGlnSerGlyAlaGlyAsnAsnTrpAlaL :  103
+        !|||:!:|||!.!|||!!:.!.!!.:!!  !|||:!!..!! !|||!.!||||||!::|||:
+        gGlnLeuPheHisProGluGlnLeuIleThrGlyLysGluAspAlaAlaAsnAsnTyrAlaA
+ 1297 : CCAGCTGTTCCATCCCGAGCAATTGATCACTGGCAAGGAAGATGCCGCCAACAACTACGCTC : 1235
+
+  104 : ysGlyHisTyrThrGluGlyAlaGluLeuValAspSerValLeuAspValValArgLysGlu :  123
+        ::||||||||||||   |||  !|||:!!||||||  !|||||||||  !:!!||||||  !
+        rgGlyHisTyrThrIleGlyLysGluIleValAspLeuValLeuAspArgIleArgLysLeu
+ 1234 : GTGGTCACTATACCATTGGCAAGGAAATTGTCGATCTGGTGCTGGATCGCATCCGCAAGTTG : 1175
+
+  124 : AlaGluSerCysAspCysLeuGlnGlyPheGlnLeuThrHisSerLeuGlyGlyGlyThrGl :  144
+        |||!!:..!|||  ! !!||||||||||||! !:!!  !||||||!!!||||||||||||||
+        AlaAspGlnCysThrGlyLeuGlnGlyPheLeuIlePheHisSerPheGlyGlyGlyThrGl
+ 1174 : GCCGATCAGTGCACTGGTCTCCAGGGCTTCCTGATCTTCCACTCTTTCGGTGGCGGCACTGG : 1112
+
+  145 : ySerGlyMetGlyThrLeuLeuIleSerLysIleArgGluGluTyrProAspArgIleMetA :  165
+        |||||||.!.  !:!!||||||!!:..!::::!:  !! !!!:|||  ! ! !:!  !! ! 
+        ySerGlyPheThrSerLeuLeuMetGluArgLeuSerValAspTyrGlyLysLysSerLysL
+ 1111 : CTCTGGCTTTACATCGCTGCTGATGGAGCGTCTGTCTGTGGATTACGGCAAGAAGTCCAAGC : 1049
+
+  166 : snThrTyrSerValValProSerProLysValSerAspThrValValGluProTyrAsnAla :  185
+            !!:!:!!:!!  !|||:!!|||:!!||||||  !.!!||||||||||||||||||:!!
+        euGluPheAlaIleTyrProAlaProGlnValSerThrAlaValValGluProTyrAsnSer
+ 1048 : TGGAGTTCGCCATCTACCCCGCACCTCAGGTGTCCACTGCTGTCGTTGAGCCCTACAACTCA :  989
+
+  186 : ThrLeuSerValHisGlnLeuValGluAsnThrAspGluThrTyrCysIleAspAsnGluAl :  206
+        ! !|||!!!..!|||  !  !:!!|||:!!:!!|||   .!!!:!   :!!|||||||||||
+        IleLeuThrThrHisThrThrLeuGluHisSerAspCysAlaPheMetValAspAsnGluAl
+  988 : ATTTTGACCACGCACACGACTCTGGAGCACTCTGACTGCGCCTTCATGGTAGATAATGAGGC :  926
+
+  207 : aLeuTyrAspIleCysPheArgThrLeuLysLeuThrThrProThrTyrGlyAspLeuAsnH :  227
+        |:!!||||||||||||  !|||!.!||| ! :!!  !  !|||||||||  !:!!||||||!
+        aIleTyrAspIleCysArgArgAsnLeuAspIleGluArgProThrTyrThrAsnLeuAsnA
+  925 : TATCTACGATATCTGCCGTCGTAACTTGGACATTGAGCGTCCCACATACACCAATCTGAATC :  863
+
+  228 : isLeuValSerLeuThrMetSerGlyValThrThrCysLeuArgPheProGlyGlnLeuAsn :  247
+        .!|||:!!.!!! !! !:!!|||..!:!!|||.!!!  |||||||||  !|||   ||||||
+        rgLeuIleGlyGlnIleValSerSerIleThrAlaSerLeuArgPheAspGlyAlaLeuAsn
+  862 : GTCTGATCGGTCAAATTGTGTCTTCGATCACAGCTTCGCTGCGTTTCGATGGTGCCCTGAAC :  803
+
+  248 : AlaAspLeuArgLysLeuAlaValAsnMetValProPheProArgLeuHisPhePheMetPr :  268
+        !.!||||||! !:!!!!!  !..!|||:!!||||||!:!||||||:!!||||||   :!:  
+        ValAspLeuThrGluPheGlnThrAsnLeuValProTyrProArgIleHisPheProLeuVa
+  802 : GTTGATCTGACTGAATTCCAGACTAACTTGGTGCCCTACCCACGTATCCATTTCCCACTTGT :  740
+
+  269 : oGlyPheAlaProLeuThrSerArgGlySerGlnGlnTyrArgAlaLeuThrValProGluL :  289
+        !  !!:!||||||:!!! !|||  !! !!.!    ! :!!..!  !|||:!!||| !!|||:
+        lThrTyrAlaProValIleSerAlaGluLysAlaTyrHisGluGlnLeuSerValAlaGluI
+  739 : CACCTACGCCCCTGTCATCTCTGCCGAGAAGGCCTACCACGAGCAGCTGTCGGTGGCTGAGA :  677
+
+  290 : euThrGlnGlnMetPheAspAlaLysAsnMetMetAlaAlaCysAspProArgHisGlyArg :  309
+        !!|||.!.  !   |||!!: !!   |||..!|||!.!  !||||||||||||||||||!:!
+        leThrAsnAlaCysPheGluProAlaAsnGlnMetValLysCysAspProArgHisGlyLys
+  676 : TCACCAACGCATGCTTCGAGCCAGCCAACCAGATGGTCAAGTGCGATCCCCGTCACGGCAAG :  617
+
+  310 : TyrLeuThrValAlaAlaIlePheArgGlyArgMetSerMetLysGluValAspGluGlnMe :  330
+        |||:!!.!!  !..!  !:!:!:!||||||  !:!:  !   |||!!:|||:!!!     !!
+        TyrMetAlaCysCysMetLeuTyrArgGlyAspValValProLysAspValAsnAlaAlaIl
+  616 : TACATGGCGTGCTGCATGTTGTACCGTGGTGATGTTGTGCCCAAGGATGTCAACGCCGCCAT :  554
+
+  331 : tLeuAsnIleGlnAsnLysAsnSerSerTyrPheValGluTrpIleProAsnAsnValLysT :  351
+        :  !!.!|||:!!!.!|||..!!!!! ! ! ||||||!!:|||  !|||!.!..! !!|||.
+        eAlaThrIleLysThrLysArgThrIleGlnPheValAspTrpCysProThrGlyPheLysV
+  553 : TGCGACCATCAAGACCAAGCGTACCATTCAGTTCGTGGACTGGTGCCCAACTGGCTTCAAGG :  491
+
+  352 : hrAlaValCysAspIleProPro :  358
+        .!!.!:!!  ! !!   ||||||
+        alGlyIleAsnTyrGlnProPro
+  490 : TTGGCATCAACTACCAGCCACCT :  468
+
+cigar: FBpp0085720 1 358 . 302 1544 467 - 795  M 123 D 6 M 948
+vulgar: FBpp0085720 1 358 . 302 1544 467 - 795 M 41 123 G 0 6 M 316 948
+-- completed exonerate analysis

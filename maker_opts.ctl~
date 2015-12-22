@@ -1,5 +1,5 @@
 #-----Genome (Required for De-Novo Annotation)
-genome=/home/genomica/Data/Group0/Group0/000/000_assembly/000_d_results/000.fasta #genome sequence file in fasta format
+genome=/home/genomica/genomicsdata/302.fa #genome sequence file in fasta format
 organism_type=eukaryotic #eukaryotic or prokaryotic. Default is eukaryotic
 
 #-----Re-annotation Using MAKER Derived GFF3

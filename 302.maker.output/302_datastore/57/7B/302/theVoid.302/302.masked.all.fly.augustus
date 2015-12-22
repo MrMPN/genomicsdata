@@ -1,0 +1,104 @@
+# This output was generated with AUGUSTUS (version 2.5.5).
+# AUGUSTUS is a gene prediction tool for eukaryotes written by Mario Stanke (mario.stanke@uni-greifswald.de)
+# and Oliver Keller (keller@cs.uni-goettingen.de).
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Initialising the parameters ...
+# fly version. Use default transition matrix.
+# Looks like /home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/query.masked.fasta is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 20001, name = 302) -----
+#
+# Constraints/Hints:
+# (none)
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+302	AUGUSTUS	gene	6112	7779	0.71	-	.	g1
+302	AUGUSTUS	transcript	6112	7779	0.71	-	.	g1.t1
+302	AUGUSTUS	stop_codon	6112	6114	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+302	AUGUSTUS	intron	7462	7776	0.96	-	.	transcript_id "g1.t1"; gene_id "g1";
+302	AUGUSTUS	CDS	6112	7461	0.71	-	0	transcript_id "g1.t1"; gene_id "g1";
+302	AUGUSTUS	CDS	7777	7779	0.96	-	0	transcript_id "g1.t1"; gene_id "g1";
+302	AUGUSTUS	start_codon	7777	7779	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+# protein sequence = [MRECISIHVGQAGVQIGNACWELYCLEHGIQPDGQMPSDKTVGGGDDSFNTFFSETGAGKHVPRAVFVDLEPTVVDEV
+# RTGTYRQLFHPEQLITGKEDAANNYARGHYTIGKEIVDLVLDRIRKLADQCTGLQGFLIFHSFGGGTGSGFTSLLMERLSVDYGKKSKLEFAIYPAPQ
+# VSTAVVEPYNSILTTHTTLEHSDCAFMVDNEAIYDICRRNLDIERPTYTNLNRLIGQIVSSITASLRFDGALNVDLTEFQTNLVPYPRIHFPLVTYAP
+# VISAEKAYHEQLSVAEITNACFEPANQMVKCDPRHGKYMACCMLYRGDVVPKDVNAAIATIKTKRTIQFVDWCPTGFKVGINYQPPTVVPGGDLAKVQ
+# RAVCMLSNTTAIAEAWARLDHKFDLMYAKRAFVHWYVGEGMEEGEFSEAREDLAALEKDYEEVGMDSGDGEGEGAEEY]
+# end gene g1
+###
+# start gene g2
+302	AUGUSTUS	gene	9310	11287	0.46	+	.	g2
+302	AUGUSTUS	transcript	9310	11287	0.46	+	.	g2.t1
+302	AUGUSTUS	start_codon	9310	9312	.	+	0	transcript_id "g2.t1"; gene_id "g2";
+302	AUGUSTUS	intron	9349	9411	1	+	.	transcript_id "g2.t1"; gene_id "g2";
+302	AUGUSTUS	intron	9884	9942	1	+	.	transcript_id "g2.t1"; gene_id "g2";
+302	AUGUSTUS	intron	10168	10231	0.74	+	.	transcript_id "g2.t1"; gene_id "g2";
+302	AUGUSTUS	intron	10339	10397	0.67	+	.	transcript_id "g2.t1"; gene_id "g2";
+302	AUGUSTUS	intron	10534	10592	0.64	+	.	transcript_id "g2.t1"; gene_id "g2";
+302	AUGUSTUS	intron	10770	10844	0.79	+	.	transcript_id "g2.t1"; gene_id "g2";
+302	AUGUSTUS	intron	11047	11109	0.97	+	.	transcript_id "g2.t1"; gene_id "g2";
+302	AUGUSTUS	CDS	9310	9348	0.96	+	0	transcript_id "g2.t1"; gene_id "g2";
+302	AUGUSTUS	CDS	9412	9883	0.99	+	0	transcript_id "g2.t1"; gene_id "g2";
+302	AUGUSTUS	CDS	9943	10167	0.95	+	2	transcript_id "g2.t1"; gene_id "g2";
+302	AUGUSTUS	CDS	10232	10338	0.67	+	2	transcript_id "g2.t1"; gene_id "g2";
+302	AUGUSTUS	CDS	10398	10533	0.67	+	0	transcript_id "g2.t1"; gene_id "g2";
+302	AUGUSTUS	CDS	10593	10769	0.71	+	2	transcript_id "g2.t1"; gene_id "g2";
+302	AUGUSTUS	CDS	10845	11046	1	+	2	transcript_id "g2.t1"; gene_id "g2";
+302	AUGUSTUS	CDS	11110	11287	0.73	+	1	transcript_id "g2.t1"; gene_id "g2";
+302	AUGUSTUS	stop_codon	11285	11287	.	+	0	transcript_id "g2.t1"; gene_id "g2";
+# protein sequence = [MAENQQQQKKLLYLNPLTLEASFFLETLEEVNRQDQLQLDPHLTHLLERVVVGIETFLDKKPMYIVPKAAQQVSEEHP
+# NTTDAGGITFVPPNELLKIKRTFNCTACTHRIVGTSINKAVAHLVEQHPNPNPNPHSTHNGNVNEQRPTTTKQEKKRAEVEARTKLNINLPKKVKALA
+# LDDMKDLLRDKYQIADKLKVMPQYDEIEEDLCKLIAPAFAKETVRIYKFGSRITGIGTRSSDLDIFIDIGNSFHLFEHRAGKNTIAKLRVLRGLFLES
+# DDWRIINVIEQARVPIIKTCHLSSGIECDICLNSLGFCNTSLLKYIFETQPLTQYMCIFLKTWMERSRLTEQITTYSMVLMVIYYLQIRQLLPSIALL
+# QQWEFMSAKQFVGPWITNFQQKSLSELGMQHIEVTVPILKEYLKDLLKFYATFNYERNLICPYFGKKHILISRIEKEMPLRYVDYANQNPECALQLRK
+# PMVVQDPIQLNHNVTKAVTKYALQKFIDYCEQTATLLCSSI]
+# end gene g2
+###
+# start gene g3
+302	AUGUSTUS	gene	12696	14372	0.79	+	.	g3
+302	AUGUSTUS	transcript	12696	14372	0.79	+	.	g3.t1
+302	AUGUSTUS	start_codon	12696	12698	.	+	0	transcript_id "g3.t1"; gene_id "g3";
+302	AUGUSTUS	intron	12969	13686	0.99	+	.	transcript_id "g3.t1"; gene_id "g3";
+302	AUGUSTUS	intron	13892	13955	1	+	.	transcript_id "g3.t1"; gene_id "g3";
+302	AUGUSTUS	intron	14154	14214	1	+	.	transcript_id "g3.t1"; gene_id "g3";
+302	AUGUSTUS	CDS	12696	12968	0.79	+	0	transcript_id "g3.t1"; gene_id "g3";
+302	AUGUSTUS	CDS	13687	13891	1	+	0	transcript_id "g3.t1"; gene_id "g3";
+302	AUGUSTUS	CDS	13956	14153	1	+	2	transcript_id "g3.t1"; gene_id "g3";
+302	AUGUSTUS	CDS	14215	14372	1	+	2	transcript_id "g3.t1"; gene_id "g3";
+302	AUGUSTUS	stop_codon	14370	14372	.	+	0	transcript_id "g3.t1"; gene_id "g3";
+# protein sequence = [MVDKIEMSLDDIIKSTRTQKKTQGGRGGPGGTRRSAGQQRFGTGGSRRGGGPGSGSPRKAAPASGAGGVLKGRRGGAG
+# GGSGVIQKPRLARGDVNSAWKHDMYDGPKRNNSAGNSTGPTRLIVGNLDYGVSNTDIKELFNDFGPMKKAAVHYDRSGRSLGTADVIFERRSDALKAI
+# KQYHGVPLDGRPMTIQLAVSDVAALTRPVHADDVKRRVGNAAGSQFKRGGGQVGGGTRRGSFRRPAGAKAAAGGQRRERKAAPTAEELDAELDSYIND
+# MKI]
+# end gene g3
+###
+# start gene g4
+302	AUGUSTUS	gene	15526	15885	0.99	-	.	g4
+302	AUGUSTUS	transcript	15526	15885	0.99	-	.	g4.t1
+302	AUGUSTUS	stop_codon	15526	15528	.	-	0	transcript_id "g4.t1"; gene_id "g4";
+302	AUGUSTUS	CDS	15526	15885	0.99	-	0	transcript_id "g4.t1"; gene_id "g4";
+302	AUGUSTUS	start_codon	15883	15885	.	-	0	transcript_id "g4.t1"; gene_id "g4";
+# protein sequence = [MTSTELKIGLSSSARPSSRVLKPPGGGHTNIFSEPEVSVNAPRPKFNQQNSSNLNACIGSTDANKIVEKLREEAANQK
+# EEPKPAPVSPPKETTNGSKAATNDQSRGRVPPGGYSSGGFW]
+# end gene g4
+###
+# start gene g5
+302	AUGUSTUS	gene	19031	19640	1	-	.	g5
+302	AUGUSTUS	transcript	19031	19640	1	-	.	g5.t1
+302	AUGUSTUS	stop_codon	19031	19033	.	-	0	transcript_id "g5.t1"; gene_id "g5";
+302	AUGUSTUS	intron	19055	19116	1	-	.	transcript_id "g5.t1"; gene_id "g5";
+302	AUGUSTUS	intron	19345	19412	1	-	.	transcript_id "g5.t1"; gene_id "g5";
+302	AUGUSTUS	CDS	19031	19054	1	-	0	transcript_id "g5.t1"; gene_id "g5";
+302	AUGUSTUS	CDS	19117	19344	1	-	0	transcript_id "g5.t1"; gene_id "g5";
+302	AUGUSTUS	CDS	19413	19640	1	-	0	transcript_id "g5.t1"; gene_id "g5";
+302	AUGUSTUS	start_codon	19638	19640	.	-	0	transcript_id "g5.t1"; gene_id "g5";
+# protein sequence = [MADTQAKPAASKAAKAPKTAKAPKAAKAPKAEKAVATETKVSAKKYKRHGRLFAKAVFTGYKRGLRNQHENHAILKIE
+# GARRKEHGQFYVGKRCVYVYKAQTKKCVPQHPDRKTRVRAVWGKVTRIHGNTGSVRARFNRNLPGHAMGHRIRIMLYPSRI]
+# end gene g5
+###
+# command line:
+# /home/genomica/Programs/maker/exe/augustus/bin/augustus --species=fly --UTR=off /home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/query.masked.fasta

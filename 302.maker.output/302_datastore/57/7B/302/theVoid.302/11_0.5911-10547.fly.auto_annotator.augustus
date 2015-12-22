@@ -1,0 +1,47 @@
+# This output was generated with AUGUSTUS (version 2.5.5).
+# AUGUSTUS is a gene prediction tool for eukaryotes written by Mario Stanke (mario.stanke@uni-greifswald.de)
+# and Oliver Keller (keller@cs.uni-goettingen.de).
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# reading in the file /home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/11_0.5911-10547.fly.auto_annotator.xdef.augustus ...
+# Setting 1group1gene for E.
+# Sources of extrinsic information: M P E 
+# Have extrinsic information about 1 sequences (in the specified range). 
+# Initialising the parameters ...
+# fly version. Use default transition matrix.
+# Looks like /home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/11_0.5911-10547.fly.auto_annotator.augustus.fasta is in fasta format.
+# We have hints for 1 sequence and for 1 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 4636, name = 302) -----
+#
+# Constraints/Hints:
+302	PROTEIN	CDSpart	204	1550	0	-	.	grp=p_pieces;src=P "100000;1;0:0"
+# Predicted genes for sequence number 1 on reverse strand
+# start gene g1
+302	AUGUSTUS	gene	201	1868	1	-	.	g1
+302	AUGUSTUS	transcript	201	1868	1	-	.	g1.t1
+302	AUGUSTUS	stop_codon	201	203	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+302	AUGUSTUS	intron	1551	1865	1	-	.	transcript_id "g1.t1"; gene_id "g1";
+302	AUGUSTUS	CDS	201	1550	1	-	0	transcript_id "g1.t1"; gene_id "g1";
+302	AUGUSTUS	CDS	1866	1868	1	-	0	transcript_id "g1.t1"; gene_id "g1";
+302	AUGUSTUS	start_codon	1866	1868	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+# protein sequence = [MRECISIHVGQAGVQIGNACWELYCLEHGIQPDGQMPSDKTVGGGDDSFNTFFSETGAGKHVPRAVFVDLEPTVVDEV
+# RTGTYRQLFHPEQLITGKEDAANNYARGHYTIGKEIVDLVLDRIRKLADQCTGLQGFLIFHSFGGGTGSGFTSLLMERLSVDYGKKSKLEFAIYPAPQ
+# VSTAVVEPYNSILTTHTTLEHSDCAFMVDNEAIYDICRRNLDIERPTYTNLNRLIGQIVSSITASLRFDGALNVDLTEFQTNLVPYPRIHFPLVTYAP
+# VISAEKAYHEQLSVAEITNACFEPANQMVKCDPRHGKYMACCMLYRGDVVPKDVNAAIATIKTKRTIQFVDWCPTGFKVGINYQPPTVVPGGDLAKVQ
+# RAVCMLSNTTAIAEAWARLDHKFDLMYAKRAFVHWYVGEGMEEGEFSEAREDLAALEKDYEEVGMDSGDGEGEGAEEY]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 33.3
+# CDS exons: 1/2
+#      P:   1 
+# CDS introns: 0/1
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 1
+#      P:   1 (p_pieces)
+# incompatible hint groups: 0
+# end gene g1
+###
+# command line:
+# /home/genomica/Programs/maker/exe/augustus/bin/augustus --species=fly --strand=backward --UTR=off --hintsfile=/home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/11_0.5911-10547.fly.auto_annotator.xdef.augustus --extrinsicCfgFile=/home/genomica/Programs/maker/exe/augustus/config/extrinsic/extrinsic.MPE.cfg /home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/11_0.5911-10547.fly.auto_annotator.augustus.fasta

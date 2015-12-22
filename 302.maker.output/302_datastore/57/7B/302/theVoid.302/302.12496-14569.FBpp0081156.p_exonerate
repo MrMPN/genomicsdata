@@ -1,0 +1,95 @@
+Command line: [/home/genomica/Programs/maker/exe/exonerate/bin/exonerate -q /home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/FBpp0081156.fasta -t /home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/302.12496-14569.fasta -Q protein -T dna -m protein2genome --softmasktarget --percent 20 --showcigar]
+Hostname: [genomica]
+
+C4 Alignment:
+------------
+         Query: FBpp0081156 type=protein; loc=3R:complement(2903975..2904129,2904544..2904741,2904976..2905177,2905686..2905931); ID=FBpp0081156; name=Ref1-PA; parent=FBgn0010774,FBtr0081642; dbxref=FlyBase:FBpp0081156,FlyBase_Annotation_IDs:CG1101-PA,GB_protein:AAF54070.1,REFSEQ:NP_651968,GB_protein:AAF54070,FlyMine:FBpp0081156,modMine:FBpp0081156; MD5=a6e9462c9ef48720251002e6880d3a12; length=266; release=r5.48; species=Dmel; 
+        Target: 302 12496 14569
+         Model: protein2genome:local
+     Raw score: 925
+   Query range: 0 -> 266
+  Target range: 200 -> 1874
+
+    1 : MetValAspLysIleGluMetSerLeuAspAspIleIleLysSerThrArgSerGlnLysLy :   21
+        |||||||||||||||||||||||||||||||||||||||||||||||||||!!!||||||||
+        MetValAspLysIleGluMetSerLeuAspAspIleIleLysSerThrArgThrGlnLysLy
+  201 : ATGGTGGATAAAATTGAAATGAGTCTGGATGATATCATTAAATCAACGCGCACACAGAAAAA :  261
+
+   22 : sProGlnAlaAlaArgGlyGlyProGlyGlyAlaArgLysThrGlyGlyGlnGlnArgPheA :   42
+        | !!|||!.!!.!||||||||||||||||||.!!|||::!:!!!.!|||||||||||||||!
+        sThrGlnGlyGlyArgGlyGlyProGlyGlyThrArgArgSerAlaGlyGlnGlnArgPheG
+  262 : AACGCAGGGTGGTCGCGGTGGGCCGGGTGGAACTCGCCGGTCTGCCGGACAACAGCGATTTG :  324
+
+   43 : laGlyGlyAlaArgArgGlyGly{A}  >>>> Target Intron 1 >>>>  {la}Asn :   51
+        .!  !|||!.!  !||| !!|||{|}            30 bp            {||}  !
+        lyThrGlyGlySerArgArgGly{A}++                         ++{la}Ala
+  325 : GTACTGGAGGATCACGCCGTGGA{G}gt.........................ag{CG}GCC :  381
+
+   52 : AlaGlyGlySerProArgLysProGlySerValLeuLysGlyProArgGlyGlyValAlaAl :   72
+         !!!.!.!!.!! !! !!     !  !!.!! !! !:::|||  !  !||||||   !.!::
+        ProAlaSerGlyAlaGlyGlyValLeuLysGlyArgArgGlyGlyAlaGlyGly---GlySe
+  382 : CCCGCTAGTGGTGCCGGCGGTGTGCTTAAAGGTCGCCGCGGTGGTGCTGGCGGA---GGTAG :  441
+
+   73 : aGlyAlaValGlnLysAlaLysPheProArg  >>>> Target Intron 2 >>>>  Gl :   83
+        !|||!.!:!!|||||| !!::!.!! !!|||            718 bp           ||
+        rGlyValIleGlnLysProArgLeuAlaArg++                         ++Gl
+  442 : TGGCGTCATTCAGAAGCCTCGGCTCGCACGGgt.........................agGG : 1192
+
+   84 : yAspValAsnSerAlaTrpLysHisAspMetTyrAspGlyProLysArg<->GlyAlaValG :  103
+        |||||||||||||||||||||||||||||||||||||||||||||||||   ..!::!!.!|
+        yAspValAsnSerAlaTrpLysHisAspMetTyrAspGlyProLysArgAsnAsnSerAlaG
+ 1193 : TGATGTAAACAGCGCTTGGAAGCATGATATGTACGATGGTCCAAAACGAAATAATAGTGCTG : 1255
+
+  104 : lyGlyGlySerGlyProThrArgLeuIleValGlyAsnLeuAspTyrGlyValSerAsnThr :  123
+        ||..!.!!!!!|||||||||||||||||||||||||||||||||||||||||||||||||||
+        lyAsnSerThrGlyProThrArgLeuIleValGlyAsnLeuAspTyrGlyValSerAsnThr
+ 1256 : GCAACAGTACAGGGCCAACACGTTTGATAGTCGGAAATTTGGACTATGGAGTCTCAAATACG : 1315
+
+  124 : AspIleLysGluLeuPheAsnAspPheGlyProIleLysLysAlaAlaValHisTyrAspAr :  144
+        |||||||||||||||||||||||||||||||||!!:||||||||||||||||||||||||||
+        AspIleLysGluLeuPheAsnAspPheGlyProMetLysLysAlaAlaValHisTyrAspAr
+ 1316 : GACATCAAGGAACTATTCAATGACTTTGGCCCAATGAAGAAAGCTGCCGTGCACTATGATCG : 1378
+
+  145 : gSerGlyArgSerLeu{G}  >>>> Target Intron 3 >>>>  {ly}ThrAlaAspV :  154
+        ||||||||||||||||{|}            64 bp            {||}||||||||||
+        gSerGlyArgSerLeu{G}++                         ++{ly}ThrAlaAspV
+ 1379 : GTCAGGACGCTCTTTG{G}gt.........................ag{GC}ACCGCTGATG : 1472
+
+  155 : alIlePheGluArgArgAlaAspAlaLeuLysAlaIleLysGlnTyrHisGlyValProLeu :  174
+        |||||||||||||||||:!!||||||||||||||||||||||||||||||||||||||||||
+        alIlePheGluArgArgSerAspAlaLeuLysAlaIleLysGlnTyrHisGlyValProLeu
+ 1473 : TTATATTCGAGCGTCGGTCTGATGCTCTTAAGGCAATTAAACAATACCATGGTGTACCCCTG : 1532
+
+  175 : AspGlyArgProMetThrIleGlnLeuAlaValSerAspValAlaValLeuThrArgProVa :  195
+        |||||||||||||||||||||||||||||||||||||||||||||!.!||||||||||||||
+        AspGlyArgProMetThrIleGlnLeuAlaValSerAspValAlaAlaLeuThrArgProVa
+ 1533 : GACGGTCGTCCAATGACCATTCAACTTGCCGTATCAGATGTTGCCGCACTCACACGTCCAGT : 1595
+
+  196 : lAlaAlaThrAspValLysArgArgValGlyGlyThrAlaProThrSerPheLysArgGly{ :  216
+        |  !|||  !|||||||||||||||||||||..!.!!|||  !:!!..!||||||||||||{
+        lHisAlaAspAspValLysArgArgValGlyAsnAlaAlaGlySerGlnPheLysArgGly{
+ 1596 : GCATGCCGATGATGTGAAACGTCGTGTGGGCAACGCCGCAGGGTCTCAATTCAAACGGGGT{ : 1658
+
+  217 : G}  >>>> Target Intron 4 >>>>  {ly}GlyGlnAlaGlyGlyThrAlaArgArg :  225
+        |}            61 bp            {||}||||||!.!||||||  !.!!||||||
+        G}++                         ++{ly}GlyGlnValGlyGlyGlyThrArgArg
+ 1659 : G}gt.........................ag{GT}GGCCAGGTTGGTGGCGGAACACGTCGA : 1746
+
+  226 : Gly<->PheLysArgProValGlyGlyLysProAlaAlaGlyGlyGlnArgArgGluArgLy :  245
+        |||   |||:::||||||!.!|||!.!||| !!|||||||||||||||||||||||||||||
+        GlySerPheArgArgProAlaGlyAlaLysAlaAlaAlaGlyGlyGlnArgArgGluArgLy
+ 1747 : GGAAGTTTCCGTCGTCCAGCTGGTGCAAAAGCTGCTGCGGGAGGCCAACGTCGTGAGAGGAA : 1809
+
+  246 : sAlaProProThrAlaGluGluLeuAspAlaGluLeuAspSerTyrIleAsnAspMetLysI :  266
+        |||| !!|||||||||||||||||||||||||||||||||||||||||||||||||||||||
+        sAlaAlaProThrAlaGluGluLeuAspAlaGluLeuAspSerTyrIleAsnAspMetLysI
+ 1810 : AGCGGCTCCAACTGCCGAAGAACTCGATGCTGAATTAGATTCATATATTAATGACATGAAGA : 1872
+
+  267 : le :  266
+        ||
+        le
+ 1873 : TC : 1874
+
+cigar: FBpp0081156 0 266 . 302 200 1874 + 925  M 147 D 31 M 59 I 1 M 36 D 718 M 51 D 3 M 150 D 65 M 197 D 62 M 32 D 3 M 120
+vulgar: FBpp0081156 0 266 . 302 200 1874 + 925 M 49 147 S 0 1 5 0 2 I 0 26 3 0 2 S 1 2 M 19 57 G 1 0 M 12 36 5 0 2 I 0 714 3 0 2 M 17 51 G 0 3 M 50 150 S 0 1 5 0 2 I 0 60 3 0 2 S 1 2 M 65 195 S 0 1 5 0 2 I 0 57 3 0 2 S 1 2 M 10 30 G 0 3 M 40 120
+-- completed exonerate analysis

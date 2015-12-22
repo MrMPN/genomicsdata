@@ -1,0 +1,135 @@
+Command line: [/home/genomica/Programs/maker/exe/exonerate/bin/exonerate -q /home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/FBpp0305518.fasta -t /home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/302.9083-11472.fasta -Q protein -T dna -m protein2genome --softmasktarget --percent 20 --showcigar]
+Hostname: [genomica]
+
+C4 Alignment:
+------------
+         Query: FBpp0305518 type=protein; loc=3R:complement(2909104..2909308,2909412..2909613,2909670..2909846,2909905..2910040,2910097..2910203,2910256..2910489,2910647..2911079,2911136..2911234,2911604..2911702); ID=FBpp0305518; name=CG1091-PC; parent=FBgn0037470,FBtr0333326; dbxref=FlyBase:FBpp0305518,FlyBase_Annotation_IDs:CG1091-PC; MD5=b83191af8d499f2564412df0aad7c2f0; length=563; release=r5.48; species=Dmel; 
+        Target: 302 9083 11472
+         Model: protein2genome:local
+     Raw score: 1238
+   Query range: 129 -> 550
+  Target range: 542 -> 2190
+
+  130 : GlyValAlaPheValGlnProGlnGluLeuGlnThrIleLysArgThrPheSerCysSerSe :  150
+        |||:!!.!!||||||! !|||.!.||||||! !! !|||||||||||||||!:!|||!!!:!
+        GlyIleThrPheValProProAsnGluLeuLeuLysIleLysArgThrPheAsnCysThrAl
+  543 : GGAATAACCTTTGTGCCACCCAATGAGCTGCTGAAAATCAAGAGAACATTCAACTGCACAGC :  603
+
+  151 : rCysSerAsnArgIleValGlyThrThrIleAlaLysAlaValAlaHisLeuSerGluGlnH :  171
+        !|||!!!:!!|||||||||||||||:!!|||  !||||||||||||||||||  !|||||||
+        aCysThrHisArgIleValGlyThrSerIleAsnLysAlaValAlaHisLeuValGluGlnH
+  604 : CTGCACTCATCGTATTGTGGGTACATCAATTAACAAAGCTGTGGCTCACTTAGTCGAGCAGC :  666
+
+  172 : isProLysProAsnProAsnAsnGlnProValGlnProHisProThrHisGlnThrLysGln :  191
+        |||||!!.||||||||||||  !!!. !!..!!!.  !  !  !..!:!!:!!  !::!! !
+        isProAsnProAsnProAsnProHisSerThrHisAsnGlyAsnValAsnGluGlnArgPro
+  667 : ACCCGAATCCAAATCCGAATCCTCATTCCACACATAATGGCAACGTCAATGAACAGCGACCG :  726
+
+  192 : GluLysLysGlnAlaGlnValLysAlaArgGlnHisIleThrValArgLeuProLysLys   :  212
+          !!  ! !:!!   |||! !|||  !|||   .!.:!!  !!.!|||  !  !  !!!.  
+        ThrThrThrLys---GlnGluLysLysArgAlaGluValGluAlaArgThrLysLeuAsn-+
+  727 : ACGACTACAAAA---CAAGAGAAAAAACGAGCCGAAGTTGAAGCACGCACTAAATTGAACat :  786
+
+  213 : >>>> Target Intron 1 >>>>  AlaArgAlaMetIleValGlyGluIleThrAsnVa :  223
+                  77 bp            !.!!:!|||:!!  !:!!! !!!:!!:! !:!!:!
+                                 ++ValLysAlaLeuAlaLeuAspAspMetLysAspLe
+  787 : .........................agGTGAAGGCGTTGGCATTGGATGACATGAAAGATTT :  896
+
+  224 : lPheLysAspLysTyrProIleAlaAspLysLeuLysValIleProGluTyrAspValIleG :  244
+        !.!!:::|||||||||! !|||||||||||||||||||||!!:|||:!!||||||! !||||
+        uLeuArgAspLysTyrGlnIleAlaAspLysLeuLysValMetProGlnTyrAspGluIleG
+  897 : GCTTCGCGATAAATATCAAATTGCGGATAAATTAAAAGTAATGCCACAGTATGATGAGATTG :  959
+
+  245 : luGlnAspLeuCysLysLeuLeuSerProGlyPheProLysGlnProLeuArgValTyrLys :  264
+        ||:!!|||||||||||||||:!!:!!|||!.!||| !!|||:!! !!:!!|||:!!||||||
+        luGluAspLeuCysLysLeuIleAlaProAlaPheAlaLysGluThrValArgIleTyrLys
+  960 : AGGAAGATTTATGTAAGCTCATAGCGCCTGCTTTTGCCAAAGAGACTGTTCGAATATATAAA : 1019
+
+  265 : PheGlySerArgIleThrGlyIleGlyAsnArgSerSerAspLeuAspLeuPheValAspIl :  285
+        |||||||||||||||||||||||||||!.!||||||||||||||||||:!!|||:!!|||||
+        PheGlySerArgIleThrGlyIleGlyThrArgSerSerAspLeuAspIlePheIleAspIl
+ 1020 : TTCGGATCACGGATAACGGGCATTGGAACCCGCTCATCAGATTTGGATATATTTATCGACAT : 1082
+
+  286 : e{G}  >>>> Target Intron 2 >>>>  {ly}LysSerGlyAsnThrPheHisThrP :  295
+        |{|}            64 bp            {||}         |||!:!||||||  !|
+        e{G}++                         ++{ly}---------AsnSerPheHisLeuP
+ 1083 : T{G}gt.........................ag{GC}---------AACAGTTTTCACCTCT : 1167
+
+  296 : heGluHisArgAlaSerAsnAlaThrValAlaLysLeuArgAlaMetArgLysPhePheCys :  315
+        ||||||||||||||.!!!!.  !|||:!!||||||||||||!.!:!!|||  !!!.|||  !
+        heGluHisArgAlaGlyLysAsnThrIleAlaLysLeuArgValLeuArgGlyLeuPheLeu
+ 1168 : TTGAGCACCGAGCTGGCAAGAATACCATTGCTAAGCTTCGAGTATTGCGTGGATTGTTCCTT : 1227
+
+  316 : AspSerGluAspTrpArgLeuIleAsn  >>>> Target Intron 3 >>>>  PheIle :  326
+        !!:|||!!:|||||||||:!!||||||            59 bp             !!|||
+        GluSerAspAspTrpArgIleIleAsn++                         ++ValIle
+ 1228 : GAAAGCGATGACTGGCGTATCATCAATgt.........................agGTCATT : 1319
+
+  327 : GluGlnAlaArgValProIleIleLysThrCysHisLeuProThrGlyIleGluCysAspIl :  347
+        ||||||||||||||||||||||||||||||||||||||| !!:!!|||||||||||||||||
+        GluGlnAlaArgValProIleIleLysThrCysHisLeuSerSerGlyIleGluCysAspIl
+ 1320 : GAACAGGCGCGCGTGCCCATTATTAAAACATGTCATCTGTCATCGGGTATAGAGTGTGATAT : 1382
+
+  348 : eCysLeuAsnSerMetGlyPheCysAsnThrAsnLeuLeuLysTyrIlePheGluSerGlnP :  368
+        |||||||||||||:!!|||||||||||||||:::|||||||||||||||||||||!!!||||
+        eCysLeuAsnSerLeuGlyPheCysAsnThrSerLeuLeuLysTyrIlePheGluThrGlnP
+ 1383 : ATGCTTAAATAGCTTGGGTTTTTGCAACACATCGTTACTCAAATATATATTTGAGACGCAGC : 1445
+
+  369 : roLeu{T}  >>>> Target Intron 4 >>>>  {hr}GlnTyrMetCysIleTyrVal :  377
+        |||||{|}            59 bp            {||}|||||||||||||||!:!:!!
+        roLeu{T}++                         ++{hr}GlnTyrMetCysIlePheLeu
+ 1446 : CATTA{A}gt.........................ag{CC}CAGTATATGTGCATTTTCTTG : 1531
+
+  378 : LysAsnTrpLeuGluArgCysLysLeuThrGluGlnIleSerThrTyrSerIleThrLeuMe :  398
+        |||!.!|||:!!|||||| !!!:!|||||||||||||||!!!|||||||||!!:..!|||||
+        LysThrTrpMetGluArgSerArgLeuThrGluGlnIleThrThrTyrSerMetValLeuMe
+ 1532 : AAAACCTGGATGGAGCGCAGCAGGCTGACAGAGCAAATAACTACATATAGCATGGTCCTAAT : 1594
+
+  399 : tValIleTyrPheLeuGlnLeuGlnAlaLeuLeuProProIleAlaMetLeuGlnIleGluA :  419
+        ||||||||||!:!||||||:!!::!  !||||||||| !!||||||:!:||||||     !!
+        tValIleTyrTyrLeuGlnIleArgGlnLeuLeuProSerIleAlaLeuLeuGlnGlnTrpG
+ 1595 : GGTTATTTACTATTTGCAAATTAGACAACTGCTGCCATCGATTGCATTACTACAGCAGTGGG : 1657
+
+  420 : spAlaAlaAsnGlnAlaValLeuValGly{P}  >>>> Target Intron 5 >>>>  { :  429
+        !:  !  !::!  !  !  !!!!||||||{|}            75 bp            {
+        luPheMetSerAlaLysGlnPheValGly{P}++                         ++{
+ 1658 : AATTTATGTCTGCGAAGCAGTTCGTGGGA{C}gt.........................ag{ : 1763
+
+  430 : ro}TrpValValAsnPheAlaGlnLysSerPheSerGluLeuGlyLeuGlnGlnLeuLysAl :  449
+        ||}|||:!!..!||||||  !|||||||||.!!||||||||||||:!!|||!!.:!!:!!!.
+        ro}TrpIleThrAsnPheGlnGlnLysSerLeuSerGluLeuGlyMetGlnHisIleGluVa
+ 1764 : CT}TGGATTACGAACTTTCAACAGAAGTCACTCAGTGAATTGGGAATGCAGCATATAGAGGT : 1822
+
+  450 : aThrValProValIleLysGlyPheLeuArgAsnPhePheAlaTyrPheAlaLysPheAspT :  470
+        !|||||||||:!!:!!|||! !!:!|||!:!:!!.!.!!.  !!:!!:!|||!  |||:!!|
+        lThrValProIleLeuLysGluTyrLeuLysAspLeuLeuLysPheTyrAlaThrPheAsnT
+ 1823 : CACCGTCCCCATACTCAAAGAATATTTGAAGGATCTATTAAAGTTCTATGCAACTTTTAACT : 1885
+
+  471 : yrGluHisPheLeuValCysProTyrIleGlyGlnAlaAsnValGluIleAlaLysIleGlu :  490
+        |||||!..  !|||:!!|||||||||.!!|||:!!  !:!!:!!   |||:!!:::||||||
+        yrGluArgAsnLeuIleCysProTyrPheGlyLysLysHisIleLeuIleSerArgIleGlu
+ 1886 : ATGAACGGAACCTGATTTGCCCATATTTTGGCAAGAAACATATTCTTATTTCGCGTATCGAG : 1945
+
+  491 : ArgMetLeuHisAla{Ar}  >>>> Target Intron 6 >>>>  {g}TyrSerAlaTy :  500
+        !:!  !:!!!    !{||}            63 bp            {|}|||  !! !||
+        LysGluMetProLeu{Ar}++                         ++{g}TyrValAspTy
+ 1946 : AAAGAGATGCCGCTA{AG}gt.........................ag{G}TATGTGGATTA : 2038
+
+  501 : rValSerAspAsnProGluCysSerIleGlnLeuLysLysProMetValValGlnAspProI :  521
+        |!.!!:!.!.||||||||||||:!!:!!||||||::!|||||||||||||||||||||||||
+        rAlaAsnGlnAsnProGluCysAlaLeuGlnLeuArgLysProMetValValGlnAspProI
+ 2039 : TGCAAATCAAAATCCGGAGTGTGCATTACAACTTCGGAAGCCAATGGTTGTTCAAGATCCCA : 2101
+
+  522 : leGlnLeuAsnHisAsnValThrLysAlaValThrLysTyrGlyLeuGlnThrPheValAsp :  541
+        |||||||||||||||||||||||||||||||||||||||||!.!||||||! !|||:!!|||
+        leGlnLeuAsnHisAsnValThrLysAlaValThrLysTyrAlaLeuGlnLysPheIleAsp
+ 2102 : TACAATTAAATCATAATGTGACGAAGGCGGTGACGAAATATGCATTACAAAAATTTATTGAC : 2161
+
+  542 : TyrCysGlnGlnThrAlaGluLeuLeu :  550
+        ||||||:!!|||||||||  !||||||
+        TyrCysGluGlnThrAlaThrLeuLeu
+ 2162 : TACTGTGAGCAAACGGCGACGTTGCTT : 2190
+
+cigar: FBpp0305518 129 550 . 302 542 2190 + 1238  M 198 I 1 M 45 D 77 M 222 D 65 M 2 I 3 M 105 D 59 M 135 D 60 M 176 D 76 M 200 D 65 M 163
+vulgar: FBpp0305518 129 550 . 302 542 2190 + 1238 M 66 198 G 1 0 M 15 45 5 0 2 I 0 73 3 0 2 M 74 222 S 0 1 5 0 2 I 0 60 3 0 2 S 1 2 G 3 0 M 35 105 5 0 2 I 0 55 3 0 2 M 45 135 S 0 1 5 0 2 I 0 55 3 0 2 S 1 2 M 58 174 S 0 1 5 0 2 I 0 71 3 0 2 S 1 2 M 66 198 S 0 2 5 0 2 I 0 59 3 0 2 S 1 1 M 54 162
+-- completed exonerate analysis

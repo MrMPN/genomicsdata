@@ -1,0 +1,45 @@
+Command line: [/home/genomica/Programs/maker/exe/exonerate/bin/exonerate -q /home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/FBpp0306729.fasta -t /home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/302.15329-16085.fasta -Q protein -T dna -m protein2genome --softmasktarget --percent 20 --showcigar]
+Hostname: [genomica]
+
+C4 Alignment:
+------------
+         Query: FBpp0306729 type=protein; loc=3R:2902641..2902997; ID=FBpp0306729; name=CG1943-PD; parent=FBgn0037468,FBtr0334668; dbxref=FlyBase:FBpp0306729,FlyBase_Annotation_IDs:CG1943-PD; MD5=21bc4742360fff6556df4e57ac7c3f5d; length=118; release=r5.48; species=Dmel; 
+        Target: 302 15329 16085:[revcomp]
+         Model: protein2genome:local
+     Raw score: 472
+   Query range: 0 -> 118
+  Target range: 557 -> 200
+
+   1 : MetThrSerThrGluLeuLysIleGlyLeuThrThrSerAlaArgProSerSerArgValLeuL :  22
+       ||||||||||||||||||||||||||||||!:!!:!||||||||||||||||||||||||||||
+       MetThrSerThrGluLeuLysIleGlyLeuSerSerSerAlaArgProSerSerArgValLeuL
+ 557 : ATGACATCCACCGAATTGAAAATTGGCTTGAGTAGCAGTGCTCGTCCTTCCAGTCGAGTACTCA : 494
+
+  23 : ysProProGlyGlyGlyHisThrAsnIlePheSerGluProAspValAlaValProAlaProAr :  43
+       |||||||||||||||||||||||||||||||||||||||||!!:|||:!!|||  !||||||||
+       ysProProGlyGlyGlyHisThrAsnIlePheSerGluProGluValSerValAsnAlaProAr
+ 493 : AGCCCCCTGGTGGTGGACACACCAACATCTTTTCAGAACCTGAAGTGTCAGTGAATGCCCCACG : 431
+
+  44 : gAlaLysTyrAsnGlnGlnAsnSerSerAsnLeuAsnAlaCysMetGlySerThrAspProAsn :  64
+       | !!|||!:!|||||||||||||||||||||||||||||||||!!:|||||||||||| !!|||
+       gProLysPheAsnGlnGlnAsnSerSerAsnLeuAsnAlaCysIleGlySerThrAspAlaAsn
+ 430 : TCCCAAATTCAATCAGCAAAACTCATCCAATTTAAATGCTTGCATTGGATCGACCGATGCCAAT : 368
+
+  65 : LysValValGluLysIleArgGluGluValSerIleGlnLysGluGluAlaLysSerAlaProP :  86
+       |||:!!|||||||||:!!|||||||||!.!:!!! !|||||||||||| !!||| !!|||||| 
+       LysIleValGluLysLeuArgGluGluAlaAlaAsnGlnLysGluGluProLysProAlaProV
+ 367 : AAGATAGTGGAGAAGCTACGTGAGGAGGCAGCCAATCAAAAAGAGGAGCCAAAACCAGCACCCG : 302
+
+  87 : roSerGlnProLysGluProAlaAsn<->LysProAlaAlaThrAsnGlyGluAlaArgGlyAr : 106
+        !|||! !||||||||| !!.!!|||   !..  !||||||||||||! !:!!:!!||||||||
+       alSerProProLysGluThrThrAsnGlySerLysAlaAlaThrAsnAspGlnSerArgGlyAr
+ 301 : TTAGCCCGCCCAAAGAGACCACCAATGGCAGCAAGGCAGCGACAAATGATCAGTCGCGCGGACG : 239
+
+ 107 : gValProProGlyGlyPheSerSerGlyGlyPheTrp : 118
+       ||||||||||||||||!:!||||||||||||||||||
+       gValProProGlyGlyTyrSerSerGlyGlyPheTrp
+ 238 : GGTTCCTCCCGGTGGTTACTCTTCGGGCGGTTTCTGG : 201
+
+cigar: FBpp0306729 0 118 . 302 557 200 - 472  M 282 D 3 M 72
+vulgar: FBpp0306729 0 118 . 302 557 200 - 472 M 94 282 G 0 3 M 24 72
+-- completed exonerate analysis

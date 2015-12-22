@@ -1,0 +1,601 @@
+##gff-version 3
+302	.	contig	1	20001	.	.	.	ID=302;Name=302;
+302	repeatmasker	match	18458	18541	225	+	.	ID=302:hit:0;Name=species:%28TTATA%29n%20genus:Simple_repeat;Target=species:%28TTATA%29n%20genus:Simple_repeat 5 90 +;
+302	repeatmasker	match_part	18458	18541	225	+	.	ID=302:hsp:0;Parent=302:hit:0;Name=species:%2528TTATA%2529n%2520genus:Simple_repeat;Target=species:%2528TTATA%2529n%2520genus:Simple_repeat 5 90 +;
+302	repeatmasker	match	3474	3533	25	+	.	ID=302:hit:1;Name=species:AT_rich%20genus:Low_complexity;Target=species:AT_rich%20genus:Low_complexity 1 60 +;
+302	repeatmasker	match_part	3474	3533	25	+	.	ID=302:hsp:1;Parent=302:hit:1;Name=species:AT_rich%2520genus:Low_complexity;Target=species:AT_rich%2520genus:Low_complexity 1 60 +;
+302	repeatmasker	match	4431	4526	26	+	.	ID=302:hit:2;Name=species:AT_rich%20genus:Low_complexity;Target=species:AT_rich%20genus:Low_complexity 1 96 +;
+302	repeatmasker	match_part	4431	4526	26	+	.	ID=302:hsp:2;Parent=302:hit:2;Name=species:AT_rich%2520genus:Low_complexity;Target=species:AT_rich%2520genus:Low_complexity 1 96 +;
+302	repeatmasker	match	7481	7501	21	+	.	ID=302:hit:3;Name=species:AT_rich%20genus:Low_complexity;Target=species:AT_rich%20genus:Low_complexity 1 21 +;
+302	repeatmasker	match_part	7481	7501	21	+	.	ID=302:hsp:3;Parent=302:hit:3;Name=species:AT_rich%2520genus:Low_complexity;Target=species:AT_rich%2520genus:Low_complexity 1 21 +;
+302	repeatmasker	match	8094	8116	23	+	.	ID=302:hit:4;Name=species:AT_rich%20genus:Low_complexity;Target=species:AT_rich%20genus:Low_complexity 1 23 +;
+302	repeatmasker	match_part	8094	8116	23	+	.	ID=302:hsp:4;Parent=302:hit:4;Name=species:AT_rich%2520genus:Low_complexity;Target=species:AT_rich%2520genus:Low_complexity 1 23 +;
+302	repeatmasker	match	8200	8244	24	+	.	ID=302:hit:5;Name=species:AT_rich%20genus:Low_complexity;Target=species:AT_rich%20genus:Low_complexity 1 45 +;
+302	repeatmasker	match_part	8200	8244	24	+	.	ID=302:hsp:5;Parent=302:hit:5;Name=species:AT_rich%2520genus:Low_complexity;Target=species:AT_rich%2520genus:Low_complexity 1 45 +;
+302	repeatmasker	match	8210	8251	28	+	.	ID=302:hit:6;Name=species:AT_rich%20genus:Low_complexity;Target=species:AT_rich%20genus:Low_complexity 1 42 +;
+302	repeatmasker	match_part	8210	8251	28	+	.	ID=302:hsp:6;Parent=302:hit:6;Name=species:AT_rich%2520genus:Low_complexity;Target=species:AT_rich%2520genus:Low_complexity 1 42 +;
+302	repeatmasker	match	8598	8622	25	+	.	ID=302:hit:7;Name=species:AT_rich%20genus:Low_complexity;Target=species:AT_rich%20genus:Low_complexity 1 25 +;
+302	repeatmasker	match_part	8598	8622	25	+	.	ID=302:hsp:7;Parent=302:hit:7;Name=species:AT_rich%2520genus:Low_complexity;Target=species:AT_rich%2520genus:Low_complexity 1 25 +;
+302	repeatmasker	match	8947	8969	23	+	.	ID=302:hit:8;Name=species:AT_rich%20genus:Low_complexity;Target=species:AT_rich%20genus:Low_complexity 1 23 +;
+302	repeatmasker	match_part	8947	8969	23	+	.	ID=302:hsp:8;Parent=302:hit:8;Name=species:AT_rich%2520genus:Low_complexity;Target=species:AT_rich%2520genus:Low_complexity 1 23 +;
+302	repeatmasker	match	11780	11815	22	+	.	ID=302:hit:9;Name=species:AT_rich%20genus:Low_complexity;Target=species:AT_rich%20genus:Low_complexity 1 36 +;
+302	repeatmasker	match_part	11780	11815	22	+	.	ID=302:hsp:9;Parent=302:hit:9;Name=species:AT_rich%2520genus:Low_complexity;Target=species:AT_rich%2520genus:Low_complexity 1 36 +;
+302	repeatmasker	match	13240	13277	31	+	.	ID=302:hit:10;Name=species:AT_rich%20genus:Low_complexity;Target=species:AT_rich%20genus:Low_complexity 1 38 +;
+302	repeatmasker	match_part	13240	13277	31	+	.	ID=302:hsp:10;Parent=302:hit:10;Name=species:AT_rich%2520genus:Low_complexity;Target=species:AT_rich%2520genus:Low_complexity 1 38 +;
+302	repeatmasker	match	17131	17153	23	+	.	ID=302:hit:11;Name=species:AT_rich%20genus:Low_complexity;Target=species:AT_rich%20genus:Low_complexity 1 23 +;
+302	repeatmasker	match_part	17131	17153	23	+	.	ID=302:hsp:11;Parent=302:hit:11;Name=species:AT_rich%2520genus:Low_complexity;Target=species:AT_rich%2520genus:Low_complexity 1 23 +;
+302	repeatmasker	match	18598	18719	31	+	.	ID=302:hit:12;Name=species:AT_rich%20genus:Low_complexity;Target=species:AT_rich%20genus:Low_complexity 1 122 +;
+302	repeatmasker	match_part	18598	18719	31	+	.	ID=302:hsp:12;Parent=302:hit:12;Name=species:AT_rich%2520genus:Low_complexity;Target=species:AT_rich%2520genus:Low_complexity 1 122 +;
+302	repeatmasker	match	16623	16648	234	+	.	ID=302:hit:13;Name=species:%28T%29n%20genus:Simple_repeat;Target=species:%28T%29n%20genus:Simple_repeat 1 26 +;
+302	repeatmasker	match_part	16623	16648	234	+	.	ID=302:hsp:13;Parent=302:hit:13;Name=species:%2528T%2529n%2520genus:Simple_repeat;Target=species:%2528T%2529n%2520genus:Simple_repeat 1 26 +;
+302	repeatmasker	match	4980	5056	261	+	.	ID=302:hit:14;Name=species:%28CATA%29n%20genus:Simple_repeat;Target=species:%28CATA%29n%20genus:Simple_repeat 2 78 +;
+302	repeatmasker	match_part	4980	5056	261	+	.	ID=302:hsp:14;Parent=302:hit:14;Name=species:%2528CATA%2529n%2520genus:Simple_repeat;Target=species:%2528CATA%2529n%2520genus:Simple_repeat 2 78 +;
+302	repeatmasker	match	5131	5199	253	+	.	ID=302:hit:15;Name=species:%28CATA%29n%20genus:Simple_repeat;Target=species:%28CATA%29n%20genus:Simple_repeat 3 68 +;
+302	repeatmasker	match_part	5131	5199	253	+	.	ID=302:hsp:15;Parent=302:hit:15;Name=species:%2528CATA%2529n%2520genus:Simple_repeat;Target=species:%2528CATA%2529n%2520genus:Simple_repeat 3 68 +;
+302	repeatmasker	match	16317	16350	210	+	.	ID=302:hit:16;Name=species:%28CATA%29n%20genus:Simple_repeat;Target=species:%28CATA%29n%20genus:Simple_repeat 2 35 +;
+302	repeatmasker	match_part	16317	16350	210	+	.	ID=302:hsp:16;Parent=302:hit:16;Name=species:%2528CATA%2529n%2520genus:Simple_repeat;Target=species:%2528CATA%2529n%2520genus:Simple_repeat 2 35 +;
+302	repeatmasker	match	17908	17974	227	+	.	ID=302:hit:17;Name=species:%28CATA%29n%20genus:Simple_repeat;Target=species:%28CATA%29n%20genus:Simple_repeat 1 70 +;
+302	repeatmasker	match_part	17908	17974	227	+	.	ID=302:hsp:17;Parent=302:hit:17;Name=species:%2528CATA%2529n%2520genus:Simple_repeat;Target=species:%2528CATA%2529n%2520genus:Simple_repeat 1 70 +;
+302	repeatmasker	match	2386	2519	271	+	.	ID=302:hit:18;Name=species:%28CATATA%29n%20genus:Simple_repeat;Target=species:%28CATATA%29n%20genus:Simple_repeat 2 132 +;
+302	repeatmasker	match_part	2386	2519	271	+	.	ID=302:hsp:18;Parent=302:hit:18;Name=species:%2528CATATA%2529n%2520genus:Simple_repeat;Target=species:%2528CATATA%2529n%2520genus:Simple_repeat 2 132 +;
+302	repeatmasker	match	9026	9113	263	+	.	ID=302:hit:19;Name=species:%28TATATG%29n%20genus:Simple_repeat;Target=species:%28TATATG%29n%20genus:Simple_repeat 6 89 +;
+302	repeatmasker	match_part	9026	9113	263	+	.	ID=302:hsp:19;Parent=302:hit:19;Name=species:%2528TATATG%2529n%2520genus:Simple_repeat;Target=species:%2528TATATG%2529n%2520genus:Simple_repeat 6 89 +;
+302	repeatmasker	match	5980	6023	206	+	.	ID=302:hit:20;Name=species:%28TTTTC%29n%20genus:Simple_repeat;Target=species:%28TTTTC%29n%20genus:Simple_repeat 2 44 +;
+302	repeatmasker	match_part	5980	6023	206	+	.	ID=302:hsp:20;Parent=302:hit:20;Name=species:%2528TTTTC%2529n%2520genus:Simple_repeat;Target=species:%2528TTTTC%2529n%2520genus:Simple_repeat 2 44 +;
+302	repeatmasker	match	781	803	207	+	.	ID=302:hit:21;Name=species:%28CATTT%29n%20genus:Simple_repeat;Target=species:%28CATTT%29n%20genus:Simple_repeat 2 24 +;
+302	repeatmasker	match_part	781	803	207	+	.	ID=302:hsp:21;Parent=302:hit:21;Name=species:%2528CATTT%2529n%2520genus:Simple_repeat;Target=species:%2528CATTT%2529n%2520genus:Simple_repeat 2 24 +;
+302	repeatmasker	match	4670	4813	233	+	.	ID=302:hit:22;Name=species:%28TATG%29n%20genus:Simple_repeat;Target=species:%28TATG%29n%20genus:Simple_repeat 1 136 +;
+302	repeatmasker	match_part	4670	4813	233	+	.	ID=302:hsp:22;Parent=302:hit:22;Name=species:%2528TATG%2529n%2520genus:Simple_repeat;Target=species:%2528TATG%2529n%2520genus:Simple_repeat 1 136 +;
+302	repeatmasker	match	8648	8690	237	+	.	ID=302:hit:23;Name=species:%28TATG%29n%20genus:Simple_repeat;Target=species:%28TATG%29n%20genus:Simple_repeat 2 44 +;
+302	repeatmasker	match_part	8648	8690	237	+	.	ID=302:hsp:23;Parent=302:hit:23;Name=species:%2528TATG%2529n%2520genus:Simple_repeat;Target=species:%2528TATG%2529n%2520genus:Simple_repeat 2 44 +;
+302	repeatmasker	match	804	2050	4440	+	.	ID=302:hit:24;Name=species:Hovi2%20genus:DNA%2FhAT-hobo;Target=species:Hovi2%20genus:DNA%2FhAT-hobo 1246 2421 +;
+302	repeatmasker	match_part	804	2050	4440	+	.	ID=302:hsp:24;Parent=302:hit:24;Name=species:Hovi2%2520genus:DNA%252FhAT-hobo;Target=species:Hovi2%2520genus:DNA%252FhAT-hobo 1246 2421 +;
+302	repeatmasker	match	2735	2801	284	+	.	ID=302:hit:25;Name=species:hAT-2_DSe%20genus:DNA%2FhAT-Ac;Target=species:hAT-2_DSe%20genus:DNA%2FhAT-Ac 1 68 +;
+302	repeatmasker	match_part	2735	2801	284	+	.	ID=302:hsp:25;Parent=302:hit:25;Name=species:hAT-2_DSe%2520genus:DNA%252FhAT-Ac;Target=species:hAT-2_DSe%2520genus:DNA%252FhAT-Ac 1 68 +;
+302	repeatmasker	match	3091	3435	452	+	.	ID=302:hit:26;Name=species:Homo8%20genus:DNA%2FhAT-Ac;Target=species:Homo8%20genus:DNA%2FhAT-Ac 689 1033 +;
+302	repeatmasker	match_part	3091	3435	452	+	.	ID=302:hsp:26;Parent=302:hit:26;Name=species:Homo8%2520genus:DNA%252FhAT-Ac;Target=species:Homo8%2520genus:DNA%252FhAT-Ac 689 1033 +;
+302	repeatmasker	match	3539	3628	382	+	.	ID=302:hit:27;Name=species:Hoana6%20genus:DNA%2FhAT-Ac;Target=species:Hoana6%20genus:DNA%2FhAT-Ac 2503 2594 +;
+302	repeatmasker	match_part	3539	3628	382	+	.	ID=302:hsp:27;Parent=302:hit:27;Name=species:Hoana6%2520genus:DNA%252FhAT-Ac;Target=species:Hoana6%2520genus:DNA%252FhAT-Ac 2503 2594 +;
+302	repeatmasker	match	3876	4220	452	+	.	ID=302:hit:28;Name=species:Homo8%20genus:DNA%2FhAT-Ac;Target=species:Homo8%20genus:DNA%2FhAT-Ac 689 1033 +;
+302	repeatmasker	match_part	3876	4220	452	+	.	ID=302:hsp:28;Parent=302:hit:28;Name=species:Homo8%2520genus:DNA%252FhAT-Ac;Target=species:Homo8%2520genus:DNA%252FhAT-Ac 689 1033 +;
+302	repeatmasker	match	4532	4621	382	+	.	ID=302:hit:29;Name=species:Hoana6%20genus:DNA%2FhAT-Ac;Target=species:Hoana6%20genus:DNA%2FhAT-Ac 2503 2594 +;
+302	repeatmasker	match_part	4532	4621	382	+	.	ID=302:hsp:29;Parent=302:hit:29;Name=species:Hoana6%2520genus:DNA%252FhAT-Ac;Target=species:Hoana6%2520genus:DNA%252FhAT-Ac 2503 2594 +;
+302	repeatmasker	match	5392	5458	225	+	.	ID=302:hit:30;Name=species:Galileo_DM%20genus:DNA%2FP;Target=species:Galileo_DM%20genus:DNA%2FP 4785 4863 +;
+302	repeatmasker	match_part	5392	5458	225	+	.	ID=302:hsp:30;Parent=302:hit:30;Name=species:Galileo_DM%2520genus:DNA%252FP;Target=species:Galileo_DM%2520genus:DNA%252FP 4785 4863 +;
+302	repeatmasker	match	9031	9123	230	+	.	ID=302:hit:31;Name=species:Galileo_DM%20genus:DNA%2FP;Target=species:Galileo_DM%20genus:DNA%2FP 4722 4801 +;
+302	repeatmasker	match_part	9031	9123	230	+	.	ID=302:hsp:31;Parent=302:hit:31;Name=species:Galileo_DM%2520genus:DNA%252FP;Target=species:Galileo_DM%2520genus:DNA%252FP 4722 4801 +;
+302	maker	gene	12696	14372	.	+	.	ID=maker-302-augustus-gene-0.10;Name=maker-302-augustus-gene-0.10;
+302	maker	mRNA	12696	14372	.	+	.	ID=maker-302-augustus-gene-0.10-mRNA-1;Parent=maker-302-augustus-gene-0.10;Name=maker-302-augustus-gene-0.10-mRNA-1;_AED=0.02;_eAED=0.02;_QI=0|1|0.5|1|1|1|4|0|277;
+302	maker	exon	12696	12968	1	+	.	ID=maker-302-augustus-gene-0.10-mRNA-1:exon:0;Parent=maker-302-augustus-gene-0.10-mRNA-1;
+302	maker	exon	13687	13891	1	+	.	ID=maker-302-augustus-gene-0.10-mRNA-1:exon:1;Parent=maker-302-augustus-gene-0.10-mRNA-1;
+302	maker	exon	13956	14153	1	+	.	ID=maker-302-augustus-gene-0.10-mRNA-1:exon:2;Parent=maker-302-augustus-gene-0.10-mRNA-1;
+302	maker	exon	14215	14372	1	+	.	ID=maker-302-augustus-gene-0.10-mRNA-1:exon:3;Parent=maker-302-augustus-gene-0.10-mRNA-1;
+302	maker	CDS	12696	12968	.	+	0	ID=maker-302-augustus-gene-0.10-mRNA-1:cds:0;Parent=maker-302-augustus-gene-0.10-mRNA-1;
+302	maker	CDS	13687	13891	.	+	0	ID=maker-302-augustus-gene-0.10-mRNA-1:cds:1;Parent=maker-302-augustus-gene-0.10-mRNA-1;
+302	maker	CDS	13956	14153	.	+	2	ID=maker-302-augustus-gene-0.10-mRNA-1:cds:2;Parent=maker-302-augustus-gene-0.10-mRNA-1;
+302	maker	CDS	14215	14372	.	+	2	ID=maker-302-augustus-gene-0.10-mRNA-1:cds:3;Parent=maker-302-augustus-gene-0.10-mRNA-1;
+302	maker	gene	9310	11287	.	+	.	ID=augustus_masked-302-abinit-gene-0.1;Name=augustus_masked-302-abinit-gene-0.1;
+302	maker	mRNA	9310	11287	.	+	.	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1;Parent=augustus_masked-302-abinit-gene-0.1;Name=augustus_masked-302-abinit-gene-0.1-mRNA-1;_AED=0.11;_eAED=0.14;_QI=0|0.71|0.5|1|1|1|8|0|511;
+302	maker	exon	9310	9348	0.46	+	.	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1:exon:4;Parent=augustus_masked-302-abinit-gene-0.1-mRNA-1;
+302	maker	exon	9412	9883	0.46	+	.	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1:exon:5;Parent=augustus_masked-302-abinit-gene-0.1-mRNA-1;
+302	maker	exon	9943	10167	0.46	+	.	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1:exon:6;Parent=augustus_masked-302-abinit-gene-0.1-mRNA-1;
+302	maker	exon	10232	10338	0.46	+	.	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1:exon:7;Parent=augustus_masked-302-abinit-gene-0.1-mRNA-1;
+302	maker	exon	10398	10533	0.46	+	.	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1:exon:8;Parent=augustus_masked-302-abinit-gene-0.1-mRNA-1;
+302	maker	exon	10593	10769	0.46	+	.	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1:exon:9;Parent=augustus_masked-302-abinit-gene-0.1-mRNA-1;
+302	maker	exon	10845	11046	0.46	+	.	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1:exon:10;Parent=augustus_masked-302-abinit-gene-0.1-mRNA-1;
+302	maker	exon	11110	11287	0.46	+	.	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1:exon:11;Parent=augustus_masked-302-abinit-gene-0.1-mRNA-1;
+302	maker	CDS	9310	9348	.	+	0	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1:cds:4;Parent=augustus_masked-302-abinit-gene-0.1-mRNA-1;
+302	maker	CDS	9412	9883	.	+	0	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1:cds:5;Parent=augustus_masked-302-abinit-gene-0.1-mRNA-1;
+302	maker	CDS	9943	10167	.	+	2	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1:cds:6;Parent=augustus_masked-302-abinit-gene-0.1-mRNA-1;
+302	maker	CDS	10232	10338	.	+	2	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1:cds:7;Parent=augustus_masked-302-abinit-gene-0.1-mRNA-1;
+302	maker	CDS	10398	10533	.	+	0	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1:cds:8;Parent=augustus_masked-302-abinit-gene-0.1-mRNA-1;
+302	maker	CDS	10593	10769	.	+	2	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1:cds:9;Parent=augustus_masked-302-abinit-gene-0.1-mRNA-1;
+302	maker	CDS	10845	11046	.	+	2	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1:cds:10;Parent=augustus_masked-302-abinit-gene-0.1-mRNA-1;
+302	maker	CDS	11110	11287	.	+	1	ID=augustus_masked-302-abinit-gene-0.1-mRNA-1:cds:11;Parent=augustus_masked-302-abinit-gene-0.1-mRNA-1;
+302	maker	gene	15526	15885	.	-	.	ID=augustus_masked-302-abinit-gene-0.3;Name=augustus_masked-302-abinit-gene-0.3;
+302	maker	mRNA	15526	15885	.	-	.	ID=augustus_masked-302-abinit-gene-0.3-mRNA-1;Parent=augustus_masked-302-abinit-gene-0.3;Name=augustus_masked-302-abinit-gene-0.3-mRNA-1;_AED=0.00;_eAED=0.00;_QI=0|-1|0|1|-1|1|1|0|119;
+302	maker	exon	15526	15885	0.99	-	.	ID=augustus_masked-302-abinit-gene-0.3-mRNA-1:exon:12;Parent=augustus_masked-302-abinit-gene-0.3-mRNA-1;
+302	maker	CDS	15526	15885	.	-	0	ID=augustus_masked-302-abinit-gene-0.3-mRNA-1:cds:12;Parent=augustus_masked-302-abinit-gene-0.3-mRNA-1;
+302	maker	gene	6112	7779	.	-	.	ID=maker-302-augustus-gene-0.11;Name=maker-302-augustus-gene-0.11;
+302	maker	mRNA	6112	7779	.	-	.	ID=maker-302-augustus-gene-0.11-mRNA-1;Parent=maker-302-augustus-gene-0.11;Name=maker-302-augustus-gene-0.11-mRNA-1;_AED=0.00;_eAED=0.00;_QI=0|0|0|0.5|1|1|2|0|450;
+302	maker	exon	6112	7461	1	-	.	ID=maker-302-augustus-gene-0.11-mRNA-1:exon:13;Parent=maker-302-augustus-gene-0.11-mRNA-1;
+302	maker	exon	7777	7779	1	-	.	ID=maker-302-augustus-gene-0.11-mRNA-1:exon:14;Parent=maker-302-augustus-gene-0.11-mRNA-1;
+302	maker	CDS	6112	7461	.	-	0	ID=maker-302-augustus-gene-0.11-mRNA-1:cds:14;Parent=maker-302-augustus-gene-0.11-mRNA-1;
+302	maker	CDS	7777	7779	.	-	0	ID=maker-302-augustus-gene-0.11-mRNA-1:cds:13;Parent=maker-302-augustus-gene-0.11-mRNA-1;
+302	maker	gene	19031	19640	.	-	.	ID=augustus_masked-302-abinit-gene-0.4;Name=augustus_masked-302-abinit-gene-0.4;
+302	maker	mRNA	19031	19640	.	-	.	ID=augustus_masked-302-abinit-gene-0.4-mRNA-1;Parent=augustus_masked-302-abinit-gene-0.4;Name=augustus_masked-302-abinit-gene-0.4-mRNA-1;_AED=0.01;_eAED=0.01;_QI=0|1|0.66|1|1|1|3|0|159;
+302	maker	exon	19031	19054	1	-	.	ID=augustus_masked-302-abinit-gene-0.4-mRNA-1:exon:15;Parent=augustus_masked-302-abinit-gene-0.4-mRNA-1;
+302	maker	exon	19117	19344	1	-	.	ID=augustus_masked-302-abinit-gene-0.4-mRNA-1:exon:16;Parent=augustus_masked-302-abinit-gene-0.4-mRNA-1;
+302	maker	exon	19413	19640	1	-	.	ID=augustus_masked-302-abinit-gene-0.4-mRNA-1:exon:17;Parent=augustus_masked-302-abinit-gene-0.4-mRNA-1;
+302	maker	CDS	19031	19054	.	-	0	ID=augustus_masked-302-abinit-gene-0.4-mRNA-1:cds:17;Parent=augustus_masked-302-abinit-gene-0.4-mRNA-1;
+302	maker	CDS	19117	19344	.	-	0	ID=augustus_masked-302-abinit-gene-0.4-mRNA-1:cds:16;Parent=augustus_masked-302-abinit-gene-0.4-mRNA-1;
+302	maker	CDS	19413	19640	.	-	0	ID=augustus_masked-302-abinit-gene-0.4-mRNA-1:cds:15;Parent=augustus_masked-302-abinit-gene-0.4-mRNA-1;
+302	maker	gene	11842	12332	.	-	.	ID=maker-302-augustus-gene-0.12;Name=maker-302-augustus-gene-0.12;
+302	maker	mRNA	11842	12332	.	-	.	ID=maker-302-augustus-gene-0.12-mRNA-1;Parent=maker-302-augustus-gene-0.12;Name=maker-302-augustus-gene-0.12-mRNA-1;_AED=0.24;_eAED=0.25;_QI=0|1|0.5|1|0|0|2|0|134;
+302	maker	exon	11842	12131	0.31	-	.	ID=maker-302-augustus-gene-0.12-mRNA-1:exon:18;Parent=maker-302-augustus-gene-0.12-mRNA-1;
+302	maker	exon	12221	12332	0.31	-	.	ID=maker-302-augustus-gene-0.12-mRNA-1:exon:19;Parent=maker-302-augustus-gene-0.12-mRNA-1;
+302	maker	CDS	11842	12131	.	-	2	ID=maker-302-augustus-gene-0.12-mRNA-1:cds:19;Parent=maker-302-augustus-gene-0.12-mRNA-1;
+302	maker	CDS	12221	12332	.	-	0	ID=maker-302-augustus-gene-0.12-mRNA-1:cds:18;Parent=maker-302-augustus-gene-0.12-mRNA-1;
+302	blastx	protein_match	6118	7461	944	-	.	ID=302:hit:32;Name=FBpp0085720;
+302	blastx	match_part	6118	7461	944	-	.	ID=302:hsp:32;Parent=302:hit:32;Name=FBpp0085720;Target=FBpp0085720 2 439;Gap=M43 D2 M314 D8 M81;
+302	blastx	protein_match	15529	15885	478	-	.	ID=302:hit:33;Name=FBpp0081151;
+302	blastx	match_part	15529	15885	478	-	.	ID=302:hsp:33;Parent=302:hit:33;Name=FBpp0081151;Target=FBpp0081151 1 118;Gap=M94 D1 M24;
+302	blastx	protein_match	6115	7461	2387	-	.	ID=302:hit:34;Name=FBpp0081153;
+302	blastx	match_part	6115	7461	2387	-	.	ID=302:hsp:34;Parent=302:hit:34;Name=FBpp0081153;Target=FBpp0081153 2 450;Gap=M449;
+302	blastx	protein_match	15529	15885	478	-	.	ID=302:hit:35;Name=FBpp0306729;
+302	blastx	match_part	15529	15885	478	-	.	ID=302:hsp:35;Parent=302:hit:35;Name=FBpp0306729;Target=FBpp0306729 1 118;Gap=M94 D1 M24;
+302	blastx	protein_match	6115	7461	2278	-	.	ID=302:hit:36;Name=FBpp0081565;
+302	blastx	match_part	6115	7461	2278	-	.	ID=302:hsp:36;Parent=302:hit:36;Name=FBpp0081565;Target=FBpp0081565 2 449;Gap=M445 D1 M3;
+302	blastx	protein_match	13765	14164	141	+	.	ID=302:hit:37;Name=FBpp0079958;
+302	blastx	match_part	13765	13914	141	+	.	ID=302:hsp:37;Parent=302:hit:37;Name=FBpp0079958;Target=FBpp0079958 74 123;Gap=M50;
+302	blastx	match_part	13952	14164	99	+	.	ID=302:hsp:38;Parent=302:hit:37;Name=FBpp0079958;Target=FBpp0079958 115 182;Gap=M35 D1 M9 D1 M14 D1 M10;
+302	blastx	protein_match	11470	12332	730	-	.	ID=302:hit:38;Name=FBpp0081152;
+302	blastx	match_part	12222	12332	167	-	.	ID=302:hsp:39;Parent=302:hit:38;Name=FBpp0081152;Target=FBpp0081152 1 37;Gap=M37;
+302	blastx	match_part	11470	12141	730	-	.	ID=302:hsp:40;Parent=302:hit:38;Name=FBpp0081152;Target=FBpp0081152 35 235;Gap=M100 D23 M101;
+302	blastx	protein_match	9283	11272	409	+	.	ID=302:hit:39;Name=FBpp0081154;
+302	blastx	match_part	9283	9915	409	+	.	ID=302:hsp:41;Parent=302:hit:39;Name=FBpp0081154;Target=FBpp0081154 47 221;Gap=M12 D2 M8 D21 M21 I1 M41 D9 M48 I5 M6 D10 M33;
+302	blastx	match_part	9942	10544	431	+	.	ID=302:hsp:42;Parent=302:hit:39;Name=FBpp0081154;Target=FBpp0081154 211 370;Gap=M76 D6 M21 D5 M5 D2 M5 D21 M5 D7 M48;
+302	blastx	match_part	10574	11272	525	+	.	ID=302:hsp:43;Parent=302:hit:39;Name=FBpp0081154;Target=FBpp0081154 357 547;Gap=M8 I4 M48 D2 M6 D23 M70 D21 M55;
+302	blastx	protein_match	13765	14164	141	+	.	ID=302:hit:40;Name=FBpp0300957;
+302	blastx	match_part	13765	13914	141	+	.	ID=302:hsp:44;Parent=302:hit:40;Name=FBpp0300957;Target=FBpp0300957 74 123;Gap=M50;
+302	blastx	match_part	13952	14164	99	+	.	ID=302:hsp:45;Parent=302:hit:40;Name=FBpp0300957;Target=FBpp0300957 115 182;Gap=M35 D1 M9 D1 M14 D1 M10;
+302	blastx	protein_match	6115	7461	2376	-	.	ID=302:hit:41;Name=FBpp0081062;
+302	blastx	match_part	6115	7461	2376	-	.	ID=302:hsp:46;Parent=302:hit:41;Name=FBpp0081062;Target=FBpp0081062 2 450;Gap=M449;
+302	blastx	protein_match	6130	7461	1730	-	.	ID=302:hit:42;Name=FBpp0076122;
+302	blastx	match_part	6130	7461	1730	-	.	ID=302:hsp:47;Parent=302:hit:42;Name=FBpp0076122;Target=FBpp0076122 2 456;Gap=M42 I8 M7 I3 M395;
+302	blastx	protein_match	9412	11272	399	+	.	ID=302:hit:43;Name=FBpp0081155;
+302	blastx	match_part	9412	9915	399	+	.	ID=302:hsp:48;Parent=302:hit:43;Name=FBpp0081155;Target=FBpp0081155 12 166;Gap=M21 I1 M41 D9 M48 I5 M6 D10 M33;
+302	blastx	match_part	9942	10544	431	+	.	ID=302:hsp:49;Parent=302:hit:43;Name=FBpp0081155;Target=FBpp0081155 156 315;Gap=M76 D6 M21 D5 M5 D2 M5 D21 M5 D7 M48;
+302	blastx	match_part	10574	11272	525	+	.	ID=302:hsp:50;Parent=302:hit:43;Name=FBpp0081155;Target=FBpp0081155 302 492;Gap=M8 I4 M48 D2 M6 D23 M70 D21 M55;
+302	blastx	protein_match	13765	14164	141	+	.	ID=302:hit:44;Name=FBpp0300958;
+302	blastx	match_part	13765	13914	141	+	.	ID=302:hsp:51;Parent=302:hit:44;Name=FBpp0300958;Target=FBpp0300958 74 123;Gap=M50;
+302	blastx	match_part	13952	14164	99	+	.	ID=302:hsp:52;Parent=302:hit:44;Name=FBpp0300958;Target=FBpp0300958 115 182;Gap=M35 D1 M9 D1 M14 D1 M10;
+302	blastx	protein_match	12696	14369	254	+	.	ID=302:hit:45;Name=FBpp0081156;
+302	blastx	match_part	12696	12968	254	+	.	ID=302:hsp:53;Parent=302:hit:45;Name=FBpp0081156;Target=FBpp0081156 1 82;Gap=M41 D1 M17 D6 M12 D2 M12;
+302	blastx	match_part	13687	13899	328	+	.	ID=302:hsp:54;Parent=302:hit:45;Name=FBpp0081156;Target=FBpp0081156 83 152;Gap=M18 D1 M52;
+302	blastx	match_part	13952	14155	291	+	.	ID=302:hsp:55;Parent=302:hit:45;Name=FBpp0081156;Target=FBpp0081156 149 216;Gap=M68;
+302	blastx	match_part	14214	14369	210	+	.	ID=302:hsp:56;Parent=302:hit:45;Name=FBpp0081156;Target=FBpp0081156 216 266;Gap=M11 D1 M40;
+302	blastx	protein_match	9283	11272	409	+	.	ID=302:hit:46;Name=FBpp0305518;
+302	blastx	match_part	9283	9915	409	+	.	ID=302:hsp:57;Parent=302:hit:46;Name=FBpp0305518;Target=FBpp0305518 47 221;Gap=M12 D2 M8 D21 M21 I1 M41 D9 M48 I5 M6 D10 M33;
+302	blastx	match_part	9942	10544	429	+	.	ID=302:hsp:58;Parent=302:hit:46;Name=FBpp0305518;Target=FBpp0305518 211 373;Gap=M76 D3 M24 D5 M5 D2 M5 D21 M5 D7 M48;
+302	blastx	match_part	10574	11272	525	+	.	ID=302:hsp:59;Parent=302:hit:46;Name=FBpp0305518;Target=FBpp0305518 360 550;Gap=M8 I4 M48 D2 M6 D23 M70 D21 M55;
+302	blastx	protein_match	6160	7458	1279	-	.	ID=302:hit:47;Name=FBpp0082964;
+302	blastx	match_part	6160	7458	1279	-	.	ID=302:hsp:60;Parent=302:hit:47;Name=FBpp0082964;Target=FBpp0082964 6 436;Gap=M34 D4 M22 I1 M102 I1 M271;
+302	blastx	protein_match	19114	19640	402	-	.	ID=302:hit:48;Name=FBpp0078416;
+302	blastx	match_part	19410	19640	295	-	.	ID=302:hsp:61;Parent=302:hit:48;Name=FBpp0078416;Target=FBpp0078416 1 75;Gap=M7 D2 M68;
+302	blastx	match_part	19114	19344	402	-	.	ID=302:hsp:62;Parent=302:hit:48;Name=FBpp0078416;Target=FBpp0078416 75 151;Gap=M77;
+302	blastx	protein_match	15529	15885	478	-	.	ID=302:hit:49;Name=FBpp0081149;
+302	blastx	match_part	15529	15885	478	-	.	ID=302:hsp:63;Parent=302:hit:49;Name=FBpp0081149;Target=FBpp0081149 1 118;Gap=M94 D1 M24;
+302	blastx	protein_match	15529	15885	478	-	.	ID=302:hit:50;Name=FBpp0081150;
+302	blastx	match_part	15529	15885	478	-	.	ID=302:hsp:64;Parent=302:hit:50;Name=FBpp0081150;Target=FBpp0081150 1 118;Gap=M94 D1 M24;
+302	protein2genome	protein_match	6385	7461	795	-	.	ID=302:hit:51;Name=FBpp0085720;
+302	protein2genome	match_part	6385	7461	795	-	.	ID=302:hsp:65;Parent=302:hit:51;Name=FBpp0085720;Target=FBpp0085720 2 358;Gap=M41 D2 M316;
+302	protein2genome	protein_match	15529	15885	472	-	.	ID=302:hit:52;Name=FBpp0081151;
+302	protein2genome	match_part	15529	15885	472	-	.	ID=302:hsp:66;Parent=302:hit:52;Name=FBpp0081151;Target=FBpp0081151 1 118;Gap=M94 D1 M24;
+302	protein2genome	protein_match	6115	7461	2387	-	.	ID=302:hit:53;Name=FBpp0081153;
+302	protein2genome	match_part	6115	7461	2387	-	.	ID=302:hsp:67;Parent=302:hit:53;Name=FBpp0081153;Target=FBpp0081153 2 450;Gap=M449;
+302	protein2genome	protein_match	15529	15885	472	-	.	ID=302:hit:54;Name=FBpp0306729;
+302	protein2genome	match_part	15529	15885	472	-	.	ID=302:hsp:68;Parent=302:hit:54;Name=FBpp0306729;Target=FBpp0306729 1 118;Gap=M94 D1 M24;
+302	protein2genome	protein_match	6121	7461	2277	-	.	ID=302:hit:55;Name=FBpp0081565;
+302	protein2genome	match_part	6121	7461	2277	-	.	ID=302:hsp:69;Parent=302:hit:55;Name=FBpp0081565;Target=FBpp0081565 2 448;Gap=M447;
+302	protein2genome	protein_match	11470	12332	907	-	.	ID=302:hit:56;Name=FBpp0081152;
+302	protein2genome	match_part	12221	12332	907	-	.	ID=302:hsp:70;Parent=302:hit:56;Name=FBpp0081152;Target=FBpp0081152 1 37;Gap=M37 F1;
+302	protein2genome	match_part	11840	12131	907	-	.	ID=302:hsp:71;Parent=302:hit:56;Name=FBpp0081152;Target=FBpp0081152 38 134;Gap=R1 M97 F2;
+302	protein2genome	match_part	11470	11770	907	-	.	ID=302:hsp:72;Parent=302:hit:56;Name=FBpp0081152;Target=FBpp0081152 135 235;Gap=R2 M101;
+302	protein2genome	protein_match	9625	11272	1272	+	.	ID=302:hit:57;Name=FBpp0081154;
+302	protein2genome	match_part	9625	9867	1272	+	.	ID=302:hsp:73;Parent=302:hit:57;Name=FBpp0081154;Target=FBpp0081154 130 211;Gap=M66 I1 M15;
+302	protein2genome	match_part	9945	10167	1272	+	.	ID=302:hsp:74;Parent=302:hit:57;Name=FBpp0081154;Target=FBpp0081154 212 285;Gap=M74 F1;
+302	protein2genome	match_part	10232	10338	1272	+	.	ID=302:hsp:75;Parent=302:hit:57;Name=FBpp0081154;Target=FBpp0081154 286 321;Gap=R1 M36;
+302	protein2genome	match_part	10398	10533	1272	+	.	ID=302:hsp:76;Parent=302:hit:57;Name=FBpp0081154;Target=FBpp0081154 322 366;Gap=M45 F1;
+302	protein2genome	match_part	10593	10769	1272	+	.	ID=302:hsp:77;Parent=302:hit:57;Name=FBpp0081154;Target=FBpp0081154 367 425;Gap=R1 M59 F1;
+302	protein2genome	match_part	10845	11046	1272	+	.	ID=302:hsp:78;Parent=302:hit:57;Name=FBpp0081154;Target=FBpp0081154 426 492;Gap=R1 M67 F2;
+302	protein2genome	match_part	11110	11272	1272	+	.	ID=302:hsp:79;Parent=302:hit:57;Name=FBpp0081154;Target=FBpp0081154 493 547;Gap=R2 M55;
+302	protein2genome	protein_match	6115	7461	2376	-	.	ID=302:hit:58;Name=FBpp0081062;
+302	protein2genome	match_part	6115	7461	2376	-	.	ID=302:hsp:80;Parent=302:hit:58;Name=FBpp0081062;Target=FBpp0081062 2 450;Gap=M449;
+302	protein2genome	protein_match	6130	7317	1607	-	.	ID=302:hit:59;Name=FBpp0076122;
+302	protein2genome	match_part	6130	7317	1607	-	.	ID=302:hsp:81;Parent=302:hit:59;Name=FBpp0076122;Target=FBpp0076122 61 456;Gap=M396;
+302	protein2genome	protein_match	9625	11272	1272	+	.	ID=302:hit:60;Name=FBpp0081155;
+302	protein2genome	match_part	9625	9867	1272	+	.	ID=302:hsp:82;Parent=302:hit:60;Name=FBpp0081155;Target=FBpp0081155 75 156;Gap=M66 I1 M15;
+302	protein2genome	match_part	9945	10167	1272	+	.	ID=302:hsp:83;Parent=302:hit:60;Name=FBpp0081155;Target=FBpp0081155 157 230;Gap=M74 F1;
+302	protein2genome	match_part	10232	10338	1272	+	.	ID=302:hsp:84;Parent=302:hit:60;Name=FBpp0081155;Target=FBpp0081155 231 266;Gap=R1 M36;
+302	protein2genome	match_part	10398	10533	1272	+	.	ID=302:hsp:85;Parent=302:hit:60;Name=FBpp0081155;Target=FBpp0081155 267 311;Gap=M45 F1;
+302	protein2genome	match_part	10593	10769	1272	+	.	ID=302:hsp:86;Parent=302:hit:60;Name=FBpp0081155;Target=FBpp0081155 312 370;Gap=R1 M59 F1;
+302	protein2genome	match_part	10845	11046	1272	+	.	ID=302:hsp:87;Parent=302:hit:60;Name=FBpp0081155;Target=FBpp0081155 371 437;Gap=R1 M67 F2;
+302	protein2genome	match_part	11110	11272	1272	+	.	ID=302:hsp:88;Parent=302:hit:60;Name=FBpp0081155;Target=FBpp0081155 438 492;Gap=R2 M55;
+302	protein2genome	protein_match	12696	14369	925	+	.	ID=302:hit:61;Name=FBpp0081156;
+302	protein2genome	match_part	12696	12843	925	+	.	ID=302:hsp:89;Parent=302:hit:61;Name=FBpp0081156;Target=FBpp0081156 1 49;Gap=M49 F1;
+302	protein2genome	match_part	12874	12968	925	+	.	ID=302:hsp:90;Parent=302:hit:61;Name=FBpp0081156;Target=FBpp0081156 50 82;Gap=R1 M20 I1 M12;
+302	protein2genome	match_part	13687	13891	925	+	.	ID=302:hsp:91;Parent=302:hit:61;Name=FBpp0081156;Target=FBpp0081156 83 149;Gap=M17 D1 M50 F1;
+302	protein2genome	match_part	13956	14153	925	+	.	ID=302:hsp:92;Parent=302:hit:61;Name=FBpp0081156;Target=FBpp0081156 150 215;Gap=R1 M66 F1;
+302	protein2genome	match_part	14215	14369	925	+	.	ID=302:hsp:93;Parent=302:hit:61;Name=FBpp0081156;Target=FBpp0081156 216 266;Gap=R1 M11 D1 M40;
+302	protein2genome	protein_match	9625	11272	1238	+	.	ID=302:hit:62;Name=FBpp0305518;
+302	protein2genome	match_part	9625	9867	1238	+	.	ID=302:hsp:94;Parent=302:hit:62;Name=FBpp0305518;Target=FBpp0305518 130 211;Gap=M66 I1 M15;
+302	protein2genome	match_part	9945	10167	1238	+	.	ID=302:hsp:95;Parent=302:hit:62;Name=FBpp0305518;Target=FBpp0305518 212 285;Gap=M74 F1;
+302	protein2genome	match_part	10232	10338	1238	+	.	ID=302:hsp:96;Parent=302:hit:62;Name=FBpp0305518;Target=FBpp0305518 286 324;Gap=R1 M1 I3 M35;
+302	protein2genome	match_part	10398	10533	1238	+	.	ID=302:hsp:97;Parent=302:hit:62;Name=FBpp0305518;Target=FBpp0305518 325 369;Gap=M45 F1;
+302	protein2genome	match_part	10593	10769	1238	+	.	ID=302:hsp:98;Parent=302:hit:62;Name=FBpp0305518;Target=FBpp0305518 370 428;Gap=R1 M59 F1;
+302	protein2genome	match_part	10845	11046	1238	+	.	ID=302:hsp:99;Parent=302:hit:62;Name=FBpp0305518;Target=FBpp0305518 429 495;Gap=R1 M67 F2;
+302	protein2genome	match_part	11110	11272	1238	+	.	ID=302:hsp:100;Parent=302:hit:62;Name=FBpp0305518;Target=FBpp0305518 496 550;Gap=R2 M55;
+302	protein2genome	protein_match	6160	7458	1240	-	.	ID=302:hit:63;Name=FBpp0082964;
+302	protein2genome	match_part	6160	7458	1240	-	.	ID=302:hsp:101;Parent=302:hit:63;Name=FBpp0082964;Target=FBpp0082964 6 436;Gap=M34 D4 M22 I1 M102 I1 M271;
+302	protein2genome	protein_match	19034	19640	694	-	.	ID=302:hit:64;Name=FBpp0078416;
+302	protein2genome	match_part	19413	19640	694	-	.	ID=302:hsp:102;Parent=302:hit:64;Name=FBpp0078416;Target=FBpp0078416 1 74;Gap=M7 D2 M67;
+302	protein2genome	match_part	19117	19344	694	-	.	ID=302:hsp:103;Parent=302:hit:64;Name=FBpp0078416;Target=FBpp0078416 75 150;Gap=M76;
+302	protein2genome	match_part	19034	19054	694	-	.	ID=302:hsp:104;Parent=302:hit:64;Name=FBpp0078416;Target=FBpp0078416 151 157;Gap=M7;
+302	protein2genome	protein_match	15529	15885	472	-	.	ID=302:hit:65;Name=FBpp0081149;
+302	protein2genome	match_part	15529	15885	472	-	.	ID=302:hsp:105;Parent=302:hit:65;Name=FBpp0081149;Target=FBpp0081149 1 118;Gap=M94 D1 M24;
+302	protein2genome	protein_match	15529	15885	472	-	.	ID=302:hit:66;Name=FBpp0081150;
+302	protein2genome	match_part	15529	15885	472	-	.	ID=302:hsp:106;Parent=302:hit:66;Name=FBpp0081150;Target=FBpp0081150 1 118;Gap=M94 D1 M24;
+302	augustus_masked	match	6112	7779	0.71	-	.	ID=302:hit:67;Name=augustus_masked-302-abinit-gene-0.0-mRNA-1;_AED=0.00;_eAED=0.00;
+302	augustus_masked	match_part	7777	7779	0.71	-	.	ID=302:hsp:107;Parent=302:hit:67;Name=augustus_masked-302-abinit-gene-0.0-mRNA-1;Target=augustus_masked-302-abinit-gene-0.0-mRNA-1 1351 1353 +;Gap=M3;
+302	augustus_masked	match_part	6112	7461	0.71	-	.	ID=302:hsp:108;Parent=302:hit:67;Name=augustus_masked-302-abinit-gene-0.0-mRNA-1;Target=augustus_masked-302-abinit-gene-0.0-mRNA-1 1 1350 +;Gap=M1350;
+302	augustus_masked	match	9310	11287	0.46	+	.	ID=302:hit:68;Name=augustus_masked-302-abinit-gene-0.1-mRNA-1;_AED=0.11;_eAED=0.14;
+302	augustus_masked	match_part	9310	9348	0.46	+	.	ID=302:hsp:109;Parent=302:hit:68;Name=augustus_masked-302-abinit-gene-0.1-mRNA-1;Target=augustus_masked-302-abinit-gene-0.1-mRNA-1 1 39 +;Gap=M39;
+302	augustus_masked	match_part	9412	9883	0.46	+	.	ID=302:hsp:110;Parent=302:hit:68;Name=augustus_masked-302-abinit-gene-0.1-mRNA-1;Target=augustus_masked-302-abinit-gene-0.1-mRNA-1 40 511 +;Gap=M472;
+302	augustus_masked	match_part	9943	10167	0.46	+	.	ID=302:hsp:111;Parent=302:hit:68;Name=augustus_masked-302-abinit-gene-0.1-mRNA-1;Target=augustus_masked-302-abinit-gene-0.1-mRNA-1 512 736 +;Gap=M225;
+302	augustus_masked	match_part	10232	10338	0.46	+	.	ID=302:hsp:112;Parent=302:hit:68;Name=augustus_masked-302-abinit-gene-0.1-mRNA-1;Target=augustus_masked-302-abinit-gene-0.1-mRNA-1 737 843 +;Gap=M107;
+302	augustus_masked	match_part	10398	10533	0.46	+	.	ID=302:hsp:113;Parent=302:hit:68;Name=augustus_masked-302-abinit-gene-0.1-mRNA-1;Target=augustus_masked-302-abinit-gene-0.1-mRNA-1 844 979 +;Gap=M136;
+302	augustus_masked	match_part	10593	10769	0.46	+	.	ID=302:hsp:114;Parent=302:hit:68;Name=augustus_masked-302-abinit-gene-0.1-mRNA-1;Target=augustus_masked-302-abinit-gene-0.1-mRNA-1 980 1156 +;Gap=M177;
+302	augustus_masked	match_part	10845	11046	0.46	+	.	ID=302:hsp:115;Parent=302:hit:68;Name=augustus_masked-302-abinit-gene-0.1-mRNA-1;Target=augustus_masked-302-abinit-gene-0.1-mRNA-1 1157 1358 +;Gap=M202;
+302	augustus_masked	match_part	11110	11287	0.46	+	.	ID=302:hsp:116;Parent=302:hit:68;Name=augustus_masked-302-abinit-gene-0.1-mRNA-1;Target=augustus_masked-302-abinit-gene-0.1-mRNA-1 1359 1536 +;Gap=M178;
+302	augustus_masked	match	12696	14372	0.79	+	.	ID=302:hit:69;Name=augustus_masked-302-abinit-gene-0.2-mRNA-1;_AED=0.02;_eAED=0.02;
+302	augustus_masked	match_part	12696	12968	0.79	+	.	ID=302:hsp:117;Parent=302:hit:69;Name=augustus_masked-302-abinit-gene-0.2-mRNA-1;Target=augustus_masked-302-abinit-gene-0.2-mRNA-1 1 273 +;Gap=M273;
+302	augustus_masked	match_part	13687	13891	0.79	+	.	ID=302:hsp:118;Parent=302:hit:69;Name=augustus_masked-302-abinit-gene-0.2-mRNA-1;Target=augustus_masked-302-abinit-gene-0.2-mRNA-1 274 478 +;Gap=M205;
+302	augustus_masked	match_part	13956	14153	0.79	+	.	ID=302:hsp:119;Parent=302:hit:69;Name=augustus_masked-302-abinit-gene-0.2-mRNA-1;Target=augustus_masked-302-abinit-gene-0.2-mRNA-1 479 676 +;Gap=M198;
+302	augustus_masked	match_part	14215	14372	0.79	+	.	ID=302:hsp:120;Parent=302:hit:69;Name=augustus_masked-302-abinit-gene-0.2-mRNA-1;Target=augustus_masked-302-abinit-gene-0.2-mRNA-1 677 834 +;Gap=M158;
+302	augustus_masked	match	15526	15885	0.99	-	.	ID=302:hit:70;Name=augustus_masked-302-abinit-gene-0.3-mRNA-1;_AED=0.00;_eAED=0.00;
+302	augustus_masked	match_part	15526	15885	0.99	-	.	ID=302:hsp:121;Parent=302:hit:70;Name=augustus_masked-302-abinit-gene-0.3-mRNA-1;Target=augustus_masked-302-abinit-gene-0.3-mRNA-1 1 360 +;Gap=M360;
+302	augustus_masked	match	19031	19640	1	-	.	ID=302:hit:71;Name=augustus_masked-302-abinit-gene-0.4-mRNA-1;_AED=0.01;_eAED=0.01;
+302	augustus_masked	match_part	19413	19640	1	-	.	ID=302:hsp:122;Parent=302:hit:71;Name=augustus_masked-302-abinit-gene-0.4-mRNA-1;Target=augustus_masked-302-abinit-gene-0.4-mRNA-1 253 480 +;Gap=M228;
+302	augustus_masked	match_part	19117	19344	1	-	.	ID=302:hsp:123;Parent=302:hit:71;Name=augustus_masked-302-abinit-gene-0.4-mRNA-1;Target=augustus_masked-302-abinit-gene-0.4-mRNA-1 25 252 +;Gap=M228;
+302	augustus_masked	match_part	19031	19054	1	-	.	ID=302:hsp:124;Parent=302:hit:71;Name=augustus_masked-302-abinit-gene-0.4-mRNA-1;Target=augustus_masked-302-abinit-gene-0.4-mRNA-1 1 24 +;Gap=M24;
+302	snap_masked	match	19031	19640	45.403	-	.	ID=302:hit:72;Name=snap_masked-302-abinit-gene-0.5-mRNA-1;_AED=0.01;_eAED=0.01;
+302	snap_masked	match_part	19413	19640	14.976	-	.	ID=302:hsp:125;Parent=302:hit:72;Name=snap_masked-302-abinit-gene-0.5-mRNA-1;Target=snap_masked-302-abinit-gene-0.5-mRNA-1 253 480 +;Gap=M228;
+302	snap_masked	match_part	19117	19344	17.085	-	.	ID=302:hsp:126;Parent=302:hit:72;Name=snap_masked-302-abinit-gene-0.5-mRNA-1;Target=snap_masked-302-abinit-gene-0.5-mRNA-1 25 252 +;Gap=M228;
+302	snap_masked	match_part	19031	19054	13.342	-	.	ID=302:hsp:127;Parent=302:hit:72;Name=snap_masked-302-abinit-gene-0.5-mRNA-1;Target=snap_masked-302-abinit-gene-0.5-mRNA-1 1 24 +;Gap=M24;
+302	snap_masked	match	12696	14343	16.614	+	.	ID=302:hit:73;Name=snap_masked-302-abinit-gene-0.6-mRNA-1;_AED=0.06;_eAED=0.22;
+302	snap_masked	match_part	12696	12968	-1.262	+	.	ID=302:hsp:128;Parent=302:hit:73;Name=snap_masked-302-abinit-gene-0.6-mRNA-1;Target=snap_masked-302-abinit-gene-0.6-mRNA-1 1 273 +;Gap=M273;
+302	snap_masked	match_part	13687	13891	2.944	+	.	ID=302:hsp:129;Parent=302:hit:73;Name=snap_masked-302-abinit-gene-0.6-mRNA-1;Target=snap_masked-302-abinit-gene-0.6-mRNA-1 274 478 +;Gap=M205;
+302	snap_masked	match_part	13956	14116	-3.675	+	.	ID=302:hsp:130;Parent=302:hit:73;Name=snap_masked-302-abinit-gene-0.6-mRNA-1;Target=snap_masked-302-abinit-gene-0.6-mRNA-1 479 639 +;Gap=M161;
+302	snap_masked	match_part	14215	14343	18.607	+	.	ID=302:hsp:131;Parent=302:hit:73;Name=snap_masked-302-abinit-gene-0.6-mRNA-1;Target=snap_masked-302-abinit-gene-0.6-mRNA-1 640 768 +;Gap=M129;
+302	snap_masked	match	15526	15885	9.655	-	.	ID=302:hit:74;Name=snap_masked-302-abinit-gene-0.7-mRNA-1;_AED=0.00;_eAED=0.00;
+302	snap_masked	match_part	15526	15885	9.655	-	.	ID=302:hsp:132;Parent=302:hit:74;Name=snap_masked-302-abinit-gene-0.7-mRNA-1;Target=snap_masked-302-abinit-gene-0.7-mRNA-1 1 360 +;Gap=M360;
+302	snap_masked	match	6112	10347	130.57	-	.	ID=302:hit:75;Name=snap_masked-302-abinit-gene-0.8-mRNA-1;_AED=0.04;_eAED=0.04;
+302	snap_masked	match_part	10246	10347	4.882	-	.	ID=302:hsp:133;Parent=302:hit:75;Name=snap_masked-302-abinit-gene-0.8-mRNA-1;Target=snap_masked-302-abinit-gene-0.8-mRNA-1 1351 1452 +;Gap=M102;
+302	snap_masked	match_part	6112	7461	125.688	-	.	ID=302:hsp:134;Parent=302:hit:75;Name=snap_masked-302-abinit-gene-0.8-mRNA-1;Target=snap_masked-302-abinit-gene-0.8-mRNA-1 1 1350 +;Gap=M1350;
+##FASTA
+>302
+TTTCGATGCCACAGCGAGTGTCATTGCCATTGACGGAATTCCTGATTTTAAAACTAAAAT
+TACTAATGGTGAAATACAGCTAAGGGAAAAACGCGGCCGAAGTAGAGCTTGGAAAATCTT
+TGCATTAATGATTGATGAAAATGGTGATGAAATTGAAAATTTTGTTGCATGTCGACACTG
+TTTCAATGCGTACAAATTTGCAAACAGTACATCGAATCTGGTTAAGCACAAATGCTTCGT
+GAAGTTCGAGGTAAGAGAGAATAGTATGCGAAATCCACAATATGCTCAAATAGGCACCGA
+GGCCATAGCCAAGTTGAGTGATGCAGCTGTCCAGTGGCTGGTGAAAAACTGTCGCTCCTG
+CAGCATACTTGAAGACTCTGGCCTGAAAGACTTTGCGCGCATCTTACTCTCAATTGGCGC
+CGCCTTCGGTGAAAATGTCAACCTGGACGACGCAATCCCAACTCCAGCAAATATAGCTAA
+AAGCATAACTGAGCTGTACGAAGAACAGCGCCAAACTATTACAGCTGAACTATGCCATGC
+AAAGGACAACGGCTATAGCATCACAACAGCCCTATGGATAGACAACTACCTTAAGCAGTC
+AATAGCATCTATCTCTGTGCATTACTTTTATCGATCTGCTATGGTCAATCGATTGCTTGC
+AGTTTATCCATTAGCCTGGGAATCAAACACAGGTAAATATAAATTAAATATTTACTTCAT
+TCTATTATCAGTAATTGAGTTCAGTTTCAAAGCATTTTTCGCATTGTTCATTCGAATGTG
+ATTTCATTTCATTTCATTTCATTGGGCTTTAATCGACTCCAATAAAGATTATATGCTGTT
+AAAGATTCTTCTATTATATTTGTAATAGAATTTGTAATTTTTTTTATAAGCAACAAATTT
+TTTTAAAATAATATATTTGTGTATTTATATCAACCATTGCAGGCAATCAGATTCGAGACT
+GTGTGAAAAAATCATTGCGCTCATTTGACTGCGACTTGGATGTGGATGAACCCATTATTG
+TGACGAATGGCAATGGAGTTGAAGAGGATGCCATGGCGAACGCCTTTAAAAATCAAAATC
+ACATACGTTGCATAAAAAGTATATTGGAGGACGCAATCGAAGAGGTCTTTAGAGAGAACT
+TCGAACTGCAACAGTTGCTACAAAAGTGCATTAGCCTAGTTAGGCAATGCGAAATTTTAT
+GTGAATCTGATTCCTTGGTATCAGCATCTAACTCTATCTGTGCACACAAGTATACAATTA
+TGTACTACTTTGAGTTTGTCGCCGACAATTGGACTGTTTTATCCGAGATTATAGTTGATA
+AGTGCGAAGTGGAAACCATAATCATTGAGATAATGGACATATCCCATATTTTAGTTAACA
+TTTCTCAAATGTTCCATGCCTTGAAAAAGCACAATGTACCCACATTGCATACCGTAATTC
+CGCATCTTCATAAGCTCAATAAGCTTTGTGCGAGTAATGCTGAAGATAAACCAAAAGTCA
+ACTTATTCAAAAGTTCATTGAAAAAGTATTTACAATCAATATCCAAAAACCATATAACAA
+AATATCATAAAATAGCCCTCTTTCTTTTCCCGCCTGCAAAGAAATTGTTGCTCTATAATG
+AGTCCGAAAAGAGAGACATTATTGCAGAATGTAAAGCAATGATGGAAGAATTTTACATCG
+AACCTGATAATAATAGCCGAAAAAAGATTAAATTAGATGCTGAGTGTTATGATTCTAGCA
+TTTTTTCCGATTTCGTGGAGGCAACATCGAATGATCCAAAGGGCGATGCCATAAGCAATG
+AAATTAACGAATATCTGAGCAGAAATACTGCGATATGTAATGTATTGAATGTCCTAGACT
+GGTGGCAAATAAATAAAGGTGTATTTCCACTGCTCTATCAAGTCAGCTGCAAAATCCTTA
+CAACACCTGCAACTATTGCATTTTCACAAAAGTCTATTCTACAAGCCCGCAATCTCTTTG
+GTGATCAGTCTAGCACGACTCAGTGCTCCGAAGGCAGTATAAATGAAATAATATTTTTAA
+ATAATAATTTGGATAGCTTTAGTTAACTGCAATTATAGCTTTATTTTTAGAAGTAATCAC
+AAGCCATTAATTAATTTATACTGAAATGTAAGAAATAATTTTAGTTTTTAATAAAACGAT
+GTTACAAAGTTGGTATAAATTGATATTTTCCTAAAAATATTTGAATATTTAATAGTTGCT
+TGGATGTGAAAAATTATTTATCTTCAACAAATAGTCTGCAACATTTAAATTTCCCGCGAT
+ACGTAATAGTGCTGCCATTTTCTACAAACGAATGGCCAGACATATTTGCTTTATTTACAT
+GAAACTATCGATAGTCAACCCGAAGAGTAAAAAGTACTCAAAGTAATATTCATATGTGTA
+GGTAAATACATATGCATACATGCATACATGGTATGCATTTAAGAACCTACATATACATAT
+ATGTATATACATGTTTATGTGCATGTGTATTACCTACATATACATACATATCTACTATAT
+TACTTTTTGGTTATGATTTATTGATTAAATTCGAAAAATATTTCCATCGATTAACTATAC
+CAGCTCAGTTCCTCTAATTCAGCCTAACTACATACATATGTATGTATACGATTTGTATGG
+TTGCAATCAGTTTCAATTCTTTGCCCACACACCCGCCTACAGAAATACGACAGAGTCGGC
+TTCATAGGTTGGAGCTGTCGTCATCACTAGTGCTGGCAAACTATCGATAGCACTATCGAT
+ATATCGAATTTTCACATTTTTGCGCCGCCATCGATATTTTTTATCCACTATCGATAGGGA
+TCGAAAATAACGCTCGCAGTTTGACACATCACTCGTTTTGGCGATTTGGTTATACGAAAT
+TTATTAAAATATAATCCGGTATAAGCTTTTTGGTTAGTGGTATAGAACAAATTTGGCATG
+GACAAATTTTTGATCGATAATAACAAGGGTGAGTATTATTTTCCATTTCATTGTTAGAAC
+CGTAAAACTAATTTTATAAGTATGTATTAACATAGATGGCGACATTTGCAATGTGGATCT
+TGAAAATACGGTTGCCAAAAAACCGCGCATTGGCAAATCTAAAGTTTGGCAATTCTTTAC
+AAAAACTAATGATGGTAAATTGGCAAAGTGTCGTTCATGGGATAAAACGTACAAGACAAG
+TGGAAATACATCTAATTTATTCGACCACCTCAAACGTGTACATCCAACACTGCAAATAAA
+TGAATTGCCAATTGTTAACAAAATCGAGAGCTACGTAAGCGCAACATATGATTCTTCAAA
+CAAGCGTAAAAAGGAGCTTGATATCGCACTTATGGAGTACATCTCATCAGACATGCGACC
+ATTCTCCGTTGTTGAAAATGCCGGGTTCGTTAATTTTATTAAGCTCCTAGACCCACGGTA
+TAAGTTACCATCAAGGAATACTTTGAAAAATGTTATGATGGTTGAGCTATACGAAAATAA
+TTTATAATTTGTTTTGTTATTTTTCGTTATTTTTAAATTTAAATGAAAATAAAGACGGTT
+TTAGCGATAGTATCGATAGTATCGAATTTTTTTCTAGAAAATATCGAAAATATCGAATGG
+CGCCACTATCGATAGTTTGCCAGCTCTAATGGTTAGTGATACNTGGCGATTTGGTTATAC
+GAAATTTATTAAAATATAATCCGGTATAAGCTTTTTGGTTAGTGGTATAGAACAAATTTG
+GCATGGACAAATTTTTGATCGATAATAACAAGGGTGAGTATTATTTTCCATTTCATTGTT
+AGAACCGTAAAACTAATTTTATAAGTATGTATTAACATAGATGGCGACATTTGCAATGTG
+GATCTTGAAAATACGGTTGCCAAAAAACCGCGCATTGGCAAATCTAAAGTTTGGCAATTC
+TTTACAAAAACTAATGATGGTAAATTGGCAAAGTGTCGTTCATGGGATAAAACGTACAAG
+ACAAGTGGAAATACATCTAATTTATTCGACCACCTCAAACGTGTACATCCAACACTGCAA
+ATAAATGAATTGCCAATCGTTAACAAAATCGAGAGCTACGTAAGCGCAACATATGATTCT
+TCAAACAAGCGTAAAAAGGAGCTTGATATCGCACTTATGGAGTACATCTCATCAGACATG
+CGACCATTCTCCGTTGTTGAAAATGCCGGGTTCGTTAATTTTATTAAGCTCCTAGACCCA
+CGGTATAAGTTACCATCAAGGAATACTTTGAAAAATGTTATGATGGTTGAGCTATACGAA
+AATAAGAAATCGAAGTTGCAAGACTATTTACGCAAAACTAATGTTTGTGCCAGCTTCATT
+AAAGCCTAAAAATGTGGATATGCTCCTCTTTCTCCAACACAATCAATGGATCTCCCAGTA
+AAATTGTTTTAACTTTAAGAAAAAAGTCAGTTATGAAGTAAAACTGATTGTTTTTTAAGT
+TAATATAATTTTTGTTATTTTGTTAATTTTCTTGTTATAATTTGTTTTGTTATTTTTCGT
+TATTTTTAAATTTAAATGAAAATAAAGACGGTTTTAGCGATAGTATCGATAGTATCGAAT
+TTTTTTCTAGAAAATATCGAAAATATCGAATGGCGCCACTATCGATAGTTTGCCAGCTCT
+AGTCATCACCGCTTGATGTGAACTTGAATCATACAAAATCAGATTTTCATATGAATGAGT
+GTATGTACATAGTATAAATGTTGAAATATACATACATATGAATGTACGTACATGGTTAGA
+CGAGTGTATAAACGATATTCATTTATACACACACATTCATATATGTACATATGTATGTGG
+GTATGTATACATGAATACGAGCTTCGCTTGACTCGATTGGATTTGATTTGAAACAGTCAA
+ATCCAATCGTAGCAACTGCTATTAAAAGTAAATAAATCAGGGTTCATTTGGAAGTAAACT
+CTTTTGATATTTGCTAGATAGCTAGAATATTGCTAAAATTTCAATATGAATGTAGCCAAA
+TACATACATATGTACATACATCATGTCATACACTAATGTAAACGTACATACATATGTATG
+TATGTATATGTATACAAATGTATGTTTGTAATCCCAAACCAACACATAACCTCAAATCGG
+AAATACAATTCTGTGGGCCATGTTTTTCAGTGCACACATACATACTCAAACTAGACATAC
+ATACATATGTATGTACATATATGTATATGTGCCTACATAGTATGTATCAGTCGGCCATCT
+GTGCGGCTTTTTGTGCATTTCCTGTATGCTCTTGTATTTCTGTGAAAATTCGATAGCTGC
+AGCTGTTGGCCTGCTTCTCGAAACTTCGGTAGTTACTTGGAGAGAGCTAGAAGATGTTAC
+TGTTACTATTGCGACAGACAACAACAAGCCGGTTCACCTAGGTTTCAACTATACATACAT
+ATGTATGTATATGAGCAAAAGCAACCCCCGTGAAAAATACGTACATATGTATGTATGTAC
+ATAAATGGTGAGAGGCACAAGCCACCGGCAATTACCACACTCGCACACACACATACACAA
+AAATGAAGTCATCGCCTGACTGTGTTAGTTATGCGGCAGCATGACTCATCACTAAATCGA
+TTTCTTTGCTTCAAGGGGGGCAACTTGGGAAGTTGGGCTAAATTTAGGTAAAAGCCACGC
+CCTAGTACAGTCTCATGCACTGAAAACTGCAGTAGAGTAGAAAGCCATCTCTGCACTATT
+AATAGAGCGTGTAGCGCTCGCGCAGCTTTCCCCAGCCACATAGGTATTTATCTTCAATTA
+TAACCGGCCCGTTCAGTGAACCTAGCTGAAAGAAATACTTGGAAGAAAGAGGAATAAAGA
+AAATGCGCTAAGTTTTTCTTTTGCTGGCAACACAGACTATTCGCTGACTTTATTTTCGTA
+CACAGTAAATTATACGTTTCTTTCCTTGTTATTTATGTGTAGTGAGTTTCTGTCATTAAA
+ATACTTGTAGGTTTCCCCCAACGTTTACTCGAGTGTTTGTTTCTTTTCTGTTTGTTTTTT
+TTTTTTTTCTTTTATATTCTTTTATGGAAGGCAAAACGTTTGCATTGGTTTCGACGTCTT
+TAACCGCCCACCAATGACGCTTGCTACGTGTGTGCTGCTTTTCGAGTGTATTTAATACTC
+CTCGGCACCCTCACCCTCACCATCACCAGAGTCCATACCGACTTCCTCATAATCCTTCTC
+CAAAGCAGCCAAATCCTCACGGGCCTCGGAGAACTCGCCTTCCTCCATACCCTCACCGAC
+GTACCAGTGGACGAAGGCACGCTTGGCGTACATCAAGTCGAACTTATGATCCAGACGGGC
+CCAGGCCTCGGCAATGGCTGTGGTGTTGGACAACATGCACACGGCACGCTGTACCTTGGC
+CAAATCGCCGCCGGGCACAACAGTAGGTGGCTGGTAGTTGATGCCAACCTTGAAGCCAGT
+TGGGCACCAGTCCACGAACTGAATGGTACGCTTGGTCTTGATGGTCGCAATGGCGGCGTT
+GACATCCTTGGGCACAACATCACCACGGTACAACATGCAGCACGCCATGTACTTGCCGTG
+ACGGGGATCGCACTTGACCATCTGGTTGGCTGGCTCGAAGCATGCGTTGGTGATCTCAGC
+CACCGACAGCTGCTCGTGGTAGGCCTTCTCGGCAGAGATGACAGGGGCGTAGGTGACAAG
+TGGGAAATGGATACGTGGGTAGGGCACCAAGTTAGTCTGGAATTCAGTCAGATCAACGTT
+CAGGGCACCATCGAAACGCAGCGAAGCTGTGATCGAAGACACAATTTGACCGATCAGACG
+ATTCAGATTGGTGTATGTGGGACGCTCAATGTCCAAGTTACGACGGCAGATATCGTAGAT
+AGCCTCATTATCTACCATGAAGGCGCAGTCAGAGTGCTCCAGAGTCGTGTGCGTGGTCAA
+AATTGAGTTGTAGGGCTCAACGACAGCAGTGGACACCTGAGGTGCGGGGTAGATGGCGAA
+CTCCAGCTTGGACTTCTTGCCGTAATCCACAGACAGACGCTCCATCAGCAGCGATGTAAA
+GCCAGAGCCAGTGCCGCCACCGAAAGAGTGGAAGATCAGGAAGCCCTGGAGACCAGTGCA
+CTGATCGGCCAACTTGCGGATGCGATCCAGCACCAGATCGACAATTTCCTTGCCAATGGT
+ATAGTGACCACGAGCGTAGTTGTTGGCGGCATCTTCCTTGCCAGTGATCAATTGCTCGGG
+ATGGAACAGCTGGCGGTAAGTGCCAGTGCGCACCTCATCAACCACAGTGGGTTCCAGATC
+AACAAAGACTGCACGCGGCACATGCTTGCCAGCGCCGGTCTCGCTGAAGAAGGTGTTGAA
+CGAATCATCGCCACCACCGACGGTCTTGTCAGAGGGCATCTGACCATCAGGCTGGATACC
+ATGCTCCAGGCAGTACAGCTCCCAGCATGCATTACCAATCTGGACACCAGCTTGGCCAAC
+GTGGATAGAGATACATTCACGCTATAAATGAGAAGATAAGAATAAAAAATTTTATTAAAT
+ACTGCTGCACCGAAAAAGCCGCACCCATGGCGATGCACACACAGCGCAGAATTGAGATTG
+TTACTAATAATCTCTTCTTATAGAGCTAAATTAAACTGAATACCTACAGATTATATNNNN
+NTTTGTGTGAATTTTTCATGACGTCACCACTTTTGCGGCGACGCCATCTTGAAACATGGC
+TTCATCACATATTGGGCAGTGGCAACCAAATTTCGTTAAACAAAAACGAAAAAGCAAAAA
+AAAAACGTACAAATTATGAAAAACATTTTAACTTACCATATTGAGTTTTTAGAATATTTT
+TCACACGACAAAGAAAATTTACAGAAAACTGTAGAGCAACTTATTGAGGTCTGTCTCGGA
+GAGAATTTACGTTCGAATTACCGGCTATGAGGCTTCACAAACGTATAATGAAAATTTTCT
+CGGAGACTGCTATTTATACTCTCGGAAATCACAGGATTTAAGTGTGTGAGTGAGTACATG
+TTGACATGATGCTTCAGTAGTCGATGTATCGATATTTGCAAAAAACTTCATGGCTTGCTT
+CGGAGTTGCCACTACTTGTTTTTAACACATCGCGCCCGATTTAAATGGTAAACATTAAAA
+AAAAAATATATATATACTTCAAAAGATACCAATATTTATATTTAATTTCTTTTAAAAGAC
+GGTAATATGGCGCTTTTCTTATTTAAATAACATAATTGGTTATTTAACGTAAAATATAAA
+TATTATTTTAAACAAAATAATTTTGTTTAATCACGCTGCATGTTCCAATTTCAAATCTTG
+GCATTTTCTTAGTATTCGCATCATCTACTGTCAAAAGAATGCATGTATAATTTGAAATAT
+GGTTATATTCTCTATTGCATAATGTATAAGATTAAACTGCAAAAATTAGGATGACAAAAA
+TTATAGAGTATTAGGATATCATTACCTGTGAATTACACTTCAGATTCAAATAAAAAGCTT
+TAGGTAAATAACAAAAATAAAGACAACTAGTTACTGAAATGGAAAATGTTGAAAATTGTT
+TTTAAACCATCGCGTGGCGGCCTTATAGACATAATTGAATATAATTAAGCTACTTATCCA
+CACATATCATACACAACAAATTAATTAATTAATTAATAATTTGTAGCTGACAACTCTGCT
+GAGTAAATATATATGTACATGAGTTTGTATGTATGTATGTATGTATGTATATTTTACCTG
+TACCAATTCATGCGCGTTTTAAAACGTACAATTTTCACGTCATATTTTCGTTTCTATTTG
+AATTGATCGTAATAATAAATAAAATGAACAGCTGGTTTAATAAAACAATTTACGATAATG
+CTGAACGATTATATTATGAGGCAATAGATGCAGGCAAAATAGAACGAGACATTGGTGTGA
+GTTAATTGAACAAGCGTTTTTTATAAGACTGACCAGCATTATGTTGATTAATAGAATTTG
+TGTGAGAATATAAAAAATAATATAAATAAGTTGTAGCTCTGGACCATTATTGTGTAATTC
+AGTTTTGTGAATTTAAAAAGAAGTCATATCTACACATATATGTACATACATATATGTACA
+TACATACATATGGGCATGCAAATATGTATTAATATATGTATGTATGTATATGTGACACTG
+GCGCTTTTATAGTTGTGTTTAGCTTCAACCGGCAAACTTTCTTGCGGGTGGCAACACTGG
+ACGAATCAGCTGTTGCTGCATTCAGCTTTGCTTAAACATTTACTTTGTTACTTTTTGTAA
+ATTGTACAGAAATCCACCTGCACCGCCCACATTATCACTACGACAAGAAAGAGTAAAAAA
+CGTAAGGCGATGGCGGAAAATCAACAGCAACAAAAGAAGTTGTTATACGTGAGTATACGG
+TTGGTTGAAAGATATGGATCTACAAATGACAAATATTATTTTGAATAATAGTTAAATCCC
+CTAACATTGGAAGCGAGCTTCTTTCTGGAAACACTGGAAGAAGTAAACCGCCAAGATCAA
+CTTCAATTAGATCCACATTTGACGCATCTGCTGGAGCGCGTTGTTGTTGGTATTGAAACA
+TTTTTGGACAAGAAGCCTATGTACATAGTGCCCAAGGCAGCGCAACAGGTTTCCGAAGAG
+CATCCAAATACAACAGATGCTGGGGGAATAACCTTTGTGCCACCCAATGAGCTGCTGAAA
+ATCAAGAGAACATTCAACTGCACAGCCTGCACTCATCGTATTGTGGGTACATCAATTAAC
+AAAGCTGTGGCTCACTTAGTCGAGCAGCACCCGAATCCAAATCCGAATCCTCATTCCACA
+CATAATGGCAACGTCAATGAACAGCGACCGACGACTACAAAACAAGAGAAAAAACGAGCC
+GAAGTTGAAGCACGCACTAAATTGAACATAAATCTGCCGAAGAGTAAGTTATTACGAGTT
+ACGAGTTAAATTACAGGTTATTAACTACTTTTAATTTTTCAGAGGTGAAGGCGTTGGCAT
+TGGATGACATGAAAGATTTGCTTCGCGATAAATATCAAATTGCGGATAAATTAAAAGTAA
+TGCCACAGTATGATGAGATTGAGGAAGATTTATGTAAGCTCATAGCGCCTGCTTTTGCCA
+AAGAGACTGTTCGAATATATAAATTCGGATCACGGATAACGGGCATTGGAACCCGCTCAT
+CAGATTTGGATATATTTATCGACATTGGTTAGTATTAAATTATAAACTACCTATTTTATT
+GTTTAATCAGAAAACTGAACTTTTCAAACAGGCAACAGTTTTCACCTCTTTGAGCACCGA
+GCTGGCAAGAATACCATTGCTAAGCTTCGAGTATTGCGTGGATTGTTCCTTGAAAGCGAT
+GACTGGCGTATCATCAATGTAGAACATTTATCTTTCATTTTATCATGATTATTAATTTTT
+TATCCTTTGTGAATTAGGTCATTGAACAGGCGCGCGTGCCCATTATTAAAACATGTCATC
+TGTCATCGGGTATAGAGTGTGATATATGCTTAAATAGCTTGGGTTTTTGCAACACATCGT
+TACTCAAATATATATTTGAGACGCAGCCATTAAGTATGTTTATTAGAGAATTGTTTTTTT
+TAAATAATATACAATCGAATATATTTTTGCAGCCCAGTATATGTGCATTTTCTTGAAAAC
+CTGGATGGAGCGCAGCAGGCTGACAGAGCAAATAACTACATATAGCATGGTCCTAATGGT
+TATTTACTATTTGCAAATTAGACAACTGCTGCCATCGATTGCATTACTACAGCAGTGGGA
+ATTTATGTCTGCGAAGCAGTTCGTGGGACGTGAGTGTTTTTGCGGCTGATAATATAATTA
+GCAATTAGCCGTACTTCCCCTTTTTACGTATTTTTTGCTTGCAGCTTGGATTACGAACTT
+TCAACAGAAGTCACTCAGTGAATTGGGAATGCAGCATATAGAGGTCACCGTCCCCATACT
+CAAAGAATATTTGAAGGATCTATTAAAGTTCTATGCAACTTTTAACTATGAACGGAACCT
+GATTTGCCCATATTTTGGCAAGAAACATATTCTTATTTCGCGTATCGAGAAAGAGATGCC
+GCTAAGGTAAACAGATAAGAGACTAATGACTATAAAATTAATCGCTGACTGTTTAACGTC
+TCCATTTAGGTATGTGGATTATGCAAATCAAAATCCGGAGTGTGCATTACAACTTCGGAA
+GCCAATGGTTGTTCAAGATCCCATACAATTAAATCATAATGTGACGAAGGCGGTGACGAA
+ATATGCATTACAAAAATTTATTGACTACTGTGAGCAAACGGCGACGTTGCTTTGCAGTAG
+TATATAAAACTTCTAAAATTCTTAAATAATAATTTCCGTGATAGAATCTAGAAGATTTGT
+ATTTATTTAAAACCTTTGGTATTGCGGCATTTTATTACTTGATTATGTGACTGTGGGTGT
+AAGATGATATAAGCAAATACAAACACATAAATACTAATAACGAACACACAAATATACAAA
+CATTTAAAAGCGCCAAGATTTGGGCCACAGATCAAACGTTATACTTAGGAAAACAATTGT
+AAAGACTATTATCAAAATGGCCCCAAGAATTGAGAAGCGATTGTACCAATGCTGTTTGCT
+TTCCTGCATCATAGTATAAATGCGCATCGCTGCTTCTTCCGTGGCAATCACGCTACCATT
+ATTGTCTATAACGAAATGTGACTTTTCACATTTTTTCTCTAGTGGCATTTGCGACTCGAT
+TCGATTAACTGCCTCCGTTTCAGAGAGTTCGTTGCGTGCCAATAATCGTTGCAGCTGCGT
+TTCTGAGTCACTGCATTTCAATAAATATTTATTATACTTCTTTTAAAATATATATGCATT
+ATGTAATTGTTATACATACCAGGTCACAGTCACAATTTTGTGGATAAAGTCCATTAGAAT
+GCCTGTCTCAAAGAGTAATGGCAAGTCTAGCACAATCCAAGCGTGACCAGACATAAATAG
+CTTGAACACACGCCAAAATATAGTCCGATGTATTACAGGATGCGTAATCTGATTTAGTTT
+TCCACGTAGCTCCTTATTCTCAAAAATCATTCGTCCTAGCACGGCCCGATTTAATTCTTT
+GCTGGGCAGCAGCACTTCGTCGCCAAAGGTGGCACGAATTTTTTGCCAGCATGACTGACC
+TGGTTCTACAACTGTGGAGGCGTCACGTATTGTTAATTTAAGCTGAGCTATGCTAATTGA
+ACGCTCAATTACAACATCCCGTATGAAATGTATGACTTACTCTCCCTTGCTATTCTATCC
+GCATCAATGACTGGAATGCCATTTCGTTCAAAAACTTTTGTGACGGTGCTTTTCCCCGTA
+GCTATACCACCAGTTACGGCCACAATAAACATATTGAACCAAAACAATTTTTTGTTTTTT
+GGAATGTTTTACAGCCTTTTCAGTTATTGTTGACAGTTGTGTAAATTTTCGTCTTGTAAT
+CGGTTTAGGGCTACGAATTTATCGATTTCTTAATAATTAATTTAAGCATTTTACAACACC
+AAGTAGGCTTGTTTTGAATGTTATACAGCACGCATTTTCATTGAAAAGTCAGCCATCTTG
+AATTTGAATACATTTTCGTTCTCGTGCGTCGTTTTCACCAGTTGGCGAAATTTTCACGCG
+TTCGTGTTAAAAATAGTTGCGTGCATTTAATACCACTTTTAAGAAAACTTAAACGACTTC
+TTTAGCATCTTATAGTTAAGCATAAAATCAGAAAAATGGTGGATAAAATTGAAATGAGTC
+TGGATGATATCATTAAATCAACGCGCACACAGAAAAAAACGCAGGGTGGTCGCGGTGGGC
+CGGGTGGAACTCGCCGGTCTGCCGGACAACAGCGATTTGGTACTGGAGGATCACGCCGTG
+GAGGTGGTCCTGGTAGCGGCTCCCCACGTAAAGCGGCCCCCGCTAGTGGTGCCGGCGGTG
+TGCTTAAAGGTCGCCGCGGTGGTGCTGGCGGAGGTAGTGGCGTCATTCAGAAGCCTCGGC
+TCGCACGGGTAATTGAACGTTACGTTTTGTCATGTAGAGAGCCAAAAGCAGCACAATATC
+CATGCACATGCATAAAAAGGACAGCCCAAGTTGGAAACTTATGATTCTTAGCAAATTTTA
+CATAAAATATAAACAATTACTGATAATATAAAATATGCTAACAGCTGCAATCACACGGAT
+TCAAAATGGCTACCATATGCAGAATAAACGGTATCTGCACCGTTACTTATACCATGTACC
+ATGTGGACATACTACTGCAAAATGGCGGCATCTAGTGGCAAAAAAAATATATATATTTAA
+ATAATATTAAACAAAAACAATGCACCACCGCACTGTTTGGTTGTGTTATGGATTGCGCGG
+AACATCAGAAATAGAACTACACACAATTGCGTCGAAAAATTCATTTATGTATTTACAAGT
+TTTACAGCACCACATTTCGTTTGAGGAATTCGCGCTTGTTGCGTTTTTTTTTTTCTTTGT
+AATCCCCGTTTATAACACGTTTAATATTTATTTTTGCGCTTGCCAAGTCAAGAAAAAGTG
+GCAGTCAATCAATGTACATTCATACATATTTAGTGTTTCTGCATTGCTTCGATGGCGTCC
+TCTTGATGTGGCTAGGATACAACAACTGCTGCTGCTACTACATCTCCCACATATTTGATC
+AGAAACTTCTCCTCACGCGTTCCGTTCGAATCAACCAACAAATCTTCTACCTAATCCCCC
+CTTTAGGGTGATGTAAACAGCGCTTGGAAGCATGATATGTACGATGGTCCAAAACGAAAT
+AATAGTGCTGGCAACAGTACAGGGCCAACACGTTTGATAGTCGGAAATTTGGACTATGGA
+GTCTCAAATACGGACATCAAGGAACTATTCAATGACTTTGGCCCAATGAAGAAAGCTGCC
+GTGCACTATGATCGGTCAGGACGCTCTTTGGGTAAGGCAATGTGTACATATAAAATGTTG
+ACAGTTTTTAAGCAACTCTGCATAATTTCTTATAGGCACCGCTGATGTTATATTCGAGCG
+TCGGTCTGATGCTCTTAAGGCAATTAAACAATACCATGGTGTACCCCTGGACGGTCGTCC
+AATGACCATTCAACTTGCCGTATCAGATGTTGCCGCACTCACACGTCCAGTGCATGCCGA
+TGATGTGAAACGTCGTGTGGGCAACGCCGCAGGGTCTCAATTCAAACGGGGTGGTATGTT
+TAAATACAACAAAAGTTTTCTTCCATATAAGGAACTTTTCATACGTAATTTTAGGTGGCC
+AGGTTGGTGGCGGAACACGTCGAGGAAGTTTCCGTCGTCCAGCTGGTGCAAAAGCTGCTG
+CGGGAGGCCAACGTCGTGAGAGGAAAGCGGCTCCAACTGCCGAAGAACTCGATGCTGAAT
+TAGATTCATATATTAATGACATGAAGATCTAATTAGATTTAAGCTGAACACTTAGCCTAA
+ACACACAAAAATGGACTTAACATTATGGTTTAACAACAAGAACAACTCAACAACACGAAC
+TTGTTTGAGAACAGCTTTAGTCATAATATCTTGCATAATTTTTCATTTAAATTATACACA
+ATTCTGTTTGGGTGAGCGCATTAAACGACTTGTTAAATGTATCGATGTAGCGCCCTTTTA
+GTTGATAATTCATAAATACATACTGATGTATGTAATGTAATCTAATTTTACTTTATAAAA
+ACACATTGACACAAGTCATAATATTTGTATAATCAGGTATAATAAATATTAGATTTAAAA
+CTAAAACTGAGATGAATGTATAATTTAAATGTATGTCGCCGAATGTACATGCTACCAGAA
+TATAACCTTTCAGACCCTGACAAAAATATACATGACGGCTCCCAATATGTATTTTATTTG
+TGATCTGGATATATTATTGAGATATATGGTTGGATGACATGGACAAGATTTCTTATTTAA
+TACATAAAATTCGAGTTATTTTATTCATTACTCAAGCTATAATTCCAAGCAATTGAATTA
+GTTATCAATTTATTGCATCTATATTCCGAACAAGAATATATTCATTTGTAGAGTCAAACA
+ATCTGGTTAAATTTTAAATGTTAATTTTATTTTGTTTTTGCAATAATACGTATATGTAAT
+TATAATAGAATTTAAACAATTTTGCAGACCGATTCAAATTTTGATTGGACACTTAAATAC
+AAATGCAGAGTTTGGTTTCTTTCCCTAATGTATTGTCGTATATTAGGGATGTTTCTTTAG
+GGCGGATTTGTGAGTTACTTAAATTTTAAACAATTGTGTTTGACGGTTTAAATAGTTTAC
+TTAGTAGAATAAAAAACATTAAATTAAAAAAATCAGAGAGCTAGATTAAGTTCTGCAATC
+AAATCGCAGTATTCTTATTTTGAAACATTTAGCACAGTAGCCAATTTGGAATTTAAATAT
+GAATGCATAAGCTATATATGTATATATTAAAGGATTTATATTTATAAATGAATAATGGGG
+CTGAGGATGTCTTTGTATGTTCGTGCTTGTGTATGAAATTGTATGCATATGCGAGAGTGT
+GTAAGAGTGTCAAAAAATGCATAAGCTATTTTTTTTTTAGTTTCTCTACCAGAAACCGCC
+CGAAGAGTAACCACCGGGAGGAACCCGTCCGCGCGACTGATCATTTGTCGCTGCCTTGCT
+GCCATTGGTGGTCTCTTTGGGCGGGCTAACGGGTGCTGGTTTTGGCTCCTCTTTTTGATT
+GGCTGCCTCCTCACGTAGCTTCTCCACTATCTTATTGGCATCGGTCGATCCAATGCAAGC
+ATTTAAATTGGATGAGTTTTGCTGATTGAATTTGGGACGTGGGGCATTCACTGACACTTC
+AGGTTCTGAAAAGATGTTGGTGTGTCCACCACCAGGGGGCTTGAGTACTCGACTGGAAGG
+ACGAGCACTGCTACTCAAGCCAATTTTCAATTCGGTGGATGTCATATTAACTGATTATTA
+GTAGGAGCTGCAAAAATATAAAAATTTTACGATATATTATTAATACGATGTATAAGATAA
+CATCGATTGATTTATATAAATCCAGCAAATACTAGTTTGTAAAAATTTATCATTCTTTTT
+GAGTAATACTTTCTAAAGAGACTAGTAAATGTGAACTCATTTATCTGCTGTGTACAAATG
+TACATAGAAACTGAAACCGTCACGCCTCTTACAAAGCTGAGAAACAATGTAGTAACAACG
+GTGACTGGCGTCGGCCAACTGAGCCATGGGGGAAAATGCCAGAATAGAGAAATGTTTAAC
+AAATACAGATTCAGACAACAGCAGAATGGAACATTACCCTCATGTCTTCCCTTTCCACTC
+ATTTCATCACTCTTACATACACACGGACGACTCTACTATTCACATTTTACATTGATATAC
+ATACATATATATGTACATACATAAATACATCATTTTATCTCTATTTTTGAGCGCCGGGCG
+TTGTTTTTTTTTTCACTTTCCCGCTAACTCTAATTGCGGGCCAGCCAACTGCGCACTTTC
+TCATTGTTGGCATTTTGAGTTTTTATTTTTGCCATTTATTTTTGTGTCAAGCCCTTGTAT
+ATTATGCACTCAAATCATTTTTGGTTACTGTAAAGAGCTTTCAATAGAAGGAATATACAT
+AGTTGCTTATGAAGCCAGTTGAAGACTCTCTAATCGCTCTCTGCTTTTCATTCAATGTTA
+AGTTTTTTTTTTTTTTTTTTTTTTTTTTGGCAAGTGCGTTGCTCAGCAAAGAATCTGTTC
+GGCATGGAGGAAAGAGGTCAAAGTGGGGCCGCAATGTGCTAAGAGATTTGCGAGTGTTGT
+AAAACGCGAATAGTGATGCGTCATGCTTTGTGGGAGACAAGCATGGATGAATTTCCCTTG
+GGGGGTGCACAATATATAAACACACACAACCACAAATATGTTGCGGAATTGATGTATGTG
+TAGACAGACAAAATGTGTAGGTATGTGTGAATGTGAGTAGAACAATGCAAAGTGAATGAC
+CGATTAATGTAAAAGCCAAAGATCTCAAAATAACAGAATTCAATCATTTCTCATTACTAA
+CATATTAAACAACTATAACAAATCAATAATAGATAATAATAAGTACATTCATACATTGAT
+GCGTCAACTATTTTCTTTATATACATATATTGTATCGGTCACGTTCACCAGCGATATTCA
+GTTACAGGTAGCACATACAAATGCTCTTACTTTAATAATTATTATTTATATATGTATGTA
+TGTATATCGGCTGTATCAGTATGTGTGCCAGTATTTACGTAGAAGTTATGAGTAATGAGC
+GCTGAGCAATCTGGATAAAACTTGAAATTAGAGGTTCGCCGGCTCGATTGGAATATCTTA
+CGCTCGTGTGTTATGATTTTGTTATTGTTATTGAGGTTTTTGTTAATAATGGTAAAACAC
+AAGCGGTCATCGCGATAAATATGGTTAAAAAACATTAATCACTTTTGGTCATGTGTTGTG
+TATATTGTAGGTATATAACAAAAAGCAAATCTAGTCTAGCCATTGGTGACCAACCTTTAT
+TTATTTACCACTTTATCTAATGACCATTAGCAAACAAAAAAATGACCCAAAGGCAGTGGC
+GTTCCTTCCACAAAATGCAAAAAACAAAAAAATAAATTATCAACACACACACACAAAATT
+TGAGTGTCAGACCCATACGTACACACAAACATATACACATGTACTGTACATGTTCGTATG
+TATGCCTTGTTTAGACAGTTCGGTTAAAACTGCCTGTAGCTAGTTTTCAGCGATTATTAA
+GGCCAAAGCATGCAGTCGTTTGCTTAAAAAGTAAAATGCAAAACTTGCCAACTGAATTGC
+CCATGCTAGGCGTCTGGCAAATGGAGCGTCATCAAGAATATCGGGAGAATGGGATGTTCT
+GTGTTATTTTTATGCTCAGAATATGTATGTATGTAGAAATGGCGTTATGGCAGCTGTGCT
+AAATAAAACTTAATAGCAGCTGCACTCCATGCATATGTACATGTACATATATGTAGATAT
+AACATACATACATAAGAAATATACAATACACACAGTTTCTTATGCTAAAAACTTCATCAT
+TATCAATAACGTCATCATCAACAAGGAGATGCATACATATGCGTCTATGTGTGTATGTAG
+TTAGTTGGTTGGGCTCAAAATTCCATAGCAAACACAAAGGCACGACACAAGTTCCCATCC
+GGAAAATTATTGATTTTGTTTTGCACCGCATTCAACAAGTCGATATTGAGCAGAGTTTTA
+ATGACTTACAATTAAGGTTGTGACTTACCTCTGGTATTTTATGAGCAAAGTATTTTTTCT
+TACTTTGTAAATATAAATTAAACAGAAATGCACACTGCAAAAGACGACGCCACCTTCTGA
+AATGAACGGTTTATTTTAAATGGACTACAACAGTGTGGCCGTAGGGACTAACGTAAATAA
+GACAAATAATTTATATACTAGATATATTGATGCATTCATAACCGGTAAAAGAAGTCTGTT
+AACCGATTTACAATTTAATTTTATAAAACTTGTCAATTTATATTATATTTATATTTATTA
+TATTATATTTATAGAATTATTTGATAACATTTATAATATATATAAATTTATTATATTATA
+TAAATGCAAAACACTTTATTTTTTTTATTGTCAAACTATCAGAAGTATTGAGATAACTAA
+ATTATATAAAATTTATTTATGACAAAGTTATAAATTTGTAAAAACTAGAAATGTCATAAA
+TTATACATATATTATATCATATATGTATATATTATTAAAACGAAATATATATTTAAAAAG
+AATATGTCGGGGAAAAAAATATATGGCCACTTTACTGTAATACGAATTTTGATCAGCTGT
+AAAATTATCGATAGCTGCGACTATTCCAATCAGAATATCGAAAATAGTTTAAATTTTTGC
+AGTGAGCTGCAAGTGAACCTAATTTGTTATAACCATTTTATGCTGTTTTTCCCATTGAAC
+TCTCTTCTTACTTTCCCTCACATCCGCATGGATGGGGCACTAAAAAAATTGAAACTCTTG
+GTTGTAAATAAATTTAAATGGTTTCATTTATTATAGAAAACGGTTTTGCGGGTCATTTAA
+AGTTATTAACTTAGATCCTTGATGGGTACAGCATCTAAAAAAGAAAAGGTACAATTTAAG
+AAATTGCAAACACATCTTAAATTTTTTGTTACTTACGATGCGAATGCGGTGACCCATGGC
+ATGACCGGGCAAATTCCTGTTGAAGCGTGCACGCACAGACCCAGTGTTGCCGTGGATGCG
+GGTAACCTTGCCCCAAACTGCACGGACACGAGTCTTGCGATCAGGATGCTGAGGCACACA
+CTTCTTGGTCTGAGCCTTATATACATACACGCAGCGCTTGCCAACATAGAATTGGCCGTG
+TTCCTTGCGACGAGCGCCCTCAATCTAAAAGTCACATTTAAATATTTGTTATAAATGTAT
+ATGCTTTATCATCAGCGACTATATAAACGTACCTTAAGGATGGCATGATTCTCGTGCTGA
+TTCCTCAAACCGCGCTTGTAGCCGGTGAAGACAGCCTTTGCGAACAGACGACCATGACGT
+TTGTATTTCTTGGCCGACACTTTGGTCTCAGTGGCGACAGCCTTCTCTGCCTTTGGGGCC
+TTGGCGGCCTTTGGCGCTTTTGCAGTTTTGGGGGCCTTTGCGGCCTTAGACGCAGCGGGC
+TTAGCTTGTGTGTCAGCCATAGTTCACTGAAAAAAACACAATATAGAAATTCTAGTTACA
+ACCTTGTACAAAAATCATAAATAAATTAAAATTCATTATTGATATTTGTTTTGATTGTTT
+GTCTAATCGGACACTTGGTTTCTAGCTATAAACATCAGAACGGTTACACTTTGTAAGTGC
+AAATAAACTTTTTTGTGACACAATACACATATTGAACTATGCAGAGAAACAACAATTTTT
+AGGTATAATTGTTATATTCATGTATATTTTGATATTTTATTAAGCATAGCACAAAATACG
+CGTACGTACCGGAAATCTACCAAATGGCGAAAGAGGGAGAAGATGACAGCTCAGTCATAC
+AGAGCTGCATTTAAGCGGGTT

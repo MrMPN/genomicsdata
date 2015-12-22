@@ -1,0 +1,69 @@
+# This output was generated with AUGUSTUS (version 2.5.5).
+# AUGUSTUS is a gene prediction tool for eukaryotes written by Mario Stanke (mario.stanke@uni-greifswald.de)
+# and Oliver Keller (keller@cs.uni-goettingen.de).
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# reading in the file /home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/10_0.12495-14572.fly.auto_annotator.xdef.augustus ...
+# Setting 1group1gene for E.
+# Sources of extrinsic information: M P E 
+# Have extrinsic information about 1 sequences (in the specified range). 
+# Initialising the parameters ...
+# fly version. Use default transition matrix.
+# Looks like /home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/10_0.12495-14572.fly.auto_annotator.augustus.fasta is in fasta format.
+# We have hints for 1 sequence and for 1 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 2077, name = 302) -----
+#
+# Constraints/Hints:
+302	EST-EXON	exonpart	202	473	0	+	.	grp=n_peices;src=E "10;0.995;0:0"
+302	EST-EXON	exonpart	1192	1419	0	+	.	grp=n_peices;src=E "10;0.995;0:0"
+302	EST-EXON	exonpart	1457	1669	0	+	.	grp=n_peices;src=E "10;0.995;0:0"
+302	EST-EXON	exonpart	1719	1874	0	+	.	grp=n_peices;src=E "10;0.995;0:0"
+302	EST-INTRON	intronpart	475	1190	0	+	.	grp=n_pieces;src=E "1;1;0:0"
+302	EST-INTRON	intronpart	1421	1455	0	+	.	grp=n_pieces;src=E "1;1;0:0"
+302	EST-INTRON	intronpart	1671	1717	0	+	.	grp=n_pieces;src=E "1;1;0:0"
+302	PROTEIN	CDSpart	202	473	0	+	.	grp=p_pieces;src=P "100000;1;0:0"
+302	PROTEIN	CDSpart	1192	1419	0	+	.	grp=p_pieces;src=P "35111.9;1;0:1"
+302	PROTEIN	CDSpart	1457	1669	0	+	.	grp=p_pieces;src=P "35111.9;1;0:1"
+302	PROTEIN	CDSpart	1719	1874	0	+	.	grp=p_pieces;src=P "100000;1;0:0"
+302	EST-EXON	genicpart	474	1191	0	.	.	grp=n_peices;src=E "2;1;0:0"
+302	EST-INTRON	genicpart	1191	1420	0	.	.	grp=n_pieces;src=E "2;1;0:0"
+302	EST-EXON	genicpart	1420	1456	0	.	.	grp=n_peices;src=E "2;1;0:0"
+302	EST-INTRON	genicpart	1456	1670	0	.	.	grp=n_pieces;src=E "2;1;0:0"
+302	EST-EXON	genicpart	1670	1718	0	.	.	grp=n_peices;src=E "2;1;0:0"
+# Predicted genes for sequence number 1 on forward strand
+# start gene g1
+302	AUGUSTUS	gene	201	1877	1	+	.	g1
+302	AUGUSTUS	transcript	201	1877	1	+	.	g1.t1
+302	AUGUSTUS	start_codon	201	203	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+302	AUGUSTUS	intron	474	1191	1	+	.	transcript_id "g1.t1"; gene_id "g1";
+302	AUGUSTUS	intron	1397	1460	1	+	.	transcript_id "g1.t1"; gene_id "g1";
+302	AUGUSTUS	intron	1659	1719	1	+	.	transcript_id "g1.t1"; gene_id "g1";
+302	AUGUSTUS	CDS	201	473	1	+	0	transcript_id "g1.t1"; gene_id "g1";
+302	AUGUSTUS	CDS	1192	1396	1	+	0	transcript_id "g1.t1"; gene_id "g1";
+302	AUGUSTUS	CDS	1461	1658	1	+	2	transcript_id "g1.t1"; gene_id "g1";
+302	AUGUSTUS	CDS	1720	1877	1	+	2	transcript_id "g1.t1"; gene_id "g1";
+302	AUGUSTUS	stop_codon	1875	1877	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+# protein sequence = [MVDKIEMSLDDIIKSTRTQKKTQGGRGGPGGTRRSAGQQRFGTGGSRRGGGPGSGSPRKAAPASGAGGVLKGRRGGAG
+# GGSGVIQKPRLARGDVNSAWKHDMYDGPKRNNSAGNSTGPTRLIVGNLDYGVSNTDIKELFNDFGPMKKAAVHYDRSGRSLGTADVIFERRSDALKAI
+# KQYHGVPLDGRPMTIQLAVSDVAALTRPVHADDVKRRVGNAAGSQFKRGGGQVGGGTRRGSFRRPAGAKAAAGGQRRERKAAPTAEELDAELDSYIND
+# MKI]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 57.1
+# CDS exons: 1/4
+#      E:   1 
+#      P:   1 
+# CDS introns: 3/3
+#      E:   3 
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 1
+#      E:   1 (n_pieces)
+# incompatible hint groups: 2
+#      E:   1 (n_peices)
+#      P:   1 (p_pieces)
+# end gene g1
+###
+# command line:
+# /home/genomica/Programs/maker/exe/augustus/bin/augustus --species=fly --strand=forward --UTR=off --hintsfile=/home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/10_0.12495-14572.fly.auto_annotator.xdef.augustus --extrinsicCfgFile=/home/genomica/Programs/maker/exe/augustus/config/extrinsic/extrinsic.MPE.cfg /home/genomica/genomicsdata/302.maker.output/302_datastore/57/7B/302//theVoid.302/10_0.12495-14572.fly.auto_annotator.augustus.fasta
